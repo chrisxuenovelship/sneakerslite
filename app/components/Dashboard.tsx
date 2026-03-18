@@ -47,17 +47,8 @@ export default function Dashboard() {
               <div className="lg:col-span-2 flex items-center justify-center">
                 <div className="w-full bg-gradient-to-br from-gray-900 to-black rounded-xl p-8 aspect-square flex items-center justify-center border border-gray-800">
                   <div className="text-center">
-                    <img 
-                      src="/sneaker-placeholder.jpg" 
-                      alt="Jordan 12s" 
-                      className="w-full h-full object-cover rounded-lg mb-4"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none'
-                        e.currentTarget.nextElementSibling?.style.display = 'block'
-                      }}
-                    />
-                    <div style={{ display: 'none' }} className="text-6xl">👟</div>
-                    <p className="text-gray-400 mt-4 font-medium">Jordan 12 Retro</p>
+                    <div className="text-6xl md:text-8xl mb-4">👟</div>
+                    <p className="text-gray-300 mt-4 font-medium">Jordan 12 Retro</p>
                     <p className="text-gray-600 text-sm mt-1">Black/White Colorway</p>
                   </div>
                 </div>
