@@ -1,0 +1,24 @@
+{
+  "name": "SneakersLite",
+  "description": "Authenticate Faster. Cheaper. Consistently.",
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "env": {
+    "RESEND_API_KEY": {
+      "description": "API key for Resend email service (optional)"
+    }
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "functions": {
+    "app/api/**/*.ts": {
+      "memory": 1024,
+      "timeout": 30,
+      "includeFiles": "app/**"
+    }
+  }
+}
