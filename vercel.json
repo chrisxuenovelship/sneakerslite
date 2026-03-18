@@ -1,6 +1,5 @@
 {
   "name": "SneakersLite",
-  "description": "Authenticate Faster. Cheaper. Consistently.",
   "buildCommand": "next build",
   "devCommand": "next dev",
   "installCommand": "npm install",
