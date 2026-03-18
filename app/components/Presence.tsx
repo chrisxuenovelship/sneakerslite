@@ -50,12 +50,15 @@ export default function Presence() {
 
         {/* Call to Action */}
         <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-4">
-            Choose your region for localized support
-          </p>
-          <button className="btn-primary">
-            Select Your Region
-          </button>
+          <h3 className="text-2xl md:text-3xl font-bold text-brand-dark mb-6">
+            Want to Learn more?
+          </h3>
+          <a
+            href="/contact"
+            className="inline-block bg-brand-cyan hover:bg-cyan-700 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+          >
+            Contact Us
+          </a>
         </div>
       </div>
     </section>

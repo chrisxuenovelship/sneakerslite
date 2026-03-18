@@ -170,30 +170,7 @@ export default function Contact() {
               </form>
             </div>
 
-            {/* Contact Info */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="text-4xl mb-3">📧</div>
-                <h3 className="font-bold text-brand-dark mb-2">Email</h3>
-                <a href="mailto:chrisxue@novelship.com" className="text-brand-cyan hover:text-cyan-700">
-                  chrisxue@novelship.com
-                </a>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl mb-3">📍</div>
-                <h3 className="font-bold text-brand-dark mb-2">Location</h3>
-                <p className="text-gray-600">
-                  Hong Kong, China, Singapore
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl mb-3">⏰</div>
-                <h3 className="font-bold text-brand-dark mb-2">Response Time</h3>
-                <p className="text-gray-600">
-                  24-48 hours
-                </p>
-              </div>
-            </div>
+
           </div>
         </section>
       </div>
