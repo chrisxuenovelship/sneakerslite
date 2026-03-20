@@ -37,6 +37,12 @@ export default function Navigation() {
               Security
             </Link>
             <Link
+              href="/blog"
+              className="text-brand-dark hover:text-brand-cyan font-medium transition"
+            >
+              Blog
+            </Link>
+            <Link
               href="/contact"
               className="btn-primary"
             >
@@ -89,6 +95,13 @@ export default function Navigation() {
               onClick={() => setMenuOpen(false)}
             >
               Security
+            </Link>
+            <Link
+              href="/blog"
+              className="block text-brand-dark hover:text-brand-cyan font-medium py-2"
+              onClick={() => setMenuOpen(false)}
+            >
+              Blog
             </Link>
             <Link
               href="/contact"
