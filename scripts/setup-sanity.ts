@@ -320,7 +320,7 @@ async function setup() {
     console.log(`   Dataset: production`)
 
     // Test connection
-    const projectDetails = await client.request({
+    await client.request({
       uri: '/projects/wl0eb4zu',
       method: 'GET',
     })

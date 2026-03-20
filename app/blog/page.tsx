@@ -37,11 +37,11 @@ export default async function BlogPage() {
             {articles.map((article: any) => (
               <Link
                 key={article._id}
-                href={`/blog/${article.slug.current}`}
+                href={`/blog/${article.slug?.current || ''}`}
                 className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition"
               >
                 {/* Article Image */}
-                {article.mainImage && (
+                {article.mainImage?.asset?.url && (
                   <div className="w-full h-48 bg-gray-200 overflow-hidden">
                     <img
                       src={`${article.mainImage.asset.url}?w=600&h=400&fit=crop`}

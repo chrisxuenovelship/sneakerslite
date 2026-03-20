@@ -32,10 +32,18 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 
 // Generate static paths for articles (ISR)
 export async function generateStaticParams() {
-  const articles = await getAllArticles()
-  return (articles || []).map((article: any) => ({
-    slug: article.slug.current,
-  }))
+  try {
+    const articles = await getAllArticles()
+    if (!articles || !Array.isArray(articles)) {
+      return []
+    }
+    return articles.map((article: any) => ({
+      slug: article?.slug?.current || '',
+    })).filter((item: any) => item.slug)
+  } catch (error) {
+    console.error('Failed to generate static params:', error)
+    return []
+  }
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
@@ -92,7 +100,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         </header>
 
         {/* Featured Image */}
-        {article.mainImage?.asset && (
+        {article.mainImage?.asset?.url && (
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src={`${article.mainImage.asset.url}?w=1200&h=600&fit=crop`}

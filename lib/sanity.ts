@@ -48,7 +48,8 @@ export const categoriesQuery = `
 // Fetch all articles
 export async function getAllArticles() {
   try {
-    return await sanityClient.fetch(articleQuery)
+    const articles = await sanityClient.fetch(articleQuery)
+    return articles || []
   } catch (error) {
     console.error('Failed to fetch articles:', error)
     return []
