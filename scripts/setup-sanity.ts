@@ -1,0 +1,351 @@
+#!/usr/bin/env node
+
+import { createClient } from '@sanity/client'
+
+const client = createClient({
+  projectId: 'wl0eb4zu',
+  dataset: 'production',
+  apiVersion: '2024-01-01',
+  token: process.env.SANITY_API_TOKEN,
+  useCdn: false,
+})
+
+// Sample article to create
+const sampleArticle = {
+  _type: 'article',
+  title: 'Real vs Fake: The Hidden Costs of Authentication',
+  slug: {
+    _type: 'slug',
+    current: 'real-vs-fake-authentication-costs',
+  },
+  author: 'SneakersLite Team',
+  excerpt:
+    'Counterfeit products cost brands billions annually. We break down the challenges of authenticating sneakers across versions, markets, and release years—and how technology is changing the game.',
+  publishedAt: new Date().toISOString(),
+  category: 'Case Study',
+  seoTitle: 'Real vs Fake Sneakers: The Cost of Authentication - SneakersLite',
+  seoDescription:
+    'Explore the challenges of product authentication and how brands combat counterfeits with technology and expertise.',
+  body: [
+    {
+      _type: 'block',
+      _key: 'block1',
+      style: 'normal',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span1',
+          text: 'Counterfeit products are a $4.2 trillion problem globally. In the sneaker market alone, fake products undermine brand integrity, damage customer trust, and erode seller credibility.',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block2',
+      style: 'h2',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span2',
+          text: 'The Authentication Challenge',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block3',
+      style: 'normal',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span3',
+          text: "Authenticating sneakers isn't simple. Each brand releases hundreds of models annually, with multiple colorways, regional variations, and year-specific details. A Jordan 1 from 2015 looks different from a 2024 release—but counterfeiters are getting sophisticated.",
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block4',
+      style: 'normal',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span4',
+          text: 'Key challenges we see:',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block5',
+      style: 'bullet',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span5',
+          text: 'Material variations across factories and years',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block6',
+      style: 'bullet',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span6',
+          text: 'Regional manufacturing differences (Asia vs Europe production)',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block7',
+      style: 'bullet',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span7',
+          text: 'Rapid release calendars making documentation hard to maintain',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block8',
+      style: 'bullet',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span8',
+          text: 'Counterfeits improving in quality year-over-year',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block9',
+      style: 'h2',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span9',
+          text: 'How SneakersLite Solves It',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block10',
+      style: 'normal',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span10',
+          text: 'Our approach combines ',
+          marks: [],
+        },
+        {
+          _type: 'span',
+          _key: 'span11',
+          text: 'visual AI',
+          marks: ['strong'],
+        },
+        {
+          _type: 'span',
+          _key: 'span12',
+          text: ', ',
+          marks: [],
+        },
+        {
+          _type: 'span',
+          _key: 'span13',
+          text: 'expert verification',
+          marks: ['strong'],
+        },
+        {
+          _type: 'span',
+          _key: 'span14',
+          text: ', and ',
+          marks: [],
+        },
+        {
+          _type: 'span',
+          _key: 'span15',
+          text: 'database intelligence',
+          marks: ['strong'],
+        },
+        {
+          _type: 'span',
+          _key: 'span16',
+          text: ' to authenticate products in seconds—not hours.',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block11',
+      style: 'normal',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span17',
+          text: "We've authenticated over 500K sneakers across 5 continents, with a 99.2% accuracy rate.",
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block12',
+      style: 'h2',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span18',
+          text: 'The Business Impact',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block13',
+      style: 'normal',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span19',
+          text: 'For brands and resellers, the cost of authentication failure is steep:',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block14',
+      style: 'bullet',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span20',
+          text: 'Customer refunds and chargebacks',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block15',
+      style: 'bullet',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span21',
+          text: 'Reputational damage and lost customers',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block16',
+      style: 'bullet',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span22',
+          text: 'Manual verification labor (expensive and slow)',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block17',
+      style: 'normal',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span23',
+          text: 'By using SneakersLite, brands reduce authentication costs by 60-70%, while maintaining trust and consistency at scale.',
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block18',
+      style: 'h2',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span24',
+          text: "What's Next?",
+          marks: [],
+        },
+      ],
+    },
+    {
+      _type: 'block',
+      _key: 'block19',
+      style: 'normal',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span25',
+          text: 'The future of authentication is automatic, transparent, and scalable. Join leading brands and resellers who trust SneakersLite to protect their business.',
+          marks: [],
+        },
+      ],
+    },
+  ],
+}
+
+async function setup() {
+  try {
+    console.log('🔄 Connecting to Sanity...')
+    console.log(`   Project: wl0eb4zu`)
+    console.log(`   Dataset: production`)
+
+    // Test connection
+    const projectDetails = await client.request({
+      uri: '/projects/wl0eb4zu',
+      method: 'GET',
+    })
+
+    console.log('✅ Connected to Sanity\n')
+
+    console.log('📝 Creating demo article...')
+    const result = await client.create(sampleArticle)
+
+    console.log('✅ Demo article created!')
+    console.log(`   ID: ${result._id}`)
+    console.log(`   Title: ${result.title}`)
+    console.log(`   Slug: ${result.slug.current}`)
+    console.log(`   Published: ${result.publishedAt}\n`)
+
+    console.log('🚀 Next steps:')
+    console.log('   1. Deploy to Vercel with env vars')
+    console.log('   2. Visit https://sneakerslite.com/blog')
+    console.log('   3. Demo article should appear in grid\n')
+
+    console.log('✨ All done!')
+  } catch (error) {
+    console.error('❌ Error:', error)
+    process.exit(1)
+  }
+}
+
+setup()
