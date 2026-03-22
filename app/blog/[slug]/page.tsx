@@ -117,42 +117,68 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
         {/* Body - Portable Text Rendering */}
         <div className="prose prose-lg max-w-none mb-12">
-          {article.body && article.body.length > 0 ? (
+          {article.body && Array.isArray(article.body) && article.body.length > 0 ? (
             article.body.map((block: any) => {
-              if (block._type === 'block') {
-                if (block.style === 'h2') {
-                  return (
-                    <h2 key={block._key} className="text-3xl font-bold text-brand-dark mt-8 mb-4">
-                      {block.children.map((child: any) => child.text).join('')}
-                    </h2>
-                  )
-                }
-                if (block.style === 'h3') {
-                  return (
-                    <h3 key={block._key} className="text-2xl font-bold text-brand-dark mt-6 mb-3">
-                      {block.children.map((child: any) => child.text).join('')}
-                    </h3>
-                  )
-                }
+              if (!block || block._type !== 'block') return null
+              
+              if (block.style === 'h2') {
                 return (
-                  <p key={block._key} className="text-gray-700 mb-4 leading-relaxed">
-                    {block.children.map((child: any) => {
-                      let text = child.text
-                      if (child.marks.includes('strong')) {
-                        text = <strong key={child._key}>{text}</strong>
+                  <h2 key={block._key} className="text-3xl font-bold text-brand-dark mt-8 mb-4">
+                    {block.children?.map((child: any) => child.text || '').join('') || ''}
+                  </h2>
+                )
+              }
+              if (block.style === 'h3') {
+                return (
+                  <h3 key={block._key} className="text-2xl font-bold text-brand-dark mt-6 mb-3">
+                    {block.children?.map((child: any) => child.text || '').join('') || ''}
+                  </h3>
+                )
+              }
+              if (block.style === 'h1') {
+                return (
+                  <h1 key={block._key} className="text-4xl font-bold text-brand-dark mt-10 mb-6">
+                    {block.children?.map((child: any) => child.text || '').join('') || ''}
+                  </h1>
+                )
+              }
+              // List items
+              if (block.listItem) {
+                const isOrdered = block.listItem === 'number'
+                return (
+                  <li key={block._key} className="text-gray-700 ml-4 mb-2">
+                    {block.children?.map((child: any) => {
+                      let text = child.text || ''
+                      if (child.marks?.includes('strong')) {
+                        return <strong key={child._key}>{text}</strong>
                       }
-                      if (child.marks.includes('em')) {
-                        text = <em key={child._key}>{text}</em>
+                      if (child.marks?.includes('em')) {
+                        return <em key={child._key}>{text}</em>
                       }
                       return text
                     })}
-                  </p>
+                  </li>
                 )
               }
-              return null
+              // Regular paragraphs
+              return (
+                <p key={block._key} className="text-gray-700 mb-4 leading-relaxed">
+                  {block.children?.map((child: any, idx: number) => {
+                    if (!child) return null
+                    let text = child.text || ''
+                    if (child.marks?.includes('strong')) {
+                      return <strong key={`${block._key}-${idx}`}>{text}</strong>
+                    }
+                    if (child.marks?.includes('em')) {
+                      return <em key={`${block._key}-${idx}`}>{text}</em>
+                    }
+                    return <span key={`${block._key}-${idx}`}>{text}</span>
+                  })}
+                </p>
+              )
             })
           ) : (
-            <p className="text-gray-700">No content available</p>
+            <p className="text-gray-700">Article body is loading or not available. Check Sanity CMS.</p>
           )}
         </div>
 

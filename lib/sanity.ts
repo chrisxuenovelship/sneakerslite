@@ -59,7 +59,11 @@ export async function getAllArticles() {
 // Fetch single article by slug
 export async function getArticleBySlug(slug: string) {
   try {
-    return await sanityClient.fetch(singleArticleQuery, { slug })
+    const article = await sanityClient.fetch(singleArticleQuery, { slug })
+    if (article) {
+      console.log(`[Sanity] Fetched article "${article.title}" with ${article.body?.length || 0} body blocks`)
+    }
+    return article
   } catch (error) {
     console.error('Failed to fetch article:', error)
     return null
