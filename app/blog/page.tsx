@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
-// Force dynamic rendering for fresh data
-export const revalidate = 30 // ISR: revalidate every 30 seconds
+// Force dynamic rendering for fresh data on every request
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Blog | SneakersLite - Authentication Insights',
