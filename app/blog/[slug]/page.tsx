@@ -144,7 +144,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               }
               // List items
               if (block.listItem) {
-                const isOrdered = block.listItem === 'number'
                 return (
                   <li key={block._key} className="text-gray-700 ml-4 mb-2">
                     {block.children?.map((child: any) => {
