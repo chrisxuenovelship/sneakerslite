@@ -4,6 +4,9 @@ import type { Metadata } from 'next'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
+// Force dynamic rendering for fresh data
+export const revalidate = 30 // ISR: revalidate every 30 seconds
+
 export const metadata: Metadata = {
   title: 'Blog | SneakersLite - Authentication Insights',
   description: 'Discover insights on sneaker authentication, authentication technology, and industry trends. Case studies and best practices for product authentication.',
@@ -16,8 +19,11 @@ export const metadata: Metadata = {
 export default async function BlogPage() {
   const articles = await getAllArticles()
   
+  // Force fresh render - debug timestamp
+  const timestamp = new Date().toISOString()
+  
   // Debug: Log to console
-  console.log(`[Blog Page] Fetched ${articles?.length || 0} articles from Sanity`)
+  console.log(`[Blog Page ${timestamp}] Fetched ${articles?.length || 0} articles from Sanity`)
   if (articles && articles.length > 0) {
     articles.forEach((a: any, i: number) => {
       console.log(`  [${i}] ${a.title} (slug: ${a.slug?.current})`)
