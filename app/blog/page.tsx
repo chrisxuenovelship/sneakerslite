@@ -15,6 +15,14 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
   const articles = await getAllArticles()
+  
+  // Debug: Log to console
+  console.log(`[Blog Page] Fetched ${articles?.length || 0} articles from Sanity`)
+  if (articles && articles.length > 0) {
+    articles.forEach((a: any, i: number) => {
+      console.log(`  [${i}] ${a.title} (slug: ${a.slug?.current})`)
+    })
+  }
 
   return (
     <main className="w-full">
