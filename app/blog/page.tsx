@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 
 // Force dynamic rendering for fresh data on every request
 export const dynamic = 'force-dynamic'
+export const revalidate = 0
 
 export const metadata: Metadata = {
   title: 'Blog | SneakersLite - Authentication Insights',
@@ -19,16 +20,17 @@ export const metadata: Metadata = {
 export default async function BlogPage() {
   const articles = await getAllArticles()
   
-  // Force fresh render - debug timestamp
-  const timestamp = new Date().toISOString()
-  
-  // Debug: Log to console
-  console.log(`[Blog Page ${timestamp}] Fetched ${articles?.length || 0} articles from Sanity`)
+  console.log(`[Blog Page] Fetched ${articles?.length || 0} articles from Sanity`)
   if (articles && articles.length > 0) {
     articles.forEach((a: any, i: number) => {
-      console.log(`  [${i}] ${a.title} (slug: ${a.slug?.current})`)
+      console.log(`  [${i}] ${a.title}`)
     })
   }
+
+  // Filter out empty/draft articles for display
+  const displayArticles = articles?.filter((a: any) => 
+    a.title && !a.title.includes('[Empty') && !a.title.includes('[Draft')
+  ) || []
 
   return (
     <main className="w-full">
@@ -46,9 +48,9 @@ export default async function BlogPage() {
 
       {/* Articles Grid */}
       <section className="max-w-6xl mx-auto px-4 py-16">
-        {articles && articles.length > 0 ? (
+        {displayArticles && displayArticles.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {articles.map((article: any) => (
+            {displayArticles.map((article: any) => (
               <Link
                 key={article._id}
                 href={`/blog/${article.slug?.current || ''}`}
