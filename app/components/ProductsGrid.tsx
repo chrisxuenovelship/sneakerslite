@@ -1,11 +1,15 @@
+'use client'
+
+import Image from 'next/image'
+
 export default function ProductsGrid() {
   const brands = [
-    { name: 'Nike', emoji: '👟' },
-    { name: 'Jordan', emoji: '🏀' },
-    { name: 'adidas', emoji: '👟' },
-    { name: 'New Balance', emoji: '👟' },
-    { name: 'ASICS', emoji: '👟' },
-    { name: 'Converse', emoji: '👟' },
+    { name: 'Nike', logo: '/images/brands/nike.svg' },
+    { name: 'Jordan', logo: '/images/brands/jordan.svg' },
+    { name: 'adidas', logo: '/images/brands/adidas.svg' },
+    { name: 'New Balance', logo: '/images/brands/newbalance.svg' },
+    { name: 'ASICS', logo: '/images/brands/asics.svg' },
+    { name: 'Converse', logo: '/images/brands/converse.svg' },
   ]
 
   return (
@@ -27,8 +31,14 @@ export default function ProductsGrid() {
               key={index}
               className="bg-gray-900 rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-brand-cyan cursor-pointer group flex flex-col items-center justify-center text-center"
             >
-              <div className="text-5xl md:text-6xl mb-4 group-hover:scale-125 group-hover:hue-rotate-180 transition-all duration-300">
-                {brand.emoji}
+              <div className="w-24 h-24 md:w-32 md:h-32 mb-4 group-hover:scale-110 transition-all duration-300 relative">
+                <Image
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  fill
+                  className="object-contain filter invert brightness-0"
+                  priority={true}
+                />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-brand-cyan transition-colors">
                 {brand.name}
