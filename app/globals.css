@@ -86,3 +86,7 @@ html {
   background-color: #06b6d4;
   color: white;
 }
+
+@media print {
+  .no-print { display: none !important; }
+}

@@ -71,11 +71,29 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {/* Article Header */}
       <article className="max-w-4xl mx-auto px-4 py-16">
-        {/* Breadcrumb */}
-        <div className="mb-8 text-sm text-gray-600">
-          <Link href="/blog" className="hover:text-brand-cyan transition">
-            ← Back to Blog
-          </Link>
+        {/* Breadcrumb + Language Toggle */}
+        <div className="mb-8 flex items-center justify-between">
+          <div className="text-sm text-gray-600">
+            <Link href="/blog" className="hover:text-brand-cyan transition">
+              ← Back to Blog
+            </Link>
+          </div>
+          {article.language === 'zh-CN' && (
+            <Link
+              href="/blog/authentication-compliance-asia"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-cyan border border-brand-cyan rounded-full px-4 py-1.5 hover:bg-brand-cyan hover:text-white transition"
+            >
+              English
+            </Link>
+          )}
+          {article.language === 'en' && (
+            <Link
+              href="/blog/authentication-compliance-asia-zh"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-cyan border border-brand-cyan rounded-full px-4 py-1.5 hover:bg-brand-cyan hover:text-white transition"
+            >
+              中文
+            </Link>
+          )}
         </div>
 
         {/* Meta */}

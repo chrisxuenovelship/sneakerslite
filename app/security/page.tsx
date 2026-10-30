@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
@@ -22,9 +23,15 @@ export default function Security() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-dark">
               Security & <span className="text-brand-cyan">Privacy</span>
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
               Your data security and privacy are our top priorities. We adhere to international standards and regional regulations.
             </p>
+            <Link
+              href="/data-protection-framework"
+              className="inline-flex items-center gap-2 bg-brand-cyan text-white px-6 py-3 rounded-lg font-medium hover:bg-cyan-700 transition"
+            >
+              View our full Data Protection Framework →
+            </Link>
           </div>
         </section>
 
@@ -62,6 +69,56 @@ export default function Security() {
                     <span className="text-gray-600">Data subject rights protection</span>
                   </li>
                 </ul>
+              </div>
+
+              {/* Cross-Border Data Compliance */}
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-brand-dark">
+                  🌏 Cross-Border Data Compliance
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  As a Hong Kong-registered entity processing data submitted by clients operating across multiple jurisdictions, SneakersLite's data handling practices align with:
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-cyan font-bold">✓</span>
+                    <span className="text-gray-600">Hong Kong Personal Data (Privacy) Ordinance (PDPO)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-cyan font-bold">✓</span>
+                    <span className="text-gray-600">China Personal Information Protection Law (PIPL)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-cyan font-bold">✓</span>
+                    <span className="text-gray-600">China Data Security Law (DSL)</span>
+                  </li>
+                </ul>
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  Client data submitted via API is processed solely for authentication purposes. Cross-border data transfers are conducted in accordance with applicable legal requirements in each operating jurisdiction.
+                </p>
+              </div>
+
+              {/* Data Ownership & Usage */}
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-brand-dark">
+                  📋 Data Ownership & Usage
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Clients retain full ownership of all images and authentication reports submitted through the SneakersLite API. Submitted data is used exclusively for:
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-cyan font-bold">✓</span>
+                    <span className="text-gray-600">Delivering contracted authentication results</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-cyan font-bold">✓</span>
+                    <span className="text-gray-600">Anonymised model training to improve authentication accuracy (with client consent per service agreement)</span>
+                  </li>
+                </ul>
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  Client data is never sold, disclosed to third parties, or used outside the scope of the contracted service.
+                </p>
               </div>
 
               {/* Data Protection */}
@@ -132,30 +189,33 @@ export default function Security() {
         {/* Certifications */}
         <section className="bg-gray-50 py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-brand-dark">
-              Security Certifications
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-brand-dark">
+              Security Standards & Compliance Frameworks
             </h2>
+            <p className="text-gray-600 text-center max-w-2xl mx-auto mb-16">
+              SneakersLite actively aligns its security practices to the following internationally recognised standards as part of our ongoing commitment to data protection. We are working toward formal certification as the platform scales.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center bg-white rounded-lg p-8 shadow-sm">
                 <div className="text-4xl mb-4">🔒</div>
                 <h3 className="text-xl font-bold mb-2 text-brand-dark">ISO 27001</h3>
                 <p className="text-gray-600 text-sm">
-                  Information Security Management System certification
+                  Information Security Management (aligned practices)
                 </p>
               </div>
               <div className="text-center bg-white rounded-lg p-8 shadow-sm">
                 <div className="text-4xl mb-4">✓</div>
-                <h3 className="text-xl font-bold mb-2 text-brand-dark">SOC 2 Type II</h3>
+                <h3 className="text-xl font-bold mb-2 text-brand-dark">SOC 2</h3>
                 <p className="text-gray-600 text-sm">
-                  Service Organization Control compliant
+                  Service Organization Controls (aligned practices)
                 </p>
               </div>
               <div className="text-center bg-white rounded-lg p-8 shadow-sm">
                 <div className="text-4xl mb-4">🛡️</div>
                 <h3 className="text-xl font-bold mb-2 text-brand-dark">PCI DSS</h3>
                 <p className="text-gray-600 text-sm">
-                  Payment Card Industry Data Security Standard
+                  Payment Card Industry Data Security Standard (aligned practices)
                 </p>
               </div>
             </div>
