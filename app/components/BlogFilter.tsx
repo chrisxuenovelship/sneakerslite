@@ -2,52 +2,46 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { langTag, localeFromLangTag, localeNames, localePath, locales, type Locale } from '@/lib/i18n'
+import type { Dictionary } from '@/lib/dictionary'
+import type { ArticleSummary } from '@/lib/sanity'
 
-interface Article {
-  _id: string
-  title: string
-  slug: { current: string }
-  author: string
-  publishedAt: string
-  excerpt: string
-  mainImage?: { asset?: { url?: string } }
-  category?: string
-  language?: string
+interface BlogFilterProps {
+  articles: ArticleSummary[]
+  locale: Locale
+  t: Dictionary['blog']['filter']
 }
 
-export default function BlogFilter({ articles }: { articles: Article[] }) {
-  const [lang, setLang] = useState<'en' | 'zh'>('en')
-
-  const filtered = articles.filter((a) => {
-    if (lang === 'zh') return a.language === 'zh-CN'
-    // EN tab: articles with language "en" or no language field set
-    return !a.language || a.language === 'en'
-  })
+export default function BlogFilter({ articles, locale, t }: BlogFilterProps) {
+  const availableLocales = locales.filter((l) =>
+    articles.some((article) => localeFromLangTag(article.language) === l)
+  )
+  const [selectedLocale, setSelectedLocale] = useState<Locale>(
+    availableLocales.includes(locale) ? locale : availableLocales[0] ?? locale
+  )
+  const tabLocale = availableLocales.includes(selectedLocale)
+    ? selectedLocale
+    : availableLocales[0] ?? locale
+  const filtered = articles.filter((article) => localeFromLangTag(article.language) === tabLocale)
 
   return (
     <>
-      {/* Language Filter Tabs */}
       <div className="flex justify-center gap-2 mb-12">
-        <button
-          onClick={() => setLang('en')}
-          className={`px-5 py-2 rounded-full text-sm font-medium transition ${
-            lang === 'en'
-              ? 'bg-brand-cyan text-white'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-          }`}
-        >
-          English
-        </button>
-        <button
-          onClick={() => setLang('zh')}
-          className={`px-5 py-2 rounded-full text-sm font-medium transition ${
-            lang === 'zh'
-              ? 'bg-brand-cyan text-white'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-          }`}
-        >
-          中文
-        </button>
+        {availableLocales.map((l) => (
+          <button
+            key={l}
+            type="button"
+            lang={langTag[l]}
+            onClick={() => setSelectedLocale(l)}
+            className={`px-5 py-2 rounded-full text-sm font-medium transition ${
+              tabLocale === l
+                ? 'bg-brand-cyan text-white'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            {localeNames[l]}
+          </button>
+        ))}
       </div>
 
       {/* Articles Grid */}
@@ -56,7 +50,7 @@ export default function BlogFilter({ articles }: { articles: Article[] }) {
           {filtered.map((article) => (
             <Link
               key={article._id}
-              href={`/blog/${article.slug?.current || ''}`}
+              href={localePath(locale, `/blog/${article.slug.current}`)}
               className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition"
             >
               {article.mainImage?.asset?.url && (
@@ -83,9 +77,9 @@ export default function BlogFilter({ articles }: { articles: Article[] }) {
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <span>{article.author}</span>
                   <span>
-                    {new Date(article.publishedAt).toLocaleDateString('en-US', {
+                    {new Date(article.publishedAt).toLocaleDateString(langTag[tabLocale], {
                       year: 'numeric',
-                      month: 'short',
+                      month: 'long',
                       day: 'numeric',
                     })}
                   </span>
@@ -96,8 +90,8 @@ export default function BlogFilter({ articles }: { articles: Article[] }) {
         </div>
       ) : (
         <div className="text-center py-16">
-          <p className="text-gray-600 text-lg mb-4">No articles in this language yet.</p>
-          <p className="text-gray-500">Check back soon for new content.</p>
+          <p className="text-gray-600 text-lg mb-4">{t.emptyTitle}</p>
+          <p className="text-gray-500">{t.emptyDescription}</p>
         </div>
       )}
     </>

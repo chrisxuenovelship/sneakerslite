@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Blog | SneakersLite - Authentication Insights",
+    "description": "Discover insights on sneaker authentication, authentication technology, and industry trends. Case studies and best practices for product authentication.",
+    "openGraphTitle": "Blog | SneakersLite",
+    "openGraphDescription": "Insights on sneaker authentication and verification"
+  },
+  "header": {
+    "title": "Authentication Insights",
+    "description": "Real stories. Real solutions. Case studies on authenticating brand products."
+  },
+  "filter": {
+    "emptyTitle": "No articles in this language yet.",
+    "emptyDescription": "Check back soon for new content."
+  },
+  "article": {
+    "notFoundMetaTitle": "Article Not Found | SneakersLite",
+    "backToBlog": "Back to Blog",
+    "bodyUnavailable": "Article body is loading or not available. Check Sanity CMS.",
+    "cta": {
+      "title": "Ready to Authenticate Your Products?",
+      "description": "Learn how SneakersLite can help you verify products with speed, accuracy, and consistency.",
+      "button": "Get Started"
+    }
+  }
+}

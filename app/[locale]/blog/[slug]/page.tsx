@@ -1,27 +1,43 @@
 import Link from 'next/link'
-import { getArticleBySlug, getAllArticles } from '@/lib/sanity'
+import { notFound } from 'next/navigation'
+import { getArticleBySlug, getAllArticles, getArticleTranslations } from '@/lib/sanity'
+import { isLocale, langTag, localeFromLangTag, localeNames, localePath, locales, siteUrl } from '@/lib/i18n'
+import { getDictionary } from '@/lib/dictionary'
 import type { Metadata } from 'next'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 
+export const revalidate = 30
+
 interface ArticlePageProps {
   params: {
+    locale: string
     slug: string
   }
 }
 
 export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
+  if (!isLocale(params.locale)) return {}
   const article = await getArticleBySlug(params.slug)
+  if (!article) return { title: getDictionary(params.locale).blog.article.notFoundMetaTitle }
 
-  if (!article) {
-    return {
-      title: 'Article Not Found | SneakersLite',
-    }
+  const translations = await getArticleTranslations(article.translationKey, params.slug)
+  const articleLocale = localeFromLangTag(article.language)
+  const languages: Record<string, string> = {
+    [langTag[articleLocale]]: `${siteUrl}${localePath(articleLocale, `/blog/${params.slug}`)}`,
+  }
+  for (const translation of translations) {
+    const translationLocale = localeFromLangTag(translation.language)
+    languages[langTag[translationLocale]] = `${siteUrl}${localePath(translationLocale, `/blog/${translation.slug.current}`)}`
   }
 
   return {
     title: article.seoTitle || article.title,
     description: article.seoDescription || article.excerpt,
+    alternates: {
+      canonical: `${siteUrl}${localePath(articleLocale, `/blog/${params.slug}`)}`,
+      languages,
+    },
     openGraph: {
       title: article.seoTitle || article.title,
       description: article.seoDescription || article.excerpt,
@@ -34,12 +50,9 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 export async function generateStaticParams() {
   try {
     const articles = await getAllArticles()
-    if (!articles || !Array.isArray(articles)) {
-      return []
-    }
-    return articles.map((article: any) => ({
-      slug: article?.slug?.current || '',
-    })).filter((item: any) => item.slug)
+    return articles.filter((article) => article.slug?.current).flatMap((article) =>
+      locales.map((locale) => ({ locale, slug: article.slug.current }))
+    )
   } catch (error) {
     console.error('Failed to generate static params:', error)
     return []
@@ -47,53 +60,41 @@ export async function generateStaticParams() {
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
+  if (!isLocale(params.locale)) notFound()
+  const locale = params.locale
+  const t = getDictionary(locale)
   const article = await getArticleBySlug(params.slug)
 
-  if (!article) {
-    return (
-      <main className="w-full">
-        <Navigation />
-        <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-          <h1 className="text-3xl font-bold text-brand-dark mb-4">Article Not Found</h1>
-          <p className="text-gray-600 mb-6">Sorry, we couldn't find that article.</p>
-          <Link href="/blog" className="btn-primary">
-            Back to Blog
-          </Link>
-        </div>
-        <Footer />
-      </main>
-    )
-  }
+  if (!article) notFound()
 
+  const translations = await getArticleTranslations(article.translationKey, params.slug)
   return (
     <main className="w-full">
-      <Navigation />
+      <Navigation locale={locale} t={t.common.nav} />
 
-      {/* Article Header */}
-      <article className="max-w-4xl mx-auto px-4 py-16">
-        {/* Breadcrumb + Language Toggle */}
+      <article lang={article.language ?? 'en'} className="max-w-4xl mx-auto px-4 py-16">
         <div className="mb-8 flex items-center justify-between">
           <div className="text-sm text-gray-600">
-            <Link href="/blog" className="hover:text-brand-cyan transition">
-              ← Back to Blog
+            <Link href={localePath(locale, '/blog')} className="hover:text-brand-cyan transition">
+              ← {t.blog.article.backToBlog}
             </Link>
           </div>
-          {article.language === 'zh-CN' && (
-            <Link
-              href="/blog/authentication-compliance-asia"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-cyan border border-brand-cyan rounded-full px-4 py-1.5 hover:bg-brand-cyan hover:text-white transition"
-            >
-              English
-            </Link>
-          )}
-          {article.language === 'en' && (
-            <Link
-              href="/blog/authentication-compliance-asia-zh"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-cyan border border-brand-cyan rounded-full px-4 py-1.5 hover:bg-brand-cyan hover:text-white transition"
-            >
-              中文
-            </Link>
-          )}
+          <div className="flex flex-wrap gap-2">
+            {translations.map((translation) => {
+              const translationLocale = localeFromLangTag(translation.language)
+              return (
+                <Link
+                  key={translation.slug.current}
+                  href={localePath(translationLocale, `/blog/${translation.slug.current}`)}
+                  hrefLang={langTag[translationLocale]}
+                  lang={langTag[translationLocale]}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-cyan border border-brand-cyan rounded-full px-4 py-1.5 hover:bg-brand-cyan hover:text-white transition"
+                >
+                  {localeNames[translationLocale]}
+                </Link>
+              )
+            })}
+          </div>
         </div>
 
         {/* Meta */}
@@ -108,7 +109,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <span>{article.author}</span>
             <span>•</span>
             <time dateTime={article.publishedAt}>
-              {new Date(article.publishedAt).toLocaleDateString('en-US', {
+              {new Date(article.publishedAt).toLocaleDateString(langTag[localeFromLangTag(article.language)], {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
@@ -195,25 +196,25 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               )
             })
           ) : (
-            <p className="text-gray-700">Article body is loading or not available. Check Sanity CMS.</p>
+            <p className="text-gray-700">{t.blog.article.bodyUnavailable}</p>
           )}
         </div>
 
         {/* Call to Action */}
         <div className="bg-brand-dark bg-opacity-5 border border-brand-cyan rounded-lg p-8 text-center">
           <h3 className="text-2xl font-bold text-brand-dark mb-2">
-            Ready to Authenticate Your Products?
+            {t.blog.article.cta.title}
           </h3>
           <p className="text-gray-700 mb-6">
-            Learn how SneakersLite can help you verify products with speed, accuracy, and consistency.
+            {t.blog.article.cta.description}
           </p>
-          <Link href="/contact" className="btn-primary">
-            Get Started
+          <Link href={localePath(locale, '/contact')} className="btn-primary">
+            {t.blog.article.cta.button}
           </Link>
         </div>
       </article>
 
-      <Footer />
+      <Footer locale={locale} t={t.common.footer} />
     </main>
   )
 }

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "보안 및 개인정보 보호 | SneakersLite",
+    "description": "데이터 보안과 개인정보 보호를 최우선으로 생각합니다. 국제 표준과 지역별 규정을 준수합니다."
+  },
+  "hero": {
+    "titlePrefix": "보안 및 ",
+    "titleHighlight": "개인정보 보호",
+    "description": "데이터 보안과 개인정보 보호를 최우선으로 생각합니다. 국제 표준과 지역별 규정을 준수합니다.",
+    "frameworkLink": "전체 데이터 보호 체계 보기 →"
+  },
+  "privacy": {
+    "items": [
+      {
+        "icon": "🇭🇰",
+        "title": "PDPO 준수",
+        "description": "개인정보 처리 방식을 규율하는 홍콩의 개인정보(프라이버시) 조례(PDPO)를 완전히 준수합니다.",
+        "points": ["데이터 수집의 투명성", "사용자 동의 관리", "데이터 보존 정책", "열람 및 정정 권리", "정보주체의 권리 보호"],
+        "conclusion": ""
+      },
+      {
+        "icon": "🌏",
+        "title": "국경 간 데이터 규정 준수",
+        "description": "여러 관할 지역에서 사업을 운영하는 고객이 제출한 데이터를 처리하는 홍콩 등록 법인으로서, SneakersLite의 데이터 처리 관행은 다음 법률에 부합합니다:",
+        "points": ["홍콩 개인정보(프라이버시) 조례(PDPO)", "중국 개인정보 보호법(PIPL)", "중국 데이터 보안법(DSL)"],
+        "conclusion": "API를 통해 제출된 고객 데이터는 정품 감정 목적으로만 처리됩니다. 국경 간 데이터 이전은 사업을 운영하는 각 관할 지역의 관련 법적 요건에 따라 이루어집니다."
+      },
+      {
+        "icon": "📋",
+        "title": "데이터 소유권 및 이용",
+        "description": "고객은 SneakersLite API를 통해 제출한 모든 이미지와 정품 감정 보고서의 소유권을 온전히 보유합니다. 제출된 데이터는 다음 목적으로만 사용됩니다:",
+        "points": ["계약에 따른 정품 감정 결과 제공", "정품 감정 정확도 향상을 위한 익명화된 모델 학습(서비스 계약에 따른 고객 동의가 있는 경우)"],
+        "conclusion": "고객 데이터는 판매되거나 제3자에게 공개되지 않으며, 계약된 서비스 범위를 벗어나 사용되지 않습니다."
+      },
+      {
+        "icon": "🔐",
+        "title": "데이터 보호",
+        "description": "기업용 수준의 보안 조치로 정품 감정 데이터와 개인정보를 보호합니다.",
+        "points": ["종단 간 암호화", "정기적인 보안 감사", "안전한 API 엔드포인트", "접근 제어 및 모니터링", "사고 대응 계획"],
+        "conclusion": ""
+      }
+    ]
+  },
+  "infrastructure": {
+    "title": "AWS 인프라",
+    "columns": { "component": "구성 요소", "provider": "제공업체", "region": "지역", "encryption": "암호화" },
+    "rows": [
+      { "component": "서버", "provider": "AWS EC2", "region": "APAC", "encryption": "AES-256" },
+      { "component": "데이터베이스", "provider": "AWS RDS", "region": "APAC", "encryption": "AES-256" },
+      { "component": "스토리지", "provider": "AWS S3", "region": "APAC", "encryption": "AES-256" },
+      { "component": "CDN", "provider": "AWS CloudFront", "region": "글로벌", "encryption": "TLS 1.3" },
+      { "component": "DDoS 방어", "provider": "AWS Shield", "region": "글로벌", "encryption": "N/A" },
+      { "component": "SSL/TLS", "provider": "AWS ACM", "region": "글로벌", "encryption": "TLS 1.3" }
+    ]
+  },
+  "standards": {
+    "title": "보안 표준 및 규정 준수 체계",
+    "description": "SneakersLite는 데이터 보호에 대한 지속적인 노력의 일환으로 다음 국제 공인 표준에 맞춰 보안 관행을 운영하고 있습니다. 플랫폼 확장에 맞춰 공식 인증 획득을 추진하고 있습니다.",
+    "items": [
+      { "icon": "🔒", "title": "ISO 27001", "description": "정보보호 관리(관련 관행에 부합)" },
+      { "icon": "✓", "title": "SOC 2", "description": "서비스 조직 통제(관련 관행에 부합)" },
+      { "icon": "🛡️", "title": "PCI DSS", "description": "결제 카드 산업 데이터 보안 표준(관련 관행에 부합)" }
+    ]
+  },
+  "contact": {
+    "title": "보안 관련 문의가 있으신가요?",
+    "description": "개인정보 처리 관행과 보안 조치에 대해 궁금한 점이 있다면 보안팀에 문의해 주세요.",
+    "button": "문의하기"
+  }
+}

@@ -6,7 +6,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, subject, message } = await request.json()
+    const { name, email, subject, message, locale } = await request.json()
 
     // Validation
     if (!name || !email || !subject || !message) {
@@ -32,6 +32,7 @@ export async function POST(request: NextRequest) {
       email,
       subject,
       message,
+      locale: typeof locale === 'string' ? locale : undefined,
     }
 
     console.log('📧 Contact Form Submission:', submissionData)
@@ -53,6 +54,7 @@ export async function POST(request: NextRequest) {
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Subject:</strong> ${subject}</p>
+            <p><strong>Language:</strong> ${locale}</p>
             <p><strong>Message:</strong></p>
             <p>${message.replace(/\n/g, '<br>')}</p>
           `,

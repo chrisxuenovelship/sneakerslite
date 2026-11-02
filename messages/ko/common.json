@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "회사 소개",
+    "security": "보안",
+    "blog": "블로그",
+    "getStarted": "문의하기",
+    "toggleMenu": "메뉴 열기/닫기",
+    "language": "언어"
+  },
+  "footer": {
+    "tagline": "더 빠르고, 더 저렴하고, 더 일관된 정품 감정. 스니커즈 검증의 미래.",
+    "quickLinks": "바로가기",
+    "home": "홈",
+    "about": "회사 소개",
+    "security": "보안",
+    "contact": "문의하기",
+    "presence": "서비스 지역",
+    "hongKong": "홍콩",
+    "china": "중국",
+    "singapore": "싱가포르",
+    "copyright": "© 2026 SneakersLite. All rights reserved."
+  },
+  "notFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "body": "요청하신 페이지가 존재하지 않거나 이동되었습니다.",
+    "backHome": "홈으로 돌아가기"
+  },
+  "site": {
+    "title": "SneakersLite - 더 빠르고, 더 저렴하고, 더 일관된 스니커즈 감정",
+    "description": "최첨단 이미지 인식 기술 기반의 빠르고 합리적이며 일관된 스니커즈 정품 감정 서비스."
+  }
+}

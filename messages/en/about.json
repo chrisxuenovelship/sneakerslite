@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "About SneakersLite",
+    "description": "Revolutionizing sneaker authentication through cutting-edge AI technology and industry expertise"
+  },
+  "hero": {
+    "titlePrefix": "About ",
+    "titleHighlight": "SneakersLite",
+    "description": "Revolutionizing sneaker authentication through cutting-edge AI technology and industry expertise"
+  },
+  "purpose": {
+    "vision": {
+      "title": "Our Vision",
+      "paragraphs": [
+        "To become the global standard for sneaker authentication, making counterfeit sneakers a thing of the past through innovative technology and uncompromising quality.",
+        "We envision a world where every sneaker enthusiast and collector can authenticate their prized possessions with confidence, speed, and affordability."
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "paragraphs": [
+        "To deliver fast, affordable, and consistent sneaker authentication through AI-powered analysis combined with expert human verification.",
+        "We're committed to protecting the sneaker community from fraud while maintaining transparent pricing and exceptional customer service."
+      ]
+    }
+  },
+  "milestones": {
+    "title": "Key Milestones",
+    "items": [
+      {
+        "year": "2024",
+        "title": "CyberPort Incubation",
+        "description": "Selected as one of the most promising sneaker tech startups in Hong Kong through the prestigious CyberPort accelerator program."
+      },
+      {
+        "year": "2025",
+        "title": "Series A Funding",
+        "description": "Secured Series A funding to expand operations across APAC and establish regional hubs in Hong Kong, China, and Singapore."
+      }
+    ]
+  },
+  "values": {
+    "title": "Our Core Values",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "Innovation",
+        "description": "Constantly pushing the boundaries of authentication technology"
+      },
+      {
+        "icon": "🤝",
+        "title": "Trust",
+        "description": "Building lasting relationships through transparency and reliability"
+      },
+      {
+        "icon": "⭐",
+        "title": "Excellence",
+        "description": "Delivering premium quality in every interaction and service"
+      }
+    ]
+  }
+}

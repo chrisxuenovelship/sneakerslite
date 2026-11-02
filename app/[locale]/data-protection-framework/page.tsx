@@ -1,14 +1,26 @@
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
+import { isLocale, localePath, siteUrl } from '@/lib/i18n'
+import { getDictionary } from '@/lib/dictionary'
+import Navigation from '@/app/components/Navigation'
+import Footer from '@/app/components/Footer'
 
-export const metadata: Metadata = {
-  title: 'Data Protection Framework v1 | SneakersLite',
-  description: 'SneakersLite Data Protection Framework — how we collect, process, store, transfer, and protect personal data and client data.',
+interface PageProps { params: { locale: string } }
+
+export function generateMetadata({ params }: PageProps): Metadata {
+  if (!isLocale(params.locale)) return {}
+  return {
+    title: 'Data Protection Framework v1 | SneakersLite',
+    description: 'SneakersLite Data Protection Framework — how we collect, process, store, transfer, and protect personal data and client data.',
+    alternates: { canonical: `${siteUrl}/data-protection-framework`, languages: {} },
+  }
 }
 
-export default function DataProtectionFramework() {
+export default function DataProtectionFramework({ params }: PageProps) {
+  if (!isLocale(params.locale)) notFound()
+  const locale = params.locale
+  const t = getDictionary(locale)
   const retentionData = [
     { type: 'Authentication images (raw)', period: '90 days post-authentication', method: 'Secure deletion from AWS S3' },
     { type: 'Authentication results and confidence scores', period: 'Duration of client contract + 1 year', method: 'Secure deletion' },
@@ -27,12 +39,12 @@ export default function DataProtectionFramework() {
 
   return (
     <main className="w-full">
-      <Navigation />
+      <Navigation locale={locale} t={t.common.nav} />
 
-      <div className="max-w-4xl mx-auto px-4 py-16">
+      <div lang="en" className="max-w-4xl mx-auto px-4 py-16">
         {/* Back link + Download */}
         <div className="flex items-center justify-between mb-12 no-print">
-          <Link href="/security" className="text-sm text-gray-600 hover:text-brand-cyan transition">
+          <Link href={localePath(locale, '/security')} className="text-sm text-gray-600 hover:text-brand-cyan transition">
             ← Back to Security
           </Link>
           <a
@@ -358,7 +370,7 @@ export default function DataProtectionFramework() {
         </div>
       </div>
 
-      <Footer />
+      <Footer locale={locale} t={t.common.footer} />
     </main>
   )
 }

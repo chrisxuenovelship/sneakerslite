@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "博客 | SneakersLite - 鉴定洞察",
+    "description": "了解球鞋鉴定、鉴定技术和行业趋势。探索产品鉴定的案例分析与最佳实践。",
+    "openGraphTitle": "博客 | SneakersLite",
+    "openGraphDescription": "球鞋鉴定与核验洞察"
+  },
+  "header": {
+    "title": "鉴定洞察",
+    "description": "真实案例，切实方案。探索品牌产品鉴定案例。"
+  },
+  "filter": {
+    "emptyTitle": "该语言暂无文章。",
+    "emptyDescription": "敬请期待新内容。"
+  },
+  "article": {
+    "notFoundMetaTitle": "未找到文章 | SneakersLite",
+    "backToBlog": "返回博客",
+    "bodyUnavailable": "文章正文正在加载或暂不可用。请检查 Sanity CMS。",
+    "cta": {
+      "title": "准备开始鉴定您的产品了吗？",
+      "description": "了解 SneakersLite 如何帮助您快速、准确且稳定地核验产品。",
+      "button": "立即开始"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "Contact Us | SneakersLite",
+    "description": "Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+  },
+  "hero": {
+    "headingStart": "Get in ",
+    "headingHighlight": "Touch",
+    "description": "Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+  },
+  "form": {
+    "name": { "label": "Full Name", "placeholder": "John Doe" },
+    "email": { "label": "Email Address", "placeholder": "john@example.com" },
+    "subject": {
+      "label": "Subject",
+      "options": [
+        { "value": "", "label": "Select a subject..." },
+        { "value": "authentication", "label": "Authentication Service" },
+        { "value": "partnership", "label": "Partnership Inquiry" },
+        { "value": "support", "label": "Technical Support" },
+        { "value": "feedback", "label": "Feedback" },
+        { "value": "other", "label": "Other" }
+      ]
+    },
+    "message": { "label": "Message", "placeholder": "Tell us more about your inquiry..." },
+    "success": "Your message has been sent successfully! We'll get back to you soon.",
+    "errors": {
+      "required": "All fields are required",
+      "invalidEmail": "Invalid email address",
+      "failed": "Failed to send message",
+      "network": "An error occurred while sending your message"
+    },
+    "submit": "Send Message",
+    "sending": "Sending..."
+  }
+}

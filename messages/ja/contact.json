@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "お問い合わせ | SneakersLite",
+    "description": "ご質問がありましたら、ぜひお問い合わせください。メッセージをお送りいただければ、できるだけ早くご返信します。"
+  },
+  "hero": {
+    "headingStart": "お問い",
+    "headingHighlight": "合わせ",
+    "description": "ご質問がありましたら、ぜひお問い合わせください。メッセージをお送りいただければ、できるだけ早くご返信します。"
+  },
+  "form": {
+    "name": { "label": "お名前（フルネーム）", "placeholder": "山田 太郎" },
+    "email": { "label": "メールアドレス", "placeholder": "john@example.com" },
+    "subject": {
+      "label": "お問い合わせ内容",
+      "options": [
+        { "value": "", "label": "内容を選択してください..." },
+        { "value": "authentication", "label": "真贋鑑定サービス" },
+        { "value": "partnership", "label": "提携について" },
+        { "value": "support", "label": "技術サポート" },
+        { "value": "feedback", "label": "ご意見・ご感想" },
+        { "value": "other", "label": "その他" }
+      ]
+    },
+    "message": { "label": "メッセージ", "placeholder": "お問い合わせの内容をご記入ください..." },
+    "success": "メッセージを送信しました。追ってご返信いたします。",
+    "errors": {
+      "required": "すべての項目を入力してください",
+      "invalidEmail": "メールアドレスの形式が正しくありません",
+      "failed": "メッセージを送信できませんでした",
+      "network": "メッセージの送信中にエラーが発生しました"
+    },
+    "submit": "メッセージを送信",
+    "sending": "送信中..."
+  }
+}

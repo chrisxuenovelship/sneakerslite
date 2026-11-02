@@ -8,49 +8,63 @@ export const sanityClient = createClient({
   token: process.env.SANITY_API_TOKEN,
 })
 
-// GROQ Queries
+export interface ArticleSummary {
+  _id: string
+  title: string
+  slug: { current: string }
+  author: string
+  publishedAt: string
+  excerpt: string
+  mainImage?: { asset?: { url?: string } }
+  category?: string
+  /** BCP 47 tag (`en`, `zh-CN`, `ja`, `ko`). Missing on articles created before the field existed → English. */
+  language?: string | null
+  /** Shared across language versions of one article. */
+  translationKey?: string | null
+}
+
+export interface Article extends ArticleSummary {
+  body: unknown[]
+  seoTitle?: string
+  seoDescription?: string
+}
+
+export interface ArticleTranslation {
+  language: string
+  slug: { current: string }
+}
+
+const articleFields = `
+  _id,
+  title,
+  slug,
+  author,
+  publishedAt,
+  excerpt,
+  mainImage,
+  seoTitle,
+  seoDescription,
+  category,
+  language,
+  translationKey
+`
+
 export const articleQuery = `
-  *[_type == "article"] | order(publishedAt desc) {
-    _id,
-    title,
-    slug,
-    author,
-    publishedAt,
-    excerpt,
-    mainImage,
-    body,
-    seoTitle,
-    seoDescription,
-    category,
-    language
-  }
+  *[_type == "article"] | order(publishedAt desc) { ${articleFields} }
 `
 
 export const singleArticleQuery = `
-  *[_type == "article" && slug.current == $slug][0] {
-    _id,
-    title,
-    slug,
-    author,
-    publishedAt,
-    excerpt,
-    mainImage,
-    body,
-    seoTitle,
-    seoDescription,
-    category,
-    language
-  }
+  *[_type == "article" && slug.current == $slug][0] { ${articleFields}, body }
 `
 
-export const categoriesQuery = `
-  array::unique(*[_type == "article"].category)
+export const translationsQuery = `
+  *[_type == "article" && translationKey == $translationKey && slug.current != $slug] { language, slug }
 `
 
-// Fetch all articles
-export async function getAllArticles() {
+
+export async function getAllArticles(): Promise<ArticleSummary[]> {
   try {
-    const articles = await sanityClient.fetch(articleQuery)
+    const articles = await sanityClient.fetch<ArticleSummary[]>(articleQuery)
     return articles || []
   } catch (error) {
     console.error('Failed to fetch articles:', error)
@@ -58,10 +72,9 @@ export async function getAllArticles() {
   }
 }
 
-// Fetch single article by slug
-export async function getArticleBySlug(slug: string) {
+export async function getArticleBySlug(slug: string): Promise<Article | null> {
   try {
-    const article = await sanityClient.fetch(singleArticleQuery, { slug })
+    const article = await sanityClient.fetch<Article | null>(singleArticleQuery, { slug })
     if (article) {
       console.log(`[Sanity] Fetched article "${article.title}" with ${article.body?.length || 0} body blocks`)
     }
@@ -72,12 +85,17 @@ export async function getArticleBySlug(slug: string) {
   }
 }
 
-// Fetch categories
-export async function getCategories() {
+/** Other language versions of an article, excluding the one identified by `slug`. */
+export async function getArticleTranslations(
+  translationKey: string | null | undefined,
+  slug: string,
+): Promise<ArticleTranslation[]> {
+  if (!translationKey) return []
   try {
-    return await sanityClient.fetch(categoriesQuery)
+    return await sanityClient.fetch<ArticleTranslation[]>(translationsQuery, { translationKey, slug })
   } catch (error) {
-    console.error('Failed to fetch categories:', error)
+    console.error('Failed to fetch article translations:', error)
     return []
   }
 }
+

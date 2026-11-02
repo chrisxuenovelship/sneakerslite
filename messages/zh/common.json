@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "security": "安全与合规",
+    "blog": "博客",
+    "getStarted": "立即开始",
+    "toggleMenu": "切换菜单",
+    "language": "语言"
+  },
+  "footer": {
+    "tagline": "更快、更省、更稳定的鉴定服务。球鞋鉴定的未来。",
+    "quickLinks": "快速链接",
+    "home": "首页",
+    "about": "关于我们",
+    "security": "安全与合规",
+    "contact": "联系我们",
+    "presence": "业务覆盖",
+    "hongKong": "香港",
+    "china": "中国内地",
+    "singapore": "新加坡",
+    "copyright": "© 2026 SneakersLite. 保留所有权利。"
+  },
+  "notFound": {
+    "title": "页面不存在",
+    "body": "您访问的页面不存在或已被移动。",
+    "backHome": "返回首页"
+  },
+  "site": {
+    "title": "SneakersLite - 更快、更省、更稳定的球鞋鉴定",
+    "description": "基于前沿视觉识别技术的球鞋鉴定服务：快速、经济、结果稳定一致。"
+  }
+}

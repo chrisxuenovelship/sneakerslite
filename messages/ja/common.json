@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "security": "セキュリティ",
+    "blog": "ブログ",
+    "getStarted": "お問い合わせ",
+    "toggleMenu": "メニューを切り替え",
+    "language": "言語"
+  },
+  "footer": {
+    "tagline": "より速く、より安く、より安定した真贋鑑定。スニーカー鑑定の未来。",
+    "quickLinks": "クイックリンク",
+    "home": "ホーム",
+    "about": "会社概要",
+    "security": "セキュリティ",
+    "contact": "お問い合わせ",
+    "presence": "事業展開地域",
+    "hongKong": "香港",
+    "china": "中国",
+    "singapore": "シンガポール",
+    "copyright": "© 2026 SneakersLite. All rights reserved."
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "body": "お探しのページは存在しないか、移動した可能性があります。",
+    "backHome": "ホームに戻る"
+  },
+  "site": {
+    "title": "SneakersLite - より速く、より安く、より安定したスニーカー鑑定",
+    "description": "最先端の画像認識技術による、迅速・低コスト・一貫性のあるスニーカー真贋鑑定サービス。"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "关于 SneakersLite",
+    "description": "结合前沿人工智能技术与行业专业经验，革新球鞋鉴定方式"
+  },
+  "hero": {
+    "titlePrefix": "关于 ",
+    "titleHighlight": "SneakersLite",
+    "description": "结合前沿人工智能技术与行业专业经验，革新球鞋鉴定方式"
+  },
+  "purpose": {
+    "vision": {
+      "title": "我们的愿景",
+      "paragraphs": [
+        "通过创新技术与始终如一的质量标准，成为全球球鞋鉴定的标杆，让仿冒球鞋成为过去。",
+        "我们期望每一位球鞋爱好者和收藏者，都能以安心、快速且经济的方式鉴定自己珍视的球鞋。"
+      ]
+    },
+    "mission": {
+      "title": "我们的使命",
+      "paragraphs": [
+        "结合人工智能分析与专家人工核验，提供快速、经济、结果稳定一致的球鞋鉴定服务。",
+        "我们致力于保护球鞋社群免受欺诈，同时坚持透明定价和优质客户服务。"
+      ]
+    }
+  },
+  "milestones": {
+    "title": "重要里程碑",
+    "items": [
+      {
+        "year": "2024",
+        "title": "CyberPort 孵化计划",
+        "description": "通过知名的 CyberPort 加速计划，入选香港最具潜力的球鞋科技初创企业之一。"
+      },
+      {
+        "year": "2025",
+        "title": "A 轮融资",
+        "description": "获得 A 轮融资，用于拓展亚太地区业务，并在香港、中国内地和新加坡设立区域枢纽。"
+      }
+    ]
+  },
+  "values": {
+    "title": "我们的核心价值观",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "创新",
+        "description": "不断拓展鉴定技术的边界"
+      },
+      {
+        "icon": "🤝",
+        "title": "信任",
+        "description": "通过透明和可靠的服务建立长期合作关系"
+      },
+      {
+        "icon": "⭐",
+        "title": "卓越",
+        "description": "在每次沟通和每项服务中提供高品质体验"
+      }
+    ]
+  }
+}

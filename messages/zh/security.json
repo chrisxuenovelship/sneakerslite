@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "安全与隐私 | SneakersLite",
+    "description": "您的数据安全与隐私是我们的首要关注事项。我们遵循国际标准和地区法规。"
+  },
+  "hero": {
+    "titlePrefix": "安全与",
+    "titleHighlight": "隐私",
+    "description": "您的数据安全与隐私是我们的首要关注事项。我们遵循国际标准和地区法规。",
+    "frameworkLink": "查看完整的数据保护框架 →"
+  },
+  "privacy": {
+    "items": [
+      {
+        "icon": "🇭🇰",
+        "title": "遵守 PDPO",
+        "description": "我们全面遵守香港《个人资料（私隐）条例》（PDPO），该条例规范个人资料的处理方式。",
+        "points": ["透明的数据收集方式", "用户同意管理", "数据保留政策", "查阅及更正权利", "保障数据主体权利"],
+        "conclusion": ""
+      },
+      {
+        "icon": "🌏",
+        "title": "跨境数据合规",
+        "description": "作为在香港注册、处理跨多个司法管辖区运营客户所提交数据的企业，SneakersLite 的数据处理方式与以下法规保持一致：",
+        "points": ["香港《个人资料（私隐）条例》（PDPO）", "中国《个人信息保护法》（PIPL）", "中国《数据安全法》（DSL）"],
+        "conclusion": "客户通过 API 提交的数据仅用于鉴定。跨境数据传输遵守各运营所在地适用的法律要求。"
+      },
+      {
+        "icon": "📋",
+        "title": "数据所有权与使用",
+        "description": "客户对通过 SneakersLite API 提交的所有图像和鉴定报告保留完整所有权。所提交数据仅用于：",
+        "points": ["交付合同约定的鉴定结果", "在客户依服务协议同意的前提下，进行匿名化模型训练，以提高鉴定准确度"],
+        "conclusion": "客户数据绝不会被出售、向第三方披露，或用于合同约定服务范围之外的用途。"
+      },
+      {
+        "icon": "🔐",
+        "title": "数据保护",
+        "description": "企业级安全措施保护您的鉴定数据和个人信息。",
+        "points": ["端到端加密", "定期安全审计", "安全的 API 端点", "访问控制与监控", "事件响应计划"],
+        "conclusion": ""
+      }
+    ]
+  },
+  "infrastructure": {
+    "title": "AWS 基础设施",
+    "columns": { "component": "组件", "provider": "服务提供商", "region": "地区", "encryption": "加密方式" },
+    "rows": [
+      { "component": "服务器", "provider": "AWS EC2", "region": "亚太地区", "encryption": "AES-256" },
+      { "component": "数据库", "provider": "AWS RDS", "region": "亚太地区", "encryption": "AES-256" },
+      { "component": "存储", "provider": "AWS S3", "region": "亚太地区", "encryption": "AES-256" },
+      { "component": "CDN", "provider": "AWS CloudFront", "region": "全球", "encryption": "TLS 1.3" },
+      { "component": "DDoS 防护", "provider": "AWS Shield", "region": "全球", "encryption": "N/A" },
+      { "component": "SSL/TLS", "provider": "AWS ACM", "region": "全球", "encryption": "TLS 1.3" }
+    ]
+  },
+  "standards": {
+    "title": "安全标准与合规框架",
+    "description": "作为持续保护数据的承诺之一，SneakersLite 积极参照以下国际公认标准完善安全实践。随着平台规模扩大，我们正朝着获得正式认证的目标推进。",
+    "items": [
+      { "icon": "🔒", "title": "ISO 27001", "description": "信息安全管理（实践参照该标准）" },
+      { "icon": "✓", "title": "SOC 2", "description": "服务组织控制（实践参照该标准）" },
+      { "icon": "🛡️", "title": "PCI DSS", "description": "支付卡行业数据安全标准（实践参照该标准）" }
+    ]
+  },
+  "contact": {
+    "title": "有安全相关问题？",
+    "description": "如对我们的隐私保护实践和安全措施有任何疑问，请联系我们的安全团队。",
+    "button": "联系我们"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "セキュリティとプライバシー | SneakersLite",
+    "description": "お客様のデータの安全性とプライバシーを最優先に考えています。国際基準と各地域の規制を遵守します。"
+  },
+  "hero": {
+    "titlePrefix": "セキュリティと",
+    "titleHighlight": "プライバシー",
+    "description": "お客様のデータの安全性とプライバシーを最優先に考えています。国際基準と各地域の規制を遵守します。",
+    "frameworkLink": "データ保護の枠組みの全文を見る →"
+  },
+  "privacy": {
+    "items": [
+      {
+        "icon": "🇭🇰",
+        "title": "PDPOへの準拠",
+        "description": "個人データの取り扱いを定める香港の個人資料（プライバシー）条例（PDPO）を全面的に遵守します。",
+        "points": ["データ収集の透明性", "利用者の同意管理", "データ保持ポリシー", "アクセスと訂正の権利", "データ主体の権利の保護"],
+        "conclusion": ""
+      },
+      {
+        "icon": "🌏",
+        "title": "国境を越えたデータの取り扱いに関する法令遵守",
+        "description": "香港で登記され、複数の法域で事業を営む顧客から提出されたデータを処理するSneakersLiteは、次の法令に沿ってデータを取り扱います。",
+        "points": ["香港の個人資料（プライバシー）条例（PDPO）", "中国の個人情報保護法（PIPL）", "中国のデータセキュリティ法（DSL）"],
+        "conclusion": "API経由で提出された顧客データは、真贋鑑定の目的にのみ使用します。国境を越えるデータ移転は、事業を行う各法域で適用される法的要件に従って実施します。"
+      },
+      {
+        "icon": "📋",
+        "title": "データの所有権と利用",
+        "description": "SneakersLite APIを通じて提出されたすべての画像と鑑定レポートの所有権は、顧客に帰属します。提出されたデータの用途は次に限られます。",
+        "points": ["契約に基づく真贋鑑定結果の提供", "鑑定精度を向上させるための匿名化データによるモデルの学習（サービス契約に基づく顧客の同意がある場合）"],
+        "conclusion": "顧客データを販売したり、第三者に開示したり、契約したサービスの範囲外で使用したりすることはありません。"
+      },
+      {
+        "icon": "🔐",
+        "title": "データ保護",
+        "description": "企業向けの高度なセキュリティ対策により、お客様の鑑定データと個人情報を保護します。",
+        "points": ["エンドツーエンドの暗号化", "定期的なセキュリティ監査", "安全なAPIエンドポイント", "アクセス制御と監視", "インシデント対応計画"],
+        "conclusion": ""
+      }
+    ]
+  },
+  "infrastructure": {
+    "title": "AWSインフラストラクチャ",
+    "columns": { "component": "構成要素", "provider": "プロバイダー", "region": "地域", "encryption": "暗号化" },
+    "rows": [
+      { "component": "サーバー", "provider": "AWS EC2", "region": "APAC", "encryption": "AES-256" },
+      { "component": "データベース", "provider": "AWS RDS", "region": "APAC", "encryption": "AES-256" },
+      { "component": "ストレージ", "provider": "AWS S3", "region": "APAC", "encryption": "AES-256" },
+      { "component": "CDN", "provider": "AWS CloudFront", "region": "グローバル", "encryption": "TLS 1.3" },
+      { "component": "DDoS対策", "provider": "AWS Shield", "region": "グローバル", "encryption": "N/A" },
+      { "component": "SSL/TLS", "provider": "AWS ACM", "region": "グローバル", "encryption": "TLS 1.3" }
+    ]
+  },
+  "standards": {
+    "title": "セキュリティ基準とコンプライアンスの枠組み",
+    "description": "SneakersLiteは、データ保護への継続的な取り組みの一環として、以下の国際的に認知された基準に沿ったセキュリティ対策を積極的に進めています。プラットフォームの拡大に合わせて、正式な認証の取得を目指しています。",
+    "items": [
+      { "icon": "🔒", "title": "ISO 27001", "description": "情報セキュリティマネジメント（基準に沿った取り組み）" },
+      { "icon": "✓", "title": "SOC 2", "description": "サービス組織の内部統制（基準に沿った取り組み）" },
+      { "icon": "🛡️", "title": "PCI DSS", "description": "クレジットカード業界のデータセキュリティ基準（基準に沿った取り組み）" }
+    ]
+  },
+  "contact": {
+    "title": "セキュリティについてのご質問",
+    "description": "プライバシーに関する取り組みやセキュリティ対策については、セキュリティチームにお問い合わせください。",
+    "button": "お問い合わせ"
+  }
+}

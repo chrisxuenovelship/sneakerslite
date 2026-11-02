@@ -14,21 +14,22 @@ content marketing via blog.
 - Framework: Next.js 14 (App Router) + TypeScript
 - Styling: Tailwind CSS
 - CMS: Sanity.io (blog articles, GROQ queries, ISR 30s revalidation)
-- Email: Resend (contact form)
+- Email: Resend was planned; the current contact API logs submissions only. Provider code is commented out; delivery is not implemented in this checkout.
 - Deployment: Vercel (auto-deploys on push to master)
 
 ## Pages
 - / — Home
 - /about — About
 - /security — Security & Privacy (PDPO, cross-border compliance, data ownership, AWS infrastructure, links to framework)
-- /contact — Contact form → chrisxue@novelship.com via Resend
-- /blog — Blog listing with EN/ZH filter tabs (default: EN)
-- /blog/[slug] — Dynamic article pages (fetched from Sanity, language toggle on V4 EN↔ZH)
+- /contact — Localized contact form → /api/contact; locale included in logged payload (no email delivery)
+- /blog — Language tabs derived from available Sanity content; defaults to UI locale when available, otherwise the first available language
+- /blog/[slug] — Sanity article pages with translation links derived from a shared `translationKey`
 - /data-protection-framework — Full 12-section data protection framework (v1)
 - /data-protection-framework.pdf — Downloadable PDF version (generated via puppeteer from live page)
+- Local implementation (not deployed): pages live under `app/[locale]/`; English URLs remain unprefixed, Chinese/Japanese/Korean use `/zh`, `/ja`, `/ko`. The framework body and PDF remain English originals.
 
 ## Components
-Navigation, Footer, Hero, USPCards, Dashboard, ProductsGrid, Presence, BlogFilter (client component — EN/ZH tabs)
+Navigation, Footer, Hero, USPCards, Dashboard, ProductsGrid, Presence, BlogFilter, ContactForm. UI strings are typed from `messages/en/*.json`, with matching `zh`, `ja`, and `ko` namespaces.
 
 ## Blog — Sanity CMS
 Sanity project: wl0eb4zu | Dataset: production
@@ -47,8 +48,22 @@ Editor token: provided ad-hoc for write operations — not stored in .env (reque
 are placeholders — not validated data. Do not treat as factual. Replace with 
 real data before final publish.
 
-## Current Issues (as of April 2026)
-None — all resolved.
+## Current Status (as of 30/10/2026)
+- Stage 1 closed. Unmet Stage 1 items (600 organic SMO) are irrelevant going forward.
+- User-reported client wins: 1 Chinese client (closed just before Stage 1 review) + 1 Korean partner (closed September 2026). Supporting documents are planned for Cyberport management over 31 October–1 November. Eligibility against the Stage 2 reporting window remains for management to confirm.
+- Stage 2 (semi-annual) evaluation due October 2026 — in progress.
+- Git note: April work existed on production but was uncommitted locally; the deployment mechanism was not verified. Baseline committed locally as cf175a9, not pushed. Do not deploy the locale cutover until CMS backfill and translation review are complete.
+
+## Workstream (started 30/10/2026)
+1. Three more articles, dated May / June / August 2026, each proposed → approved → published:
+   - A6 (14 May 2026): "Beyond Jordan and Nike: What It Actually Takes to Authenticate a New Brand" — `drafts/A6-authenticating-new-sneaker-brands.md`, 37 blocks. Dry-run clean. Publish approved 02/11/2026 (user reviews live).
+   - A7 (18 Jun 2026): "From Contract to First Result: An Integration Playbook for Marketplace Authentication" — `drafts/A7-integration-onboarding-playbook.md`, 47 blocks. Dry-run clean. Publish approved 02/11/2026.
+   - A8 (20 Aug 2026): "Korea and Japan: Why Asia's Most Demanding Resale Markets Need Authentication Infrastructure, Not Just Inspectors" — `drafts/A8-korea-japan-resale-authentication.md`, 30 blocks. Dry-run clean. Publish approved 02/11/2026. Deliberately contains no market-size figures; does not mention the Korean partner (closed after the editorial date).
+   - All three blocked only on `SANITY_EDITOR_TOKEN`. Verified 02/11/2026: no editor token exists on this server; `.env.local` viewer token is rejected for mutations (`permission "update" required`).
+2. Multilingual — Option A implemented locally: native Next.js locale routes, JSON namespaces, translated site chrome/pages, Sanity language enum and translation groups, canonical/hreflang metadata, sitemap alternates, locale dates, and CJK fonts. JA/KO/ZH copy is assistant-drafted and needs native review. No JA/KO article bodies have been published.
+3. CMS migration: `node --env-file=.env.local scripts/sanity-publish.mjs backfill --dry-run` previews six document patches (three missing English language fields and translation keys for all six, grouping the V4 pair). Run for real before production cutover so existing V4 translation links are retained.
+4. Publishing: `node --env-file=.env.local scripts/sanity-publish.mjs publish drafts/<file>.md --dry-run` previews Portable Text. Drop `--dry-run` to write. Token lives only in `.env.local` (gitignored) as `SANITY_EDITOR_TOKEN`.
+5. Deployment: GitHub SSH push works (`ssh -T git@github.com` authenticates as chrisxuenovelship). Vercel CLI has no auth; not needed because Vercel auto-deploys on push to master. Locale cutover still gated on CMS backfill and JA/KO native review.
 
 ## Environment Variables
 All set correctly in Vercel as of 04/04/2026:
@@ -89,12 +104,8 @@ the most reliable reference if needed, otherwise rely on this context.md.
 - Deployed all changes to production (3 deploys total)
 - Sitemap live at sneakerslite.com/sitemap.xml — ready for Google Search Console submission
 
-## Immediate Priorities (next session — 06/04/2026 afternoon)
-1. Submit sitemap.xml in Google Search Console (manual step in GSC UI)
-2. Verify GA4 is collecting data — check Realtime report in GA4 dashboard
-3. Confirm 600 organic SMO metric — review GA4 data once sufficient collection period
-4. Consider Article 6 for Stage 2 content pipeline
-5. Stage 2 planning: multilingual assets (JP/KR landing pages), new B2B client onboarding
+## Immediate Priorities
+See "Workstream (started 30/10/2026)" above.
 
 ## SneakersLite — Verified Company Data (from CIP Presentation)
 
@@ -151,16 +162,16 @@ Upcoming: Puma, Vans, Converse, Saucony, HOKA, Salomon
 
 ### Cyberport Status
 - CCMF (Creative Micro Fund): Completed May 2025
-- CIP (Incubation Program): Active — current Q1 evaluation period
+- CIP (Incubation Program): Active — Stage 2 semi-annual evaluation preparation
 - CIP focus: Generative AI for synthetic fake image training data
 
 ## Cyberport CIP Milestones
 
-### Stage 1 (30/09/2025 – 29/03/2026) — Q1 Evaluation due next Wednesday
+### Stage 1 (30/09/2025 – 29/03/2026) — Closed; historical record only
 - Launch joint announcement via eDM and in-app push (25%) — DONE ✅
 - Launch standalone website with self-hosted blog, minimum 5 posts (30%) — DONE ✅ sneakerslite.com live, 5 published EN articles + 1 ZH article
-- Achieve 600 combined cumulative organic SMO (25%) — PENDING ⚠️ — GA4 installed 05/04/2026 (G-JJPC6FYVNM), awaiting data collection
-- Hire Business Development Lead (10%) — DONE ✅ — contract location to confirm tomorrow
+- Achieve 600 combined cumulative organic SMO (25%) — not completed at Stage 1 close; no carry-forward action per user
+- Hire Business Development Lead (10%) — recorded as completed in April
 - Complete Data Protection Framework v1 (10%) — DONE ✅
 
 ### Data Protection Framework v1 — COMPLETE ✅
@@ -177,7 +188,7 @@ Upcoming: Puma, Vans, Converse, Saucony, HOKA, Salomon
 - Develop multilingual expansion assets — Japanese or Korean landing pages (10%)
 
 ### Blog milestone status
-Stage 1 requires minimum 5 blog post URLs as supporting proof.
+Historical Stage 1 minimum-five-post requirement is closed. Published URLs retained for reference:
 Current published articles:
 1. sneakerslite.com/blog/digital-authentication-marketplaces
 2. sneakerslite.com/blog/air-jordan-1-authentication-guide

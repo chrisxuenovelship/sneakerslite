@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "security": "Security",
+    "blog": "Blog",
+    "getStarted": "Get Started",
+    "toggleMenu": "Toggle menu",
+    "language": "Language"
+  },
+  "footer": {
+    "tagline": "Authenticate faster, cheaper, and consistently. The future of sneaker verification.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About",
+    "security": "Security",
+    "contact": "Contact",
+    "presence": "Our Presence",
+    "hongKong": "Hong Kong",
+    "china": "China",
+    "singapore": "Singapore",
+    "copyright": "© 2026 SneakersLite. All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has moved.",
+    "backHome": "Back to Home"
+  },
+  "site": {
+    "title": "SneakersLite - Authenticate Faster. Cheaper. Consistently.",
+    "description": "Fast, affordable, and consistent sneaker authentication with cutting-edge verification technology."
+  }
+}

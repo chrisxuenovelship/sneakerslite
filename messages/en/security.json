@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Security & Privacy | SneakersLite",
+    "description": "Your data security and privacy are our top priorities. We adhere to international standards and regional regulations."
+  },
+  "hero": {
+    "titlePrefix": "Security & ",
+    "titleHighlight": "Privacy",
+    "description": "Your data security and privacy are our top priorities. We adhere to international standards and regional regulations.",
+    "frameworkLink": "View our full Data Protection Framework →"
+  },
+  "privacy": {
+    "items": [
+      {
+        "icon": "🇭🇰",
+        "title": "PDPO Compliance",
+        "description": "We fully comply with the Personal Data (Privacy) Ordinance (PDPO) of Hong Kong, which governs how personal data is handled.",
+        "points": ["Data collection transparency", "User consent management", "Data retention policies", "Right to access and correction", "Data subject rights protection"],
+        "conclusion": ""
+      },
+      {
+        "icon": "🌏",
+        "title": "Cross-Border Data Compliance",
+        "description": "As a Hong Kong-registered entity processing data submitted by clients operating across multiple jurisdictions, SneakersLite's data handling practices align with:",
+        "points": ["Hong Kong Personal Data (Privacy) Ordinance (PDPO)", "China Personal Information Protection Law (PIPL)", "China Data Security Law (DSL)"],
+        "conclusion": "Client data submitted via API is processed solely for authentication purposes. Cross-border data transfers are conducted in accordance with applicable legal requirements in each operating jurisdiction."
+      },
+      {
+        "icon": "📋",
+        "title": "Data Ownership & Usage",
+        "description": "Clients retain full ownership of all images and authentication reports submitted through the SneakersLite API. Submitted data is used exclusively for:",
+        "points": ["Delivering contracted authentication results", "Anonymised model training to improve authentication accuracy (with client consent per service agreement)"],
+        "conclusion": "Client data is never sold, disclosed to third parties, or used outside the scope of the contracted service."
+      },
+      {
+        "icon": "🔐",
+        "title": "Data Protection",
+        "description": "Enterprise-grade security measures protect your authentication data and personal information.",
+        "points": ["End-to-end encryption", "Regular security audits", "Secure API endpoints", "Access control & monitoring", "Incident response plan"],
+        "conclusion": ""
+      }
+    ]
+  },
+  "infrastructure": {
+    "title": "AWS Infrastructure",
+    "columns": { "component": "Component", "provider": "Provider", "region": "Region", "encryption": "Encryption" },
+    "rows": [
+      { "component": "Servers", "provider": "AWS EC2", "region": "APAC", "encryption": "AES-256" },
+      { "component": "Database", "provider": "AWS RDS", "region": "APAC", "encryption": "AES-256" },
+      { "component": "Storage", "provider": "AWS S3", "region": "APAC", "encryption": "AES-256" },
+      { "component": "CDN", "provider": "AWS CloudFront", "region": "Global", "encryption": "TLS 1.3" },
+      { "component": "DDoS Protection", "provider": "AWS Shield", "region": "Global", "encryption": "N/A" },
+      { "component": "SSL/TLS", "provider": "AWS ACM", "region": "Global", "encryption": "TLS 1.3" }
+    ]
+  },
+  "standards": {
+    "title": "Security Standards & Compliance Frameworks",
+    "description": "SneakersLite actively aligns its security practices to the following internationally recognised standards as part of our ongoing commitment to data protection. We are working toward formal certification as the platform scales.",
+    "items": [
+      { "icon": "🔒", "title": "ISO 27001", "description": "Information Security Management (aligned practices)" },
+      { "icon": "✓", "title": "SOC 2", "description": "Service Organization Controls (aligned practices)" },
+      { "icon": "🛡️", "title": "PCI DSS", "description": "Payment Card Industry Data Security Standard (aligned practices)" }
+    ]
+  },
+  "contact": {
+    "title": "Security Questions?",
+    "description": "Contact our security team for any inquiries about our privacy practices and security measures.",
+    "button": "Contact Us"
+  }
+}

@@ -53,11 +53,36 @@ export default defineType({
       options: {
         list: [
           { title: 'Authentication', value: 'Authentication' },
+          { title: 'B2B Solutions', value: 'B2B Solutions' },
           { title: 'Case Study', value: 'Case Study' },
+          { title: 'Market Insights', value: 'Market Insights' },
           { title: 'Trends', value: 'Trends' },
           { title: 'Technology', value: 'Technology' },
         ],
       },
+    }),
+    defineField({
+      name: 'language',
+      title: 'Language',
+      type: 'string',
+      description: 'BCP 47 tag. Drives the blog language tabs and <html lang>.',
+      options: {
+        list: [
+          { title: 'English', value: 'en' },
+          { title: '中文 (简体)', value: 'zh-CN' },
+          { title: '日本語', value: 'ja' },
+          { title: '한국어', value: 'ko' },
+        ],
+      },
+      initialValue: 'en',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'translationKey',
+      title: 'Translation Key',
+      type: 'string',
+      description:
+        'Same value on every language version of one article (e.g. "authentication-compliance-asia"). Powers the language toggle on article pages.',
     }),
     defineField({
       name: 'body',

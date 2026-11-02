@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "SneakersLite - より速く、より安く、より安定した真贋鑑定",
+    "description": "最先端の鑑定技術による、迅速・低コスト・一貫性のあるスニーカー真贋鑑定。"
+  },
+  "hero": {
+    "authenticate": "真贋鑑定を",
+    "faster": "より速く。",
+    "cheaper": "より安く。",
+    "consistently": "より安定して。",
+    "description": "最先端のAI技術と業界の専門知識を組み合わせた、革新的なスニーカー真贋鑑定。迅速な結果、競争力のある価格、卓越した精度を提供します。",
+    "getStarted": "今すぐお問い合わせ",
+    "learnMore": "詳しく見る"
+  },
+  "usp": {
+    "title": "SneakersLiteが選ばれる理由",
+    "description": "私たちを差別化する3つの柱",
+    "cards": [
+      { "title": "より速く", "description": "鑑定結果を数日ではなく数分でお届け。効率化されたプロセスにより、品質を損なうことなく迅速に真贋を確認します。", "icon": "⚡" },
+      { "title": "より安く", "description": "品質に妥協しない競争力のある価格。ビジネスに適した価格で、高品質な真贋鑑定を提供します。", "icon": "💰" },
+      { "title": "安定した品質", "description": "業界をリードする精度と信頼性。すべての真贋鑑定を厳格な基準と専門知識で支えます。", "icon": "✓" }
+    ]
+  },
+  "dashboard": {
+    "title": "高度な真贋鑑定ダッシュボード",
+    "description": "パートナーが大規模な鑑定依頼の管理と追跡に使用するリアルタイムのダッシュボード",
+    "sneaker": "Jordan 12 Retro",
+    "colorway": "ブラック／ホワイトのカラーリング",
+    "productDetails": [
+      { "label": "商品名", "value": "Jordan 1 Retro High OG" },
+      { "label": "モデルID", "value": "153265-006" },
+      { "label": "GTIN", "value": "0195866361881" },
+      { "label": "依頼ID", "value": "AUTH-2026-001945" }
+    ],
+    "metricsTitle": "真贋鑑定の指標",
+    "metrics": [
+      { "label": "サイズタグのID", "value": "確認済み", "type": "badge" },
+      { "label": "サイズタグのフォントと字間", "value": "98.2", "type": "progress" },
+      { "label": "色の再現精度", "value": "97.6", "type": "progress" },
+      { "label": "外側のステッチ", "value": "96.1", "type": "progress" },
+      { "label": "ロゴの精度", "value": "92.4", "type": "progress" },
+      { "label": "インソール", "value": "93.9", "type": "progress" },
+      { "label": "ミッドソールのステッチ", "value": "97.7", "type": "progress" },
+      { "label": "箱・パッケージ", "value": "93", "type": "progress" }
+    ],
+    "checksTitle": "確認項目",
+    "checks": [
+      { "text": "正規品の素材を検出" },
+      { "text": "ロゴの形状と位置が基準に適合" },
+      { "text": "ステッチのパターンと本数を確認" },
+      { "text": "シリアル番号の照合を完了" },
+      { "text": "フォントと字間が許容範囲内" },
+      { "text": "偽造品の特徴：検出なし" }
+    ],
+    "confidenceLabel": "信頼度スコア",
+    "confidenceValue": "96.9%",
+    "verdictLabel": "鑑定結果",
+    "verdictValue": "正規品",
+    "requestDemo": "デモを依頼する"
+  },
+  "products": {
+    "title": "鑑定対応ブランド",
+    "description": "世界を代表するブランドのスニーカーを鑑定します",
+    "logoAlt": "ロゴ",
+    "brands": [
+      { "name": "Nike", "logo": "/images/brands/nike.svg" },
+      { "name": "Jordan", "logo": "/images/brands/jordan.svg" },
+      { "name": "adidas", "logo": "/images/brands/adidas.svg" },
+      { "name": "New Balance", "logo": "/images/brands/newbalance.svg" },
+      { "name": "ASICS", "logo": "/images/brands/asics.svg" },
+      { "name": "Converse", "logo": "/images/brands/converse.svg" }
+    ]
+  },
+  "presence": {
+    "title": "グローバルな事業展開",
+    "description": "世界各地のお客様にサービスを届けるための戦略的な拠点配置",
+    "locations": [
+      { "flag": "🇭🇰", "name": "香港", "description": "アジア太平洋地域の事業を統括する地域本部" },
+      { "flag": "🇨🇳", "name": "中国", "description": "真贋鑑定と物流の主要拠点" },
+      { "flag": "🇸🇬", "name": "シンガポール", "description": "グローバルな事業運営の拠点" }
+    ],
+    "ctaTitle": "詳しくお知りになりたいですか？",
+    "contact": "お問い合わせ"
+  }
+}

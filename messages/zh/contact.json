@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "联系我们 | SneakersLite",
+    "description": "有任何问题？欢迎与我们联系。请发送消息，我们会尽快回复。"
+  },
+  "hero": {
+    "headingStart": "联系",
+    "headingHighlight": "我们",
+    "description": "有任何问题？欢迎与我们联系。请发送消息，我们会尽快回复。"
+  },
+  "form": {
+    "name": { "label": "姓名", "placeholder": "张三" },
+    "email": { "label": "电子邮箱", "placeholder": "john@example.com" },
+    "subject": {
+      "label": "咨询主题",
+      "options": [
+        { "value": "", "label": "请选择咨询主题..." },
+        { "value": "authentication", "label": "鉴定服务" },
+        { "value": "partnership", "label": "合作咨询" },
+        { "value": "support", "label": "技术支持" },
+        { "value": "feedback", "label": "意见反馈" },
+        { "value": "other", "label": "其他" }
+      ]
+    },
+    "message": { "label": "留言", "placeholder": "请详细说明您的问题..." },
+    "success": "您的消息已成功发送！我们会尽快回复您。",
+    "errors": {
+      "required": "请填写所有字段",
+      "invalidEmail": "电子邮箱地址无效",
+      "failed": "消息发送失败",
+      "network": "发送消息时发生错误"
+    },
+    "submit": "发送消息",
+    "sending": "正在发送..."
+  }
+}
