@@ -14,14 +14,15 @@ content marketing via blog.
 - Framework: Next.js 14 (App Router) + TypeScript
 - Styling: Tailwind CSS
 - CMS: Sanity.io (blog articles, GROQ queries, ISR 30s revalidation)
-- Email: Resend was planned; the current contact API logs submissions only. Provider code is commented out; delivery is not implemented in this checkout.
+- Email: Resend. `app/api/contact/route.ts` delivers leads to `CONTACT_TO` (default chrisxue@novelship.com) from `CONTACT_FROM` (default `onboarding@resend.dev`, which Resend only delivers to the account owner). `sneakerslite.com` is NOT verified in Resend yet — once DNS is added, set `CONTACT_FROM="SneakersLite <noreply@sneakerslite.com>"` in Vercel. Route returns 502 (never fake success) if send fails.
 - Deployment: Vercel (auto-deploys on push to master)
 
 ## Pages
 - / — Home
 - /about — About
 - /security — Security & Privacy (PDPO, cross-border compliance, data ownership, AWS infrastructure, links to framework)
-- /contact — Localized contact form → /api/contact; locale included in logged payload (no email delivery)
+- /contact — Localized form: name, work email, company, monthly volume band, subject (authentication/partnership/integration/support/other), message → /api/contact → Resend email with reply-to set to the lead.
+- /pricing — Public tiers ($2.00/$1.30/$0.80 per result), slider calculator vs $4 human benchmark, enterprise CTA, FAQ. Competitors publish pricing too (Entrupy $139–$1,049/mo ≈ $4.20–$5.60/auth; CheckCheck from $6/item), checked 02/11/2026.
 - /blog — Language tabs derived from available Sanity content; defaults to UI locale when available, otherwise the first available language
 - /blog/[slug] — Sanity article pages with translation links derived from a shared `translationKey`
 - /data-protection-framework — Full 12-section data protection framework (v1)
@@ -53,7 +54,8 @@ real data before final publish.
 - User-reported client wins: 1 Chinese client (closed just before Stage 1 review) + 1 Korean partner (closed September 2026). Supporting documents are planned for Cyberport management over 31 October–1 November. Eligibility against the Stage 2 reporting window remains for management to confirm.
 - Stage 2 (semi-annual) evaluation due October 2026 — in progress.
 - 02/11/2026: A6/A7/A8 published to Sanity (9 articles live). Backfill applied. Locale cutover pushed as c58ea05 → Vercel auto-deployed in ~140s (push→deploy mechanism now verified). Sitemap is ISR (30s), 30 URLs. JA/KO/ZH copy shipped WITHOUT native review — post-launch copy fixes are the open item for milestone 5.
-- Pending from user: Stage 2 #2 brand/model list (also keeps A6's "in active development" claim honest), #3 revenue figure, #4 Sales & Partnership Framework doc.
+- Pending from user: Stage 2 #2 brand/model list (beyond ASICS/Converse, already confirmed), #3 revenue figure, #4 Sales & Partnership Framework doc. Also: is the About page "2025 Series A Funding" milestone true? (unanswered; left live).
+- 02/11/2026 site work shipped (5612073): contact form delivers leads (was console.log only since April); /pricing; How-it-works section on home; article CTA card + related articles; blog hero restyled; legacy article authors normalised to "SneakersLite by Prime Fleet" (were "Novelship…"). Not done: About milestones / footer legal / dashboard mock copy (#2 of the audit), social proof section (#3 of the audit — needs a partner-approved quote; draft sent to user).
 
 ## Workstream (started 30/10/2026)
 1. Three more articles, dated May / June / August 2026, each proposed → approved → published:
