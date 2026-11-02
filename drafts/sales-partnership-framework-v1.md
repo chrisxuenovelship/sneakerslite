@@ -37,11 +37,11 @@ SneakersLite sells to organisations that authenticate sneakers at volume as part
 
 ### 2.3 Segment C — Inspection, logistics and fulfilment houses
 
-- Who: third parties that inspect, grade or fulfil on behalf of platforms and retailers.
+- Who: third parties that inspect, grade, store or fulfil on behalf of platforms, retailers and cross-border sellers.
 - Buyer of record: Head of Operations; the platform client is often the sponsor.
 - Volume band: 1,000 to 15,000 items per month across several end clients.
 - Trigger: a client contract requires a defined authentication process; staff turnover in the inspection team; need to add brands without adding specialists.
-- Reference partner: none yet; target segment for Stage 3 outbound (Hong Kong and Korea).
+- Reference partner: Silver Star (South Korea), a sneaker 3PL that processes and authenticates shipments for sellers exporting from Korea.
 - Disqualifiers: inspection is a loss-leader with no budget line; the house cannot agree data-sharing terms with its end clients.
 
 ### 2.4 Qualification gate
@@ -122,7 +122,7 @@ Partnerships are distinct from customer contracts: they carry obligations on bot
 
 ### 6.1 Launch partner
 
-- Who: the first marketplace or wholesaler in a new market (for example the Singapore and Guangzhou partners; the Korean platform onboarded in September 2026).
+- Who: the first marketplace, wholesaler or fulfilment house in a new market (for example the Singapore and Guangzhou partners; the Korean 3PL onboarded in September 2026).
 - SneakersLite provides: pricing locked at the agreed tier for 12 months regardless of volume dips; priority on model-coverage requests; a named integration contact; co-authored case study and testimonial rights, published only with written approval.
 - Partner provides: a minimum monthly volume commitment; human-reviewed cases returned to training under the agreed data path; a reference call for one prospect per quarter; named testimonial or quote.
 
@@ -146,7 +146,7 @@ Every partnership agreement records: tier; term and renewal; volume commitment; 
 
 ### 7.1 Commercial outcomes
 
-- New B2B clients onboarded in the window: 2 — 佳超 (mainland China, Segment B, closed Q3 2026) and Silver Star (South Korea platform, Segment A, closed September 2026). Milestone target: 2. The pre-incubation clients (Novelship, Singapore; 潮盟 国际版 / Dong Yi Hai Wai, Guangzhou) are not counted.
+- New B2B clients onboarded in the window: 2 — 佳超 (mainland China, Segment B, closed Q3 2026) and Silver Star (South Korea, Segment C sneaker 3PL serving cross-border sellers, closed September 2026). Milestone target: 2. The pre-incubation clients (Novelship, Singapore; 潮盟 国际版 / Dong Yi Hai Wai, Guangzhou) are not counted.
 - Cumulative revenue against the HKD 250,000 Stage 2 target: {{REVENUE_HKD}} (source: finance sheet, {{REVENUE_AS_OF_DATE}}).
 - Monthly authentication volume at window close: {{MONTHLY_VOLUME}}; items verified to date: {{TOTAL_VERIFIED}}; 60-day retention: {{RETENTION_60D}}.
 
@@ -159,7 +159,7 @@ Each row is one organisation. Names are withheld in the Cyberport copy; the inte
 | P-01 | A | Singapore | Existing partner (pre-incubation) | Live | {{P01_DATE}} | Quarterly review |
 | P-02 | B | Guangzhou | Existing partner (pre-incubation) | Live | {{P02_DATE}} | Quarterly review |
 | P-03 | B | Mainland China | {{P03_SOURCE}} | Live | {{P03_DATE}} (Q3 2026) | Day-60 retention check |
-| P-04 | A | South Korea | {{P04_SOURCE}} | Live | September 2026 | Coverage expansion for KR catalogue |
+| P-04 | C | South Korea | {{P04_SOURCE}} | Live | September 2026 | Coverage expansion for KR export catalogue |
 | P-05 | {{P05_SEGMENT}} | {{P05_MARKET}} | {{P05_SOURCE}} | {{P05_STAGE}} | {{P05_DATE}} | {{P05_NEXT}} |
 
 ### 7.3 Assets built in the window
