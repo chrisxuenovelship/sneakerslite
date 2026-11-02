@@ -174,24 +174,133 @@ Each row is one organisation. Names are withheld in the Cyberport copy; the inte
 
 ## 8. Sales Playbooks
 
-### 8.1 Discovery call (30 minutes)
+Calls are the unit of selling. Every call has a type, a time budget, a purpose, and a dated next step. The BD Lead logs each call in the pipeline register within one working day using the scorecard in 8.4.
 
-1. Current process: who authenticates today, how many people, what turnaround, what it costs per item all-in.
-2. Volume and shape: monthly items, peak weeks, batch or single-item, share of catalogue outside Nike and Jordan.
-3. Failure cost: last counterfeit that reached a buyer; what it cost in refunds, time and reputation.
-4. Coverage: top 20 models by volume (we check against current model-level coverage before the next call).
-5. Data: where images are stored, which jurisdiction, whether seller identity is attached.
-6. Decision: who signs, by when, what a pilot would need to show.
+### 8.1 Call types
 
-### 8.2 Objection handling
+| Call | Length | Purpose | Exit |
+|---|---|---|---|
+| Intro | 15 min | Confirm fit against the ICP; earn a discovery call | Discovery booked, or close-lost with reason |
+| Discovery | 30 min | Understand process, volume, failure cost, coverage, data, decision | Pilot scope drafted |
+| Pilot kick-off | 30 min | Agree image standards, submission path, weekly check-in, success measures | Pilot live date |
+| Pilot review | 30 min, weekly | Review-rate curve, coverage gaps, disputes | Actions logged |
+| Commercial | 30 min | Walk the pilot report; present tier, partnership tier, data path | Signature date |
 
-- "Our inspectors are better than any model." Agree on the hard cases; the system routes those to them. The value is the 80 to 90% of items that do not need an expert, and consistency on the rest.
-- "What is your accuracy?" Do not quote a single number. Show the confidence score and verification breakdown, explain the threshold and review path, and propose a pilot measured on review rate and disputes against their own baseline.
-- "Our data cannot leave the country." Offer the in-region or client-hosted path (section 5.4) and the Data Protection Framework.
-- "We will build it ourselves." Walk through the build-vs-buy article: data acquisition (verified fakes), model maintenance per release cycle, and the time to usable confidence on a new model.
-- "You are a small company." Cyberport incubation, named partners in three markets, published framework and pricing, and a pilot that costs them one month at STANDARD tier.
+### 8.2 Discovery call structure (30 minutes)
 
-### 8.3 Pilot to contract
+1. Open (2 min). Confirm time, confirm who is on the call and their role, state the agenda: "how you authenticate today, what it costs you, and whether a pilot is worth your time."
+2. Current process (6 min). Who authenticates, how many people, turnaround from receipt to release, all-in cost per item, what happens when the team is uncertain.
+3. Volume and shape (5 min). Monthly items, peak weeks, batch or single-item intake, share of catalogue outside Nike and Jordan, top 20 models by volume.
+4. Failure cost (5 min). The last counterfeit that reached a buyer; refund, support time, seller action, reputational effect; how often condition disputes are mislabelled as authenticity disputes.
+5. Data and integration (5 min). Where images live, which jurisdiction, whether seller identity travels with the image, whether engineering time is available or the dashboard is the path.
+6. Decision and next step (7 min). Who signs, by when, what a pilot has to show them to be a yes; propose pilot terms (section 5.2); book the kick-off date before ending the call.
+
+### 8.3 Discovery question bank by segment
+
+- Segment A (marketplaces): "What does your buyer guarantee promise, in words?" "What share of items wait more than 24 hours for an inspector?" "Which brands do you decline to list because you cannot authenticate them?" "How many inspectors would you need to hire for next year's volume?"
+- Segment B (wholesale and consignment): "When a downstream platform rejects a lot, who absorbs it?" "Is your inspection tag per item or per batch?" "Which SKUs have caused a dispute in the last quarter?" "Where do your item photos physically sit, and who can access them?"
+- Segment C (inspection houses): "How do you prove to a client that two inspectors would reach the same verdict?" "How long does a new inspector take to be trusted on a brand?" "What do your client contracts say about the authentication process?" "Which client is asking for brands you cannot cover yet?"
+
+### 8.4 Post-call scorecard
+
+Logged for every intro or discovery call. A lead advances to Qualified only when gates 1 to 4 are all Yes.
+
+| Field | Entry |
+|---|---|
+| Gate 1 — Volume | Monthly items (number); 500+ now or within six months: Yes / No |
+| Gate 2 — Buyer of record | Name, title, budget authority confirmed: Yes / No |
+| Gate 3 — Trigger | Event and date (last 12 months or next 6): Yes / No |
+| Gate 4 — Data path | Section 5.4 path selected: HK / in-region / client-hosted / blocked |
+| Segment | A / B / C |
+| Cost baseline | Client's stated all-in cost per item and turnaround |
+| Top models | Top 20 by volume; coverage check result (covered / partial / gap) |
+| Objections raised | From 8.5, with response given |
+| Next step | Action, owner, date (mandatory) |
+
+### 8.5 Objection matrix
+
+| Objection | What it usually means | Response | Proof asset |
+|---|---|---|---|
+| "Our inspectors are better than any model." | Fear of being replaced; pride in the team | Agree on the hard cases; the system routes those to them. The value is the large share of items that do not need an expert, and consistency on the rest. The review path is theirs. | Home page dashboard; integration playbook article |
+| "What is your accuracy?" | Looking for a single number to compare vendors | Do not quote one. Show the confidence score and verification breakdown, explain the threshold and review path, and propose a pilot measured on review rate and disputes against their own baseline. | Pilot report template; brand guides |
+| "Our data cannot leave the country." | Legal or procurement block | Offer the in-region or client-hosted path and the Data Protection Framework; agree the path before the pilot, not after. | Data Protection Framework; Guangzhou article |
+| "We will build it ourselves." | Engineering confidence; underestimates the data problem | Walk through verified-fake data acquisition, model maintenance per release cycle, and time to usable confidence on a new model; offer to run the pilot alongside their build. | Build vs buy article; adding new brands article |
+| "You are a small company." | Continuity risk | Cyberport incubation, named partners in three markets, published framework and pricing, a pilot that costs one month at STANDARD tier, and a defined exit (their data returned). | Partner testimonials; pricing page |
+| "The price is low; what is the catch?" | Suspicion of hidden fees | Pricing is public; no set-up fee; human review included; the only variable is volume tier. | Pricing page; Appendix A |
+| "We only need Jordan and Nike." | Coverage concern inverted | Fine: start there, and the model list for the rest of their catalogue is disclosed on request so they can expand when ready. | Brand guides |
+
+### 8.6 Role-play 1 — discovery call, Segment A (Singapore marketplace)
+
+Participants: SneakersLite BD Lead (BD); Head of Operations at a Singapore sneaker marketplace (HO).
+
+BD: Thanks for the time. Thirty minutes: how you authenticate today, what it costs you, and whether a pilot is worth your time. If it is not a fit I will say so.
+
+HO: Fine. We have four inspectors in the warehouse. Everything is checked before it ships.
+
+BD: Four people, every item. What is the turnaround from the item arriving to release?
+
+HO: Same day if it is a Dunk or a Jordan. New Balance and ASICS can sit two or three days because only one person is confident on them.
+
+BD: So the queue is really a coverage queue. How many items a month, and what share is outside Nike and Jordan now?
+
+HO: About two thousand eight hundred a month. Maybe thirty percent outside Nike and Jordan, and rising.
+
+BD: What does an item cost you all-in to authenticate, salary and space included?
+
+HO: We have never worked it out per item. Roughly four to five Singapore dollars.
+
+BD: That is in line with what we see. When did a counterfeit last reach a buyer?
+
+HO: Two months ago. A Samba. Refund, apology credit, and the seller was banned. The support thread took a week.
+
+BD: Was it an authenticity miss or a condition dispute that became one?
+
+HO: Authenticity. Nobody on the team is strong on adidas terrace models.
+
+BD: Two questions on data. Where do your item photos sit, and does the seller's identity travel with the photo?
+
+HO: AWS Singapore. The photos are linked to the order, not to the seller directly.
+
+BD: Good, that fits our client-hosted path with a transaction reference; nothing identifying needs to reach us. Last question: if a 30-day pilot showed the review rate on your top 20 models and the cost against your four to five dollars, who decides?
+
+HO: Me, with the COO for the budget.
+
+BD: Then I propose a pilot at the STANDARD rate on at least 300 items, your choice of models, with a weekly review-rate report and a written pilot report at the end. If you sign within 30 days the pilot fee is credited. Can we book the kick-off for next Tuesday and can you send the top 20 models by volume before then?
+
+HO: Tuesday works. I will send the list tomorrow.
+
+Scorecard: Gate 1 Yes (2,800); Gate 2 Yes (HO with COO); Gate 3 Yes (counterfeit reached buyer, two months ago); Gate 4 client-hosted. Segment A. Baseline SGD 4 to 5 per item, 1 to 3 days. Next step: kick-off Tuesday, model list due tomorrow. Stage: Qualified → Pilot scoped.
+
+### 8.7 Role-play 2 — data objection, Segment B (Guangzhou wholesaler)
+
+Participants: SneakersLite CEO (CEO); General Manager of a Guangzhou wholesaler (GM).
+
+GM: We are interested, but our lawyer says item photos cannot go to a Hong Kong server. That ends it.
+
+CEO: It does not end it; it decides which path we use. Three options exist, and we pick one before any pilot. First, in-region processing for mainland images, with the PIPL and DSL assessment documented on both sides. Second, your system keeps the photos and sends us only what the model needs with a transaction reference, no seller data. Third, Hong Kong processing, which your lawyer has already ruled out.
+
+GM: What would your side need for the second option?
+
+CEO: The item photos at the angles in our intake standard, a batch number and a per-item reference. No names, no order details. The result goes back against the reference. Our Data Protection Framework describes retention and access; we attach it to the agreement.
+
+GM: And the batch question. We receive lots of two hundred pairs. We cannot photograph every pair.
+
+CEO: Then you sample for receiving risk, and you only attach "verified" to the pairs that were actually submitted. The system reports per item, so your downstream buyer can check the exact pair. We would never report a batch verdict as if it were an item verdict; that is what causes disputes later.
+
+GM: Send me the second option in writing with the retention terms.
+
+CEO: You will have it tomorrow, with a 30-day pilot proposal on your top SKUs. If your lawyer confirms the path by Friday, we can start the following week.
+
+Scorecard: Gate 4 client-hosted (pending legal confirmation Friday). Objection: data residency, answered with path 2 and the Data Protection Framework. Next step: written proposal tomorrow; legal confirmation Friday. Stage: Qualified, hold until Friday.
+
+### 8.8 Closing every call
+
+- Summarise what was heard in three sentences and ask for correction.
+- Name the next step, the owner and the date; book it on the call.
+- Send a written recap within one working day with the relevant proof assets linked.
+- Update the pipeline register the same day; a call without a logged next step is treated as not having happened.
+
+### 8.9 Pilot to contract
 
 1. Week 1: integration live or dashboard in use; first 100 submissions; confirm image standards.
 2. Weeks 2 to 4: weekly review-rate report; coverage gaps logged with model names; disputes tracked.
