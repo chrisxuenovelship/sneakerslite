@@ -158,3 +158,7 @@ Site: the "Head of Operations, Silver Star" testimonial is segment-neutral and s
 ## UPDATE 19:55 SGT — live financials sheet replaces the xlsx
 
 Google Sheet `1qLNyn4aIn_q4-svD5lgpi-5YI1RkiTRk98uSYv1g5ts` ("Cyberport Program", tab `P&L Report`), SA has read access; `deck sheet <id>` dumps it. Source of truth for all revenue figures from now on. Current values (HK$): Stage 2 actual revenue **185,784**, COGS 14,756, expenses 166,844.14, net 4,183.86; cumulative since commencement revenue **311,399**, net 10,220.86; Stage 3 forecast revenue 250,000, net 22,200. Remaining finance questions were posted to Chris in the thread (ts `1793619436.299189`): half-booked 6,580 professional invoice; 141,321 forecast; Stage 4 forecast empty (1M cumulative milestone); MPF treatment; COGS 7.9% vs the form's USD 0.24/0.80.
+
+## UPDATE 20:02 SGT — finance reply (thread ts `1793619663.402709`) and session answer (`1793619758.845359`)
+
+Resolved: column L, COGS reclass, G35, Stage 1 forecast as filed, Stage 3 forecast 250k is a real forecast, 141,321 forecast as filed. Team size = founder + 1 FTE (fill p4). Monthly revenue for p4 col 5 = **30,964** (185,784 ÷ 6); 122K must not appear anywhere. Open: real reason for the 6,580 ÷ 2 (and Stage 3 3,290 vs 4,000); real reason for no MPF in Stage 1 (compliance risk if the person was a contractor — affects which line 72,000 sits on); p4 col 6 HK-billed monthly revenue; Stage 4 forecast column empty; COGS USD 0.24 on the signed form vs 7.9% booked — one explanatory sentence needed in the Stage 2 self-assessment.
