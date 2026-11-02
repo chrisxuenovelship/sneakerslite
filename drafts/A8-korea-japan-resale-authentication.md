@@ -52,7 +52,7 @@ The term matters. Inspectors are a resource. Infrastructure is a system that pro
 
 ## How We Approach Korea and Japan
 
-SneakersLite was built in Hong Kong and proven with partners across Hong Kong, mainland China, and Southeast Asia, including Novelship, the largest business-to-consumer sneaker marketplace in Southeast Asia. Our expansion into Korea and Japan follows the same sequence we apply to any new brand: build the local data layer first, launch at conservative confidence thresholds, and let the system mature on real submissions.
+SneakersLite was built in Hong Kong and proven with marketplace partners across Hong Kong, mainland China, and Southeast Asia. Our expansion into Korea and Japan follows the same sequence we apply to any new brand: build the local data layer first, launch at conservative confidence thresholds, and let the system mature on real submissions.
 
 Concretely, that means prioritising the models that drive volume in each market, including the lifestyle and running silhouettes that are under-served by most authentication vendors; building label and packaging coverage for regional releases; and working with partners on a review path that fits their existing inspection operation rather than displacing it.
 

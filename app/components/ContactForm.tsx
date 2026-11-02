@@ -10,12 +10,8 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ locale, t }: ContactFormProps) {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  })
+  const empty = { name: '', email: '', company: '', volume: '', subject: '', message: '' }
+  const [formData, setFormData] = useState(empty)
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -38,7 +34,7 @@ export default function ContactForm({ locale, t }: ContactFormProps) {
 
       if (response.ok) {
         setStatus('success')
-        setFormData({ name: '', email: '', subject: '', message: '' })
+        setFormData(empty)
         setTimeout(() => setStatus('idle'), 5000)
       } else {
         const error = await response.json()
@@ -88,6 +84,41 @@ export default function ContactForm({ locale, t }: ContactFormProps) {
           placeholder={t.email.placeholder}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-brand-cyan focus:ring-2 focus:ring-cyan-200 transition"
         />
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <label htmlFor="company" className="block text-sm font-semibold text-brand-dark mb-2">
+            {t.company.label}
+          </label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            value={formData.company}
+            onChange={handleChange}
+            required
+            placeholder={t.company.placeholder}
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-brand-cyan focus:ring-2 focus:ring-cyan-200 transition"
+          />
+        </div>
+        <div>
+          <label htmlFor="volume" className="block text-sm font-semibold text-brand-dark mb-2">
+            {t.volume.label}
+          </label>
+          <select
+            id="volume"
+            name="volume"
+            value={formData.volume}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-brand-cyan focus:ring-2 focus:ring-cyan-200 transition"
+          >
+            {t.volume.options.map((option) => (
+              <option key={option.value} value={option.value}>{option.label}</option>
+            ))}
+          </select>
+        </div>
       </div>
 
       <div>

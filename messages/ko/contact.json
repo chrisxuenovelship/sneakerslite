@@ -1,29 +1,41 @@
 {
   "meta": {
     "title": "문의하기 | SneakersLite",
-    "description": "궁금한 점이 있으신가요? 메시지를 보내주시면 최대한 빨리 답변드리겠습니다."
+    "description": "운영 중인 플랫폼과 월간 감정 물량을 알려주세요. 영업일 기준 1일 이내에 답변드립니다."
   },
   "hero": {
     "headingStart": "문의",
     "headingHighlight": "하기",
-    "description": "궁금한 점이 있으신가요? 메시지를 보내주시면 최대한 빨리 답변드리겠습니다."
+    "description": "운영 중인 플랫폼과 월간 감정 물량을 알려주세요. 영업일 기준 1일 이내에 답변드립니다."
   },
   "form": {
     "name": { "label": "성함", "placeholder": "홍길동" },
-    "email": { "label": "이메일 주소", "placeholder": "john@example.com" },
+    "email": { "label": "회사 이메일", "placeholder": "john@company.com" },
+    "company": { "label": "회사 / 플랫폼", "placeholder": "운영 중인 마켓플레이스 또는 매장명" },
+    "volume": {
+      "label": "월간 감정 물량",
+      "options": [
+        { "value": "", "label": "범위를 선택하세요..." },
+        { "value": "lt1000", "label": "1,000건 미만" },
+        { "value": "1000-2000", "label": "1,000 – 2,000건" },
+        { "value": "2000-10000", "label": "2,000 – 10,000건" },
+        { "value": "gt10000", "label": "10,000건 이상" },
+        { "value": "unsure", "label": "아직 미정" }
+      ]
+    },
     "subject": {
       "label": "문의 유형",
       "options": [
         { "value": "", "label": "문의 유형을 선택하세요..." },
         { "value": "authentication", "label": "정품 감정 서비스" },
         { "value": "partnership", "label": "제휴 문의" },
+        { "value": "integration", "label": "API / 시스템 연동" },
         { "value": "support", "label": "기술 지원" },
-        { "value": "feedback", "label": "의견 보내기" },
         { "value": "other", "label": "기타" }
       ]
     },
     "message": { "label": "메시지", "placeholder": "문의 내용을 자세히 알려주세요..." },
-    "success": "메시지가 전송되었습니다! 곧 답변드리겠습니다.",
+    "success": "문의해 주셔서 감사합니다. 영업일 기준 1일 이내에 답변드리겠습니다.",
     "errors": {
       "required": "모든 항목을 입력해 주세요",
       "invalidEmail": "올바른 이메일 주소를 입력해 주세요",

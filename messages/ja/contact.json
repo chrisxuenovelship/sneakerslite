@@ -1,29 +1,41 @@
 {
   "meta": {
     "title": "お問い合わせ | SneakersLite",
-    "description": "ご質問がありましたら、ぜひお問い合わせください。メッセージをお送りいただければ、できるだけ早くご返信します。"
+    "description": "貴社のプラットフォームと月間鑑定件数についてお聞かせください。1営業日以内にご返信いたします。"
   },
   "hero": {
     "headingStart": "お問い",
     "headingHighlight": "合わせ",
-    "description": "ご質問がありましたら、ぜひお問い合わせください。メッセージをお送りいただければ、できるだけ早くご返信します。"
+    "description": "貴社のプラットフォームと月間鑑定件数についてお聞かせください。1営業日以内にご返信いたします。"
   },
   "form": {
     "name": { "label": "お名前（フルネーム）", "placeholder": "山田 太郎" },
-    "email": { "label": "メールアドレス", "placeholder": "john@example.com" },
+    "email": { "label": "勤務先メールアドレス", "placeholder": "john@company.com" },
+    "company": { "label": "会社名 / プラットフォーム名", "placeholder": "貴社のマーケットプレイスや店舗名" },
+    "volume": {
+      "label": "月間鑑定件数",
+      "options": [
+        { "value": "", "label": "範囲を選択してください..." },
+        { "value": "lt1000", "label": "1,000件未満" },
+        { "value": "1000-2000", "label": "1,000〜2,000件" },
+        { "value": "2000-10000", "label": "2,000〜10,000件" },
+        { "value": "gt10000", "label": "10,000件以上" },
+        { "value": "unsure", "label": "未定" }
+      ]
+    },
     "subject": {
       "label": "お問い合わせ内容",
       "options": [
         { "value": "", "label": "内容を選択してください..." },
         { "value": "authentication", "label": "真贋鑑定サービス" },
         { "value": "partnership", "label": "提携について" },
+        { "value": "integration", "label": "API・システム連携" },
         { "value": "support", "label": "技術サポート" },
-        { "value": "feedback", "label": "ご意見・ご感想" },
         { "value": "other", "label": "その他" }
       ]
     },
     "message": { "label": "メッセージ", "placeholder": "お問い合わせの内容をご記入ください..." },
-    "success": "メッセージを送信しました。追ってご返信いたします。",
+    "success": "お問い合わせありがとうございます。1営業日以内にご返信いたします。",
     "errors": {
       "required": "すべての項目を入力してください",
       "invalidEmail": "メールアドレスの形式が正しくありません",
