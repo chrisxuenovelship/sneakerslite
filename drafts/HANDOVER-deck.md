@@ -166,3 +166,10 @@ Resolved: column L, COGS reclass, G35, Stage 1 forecast as filed, Stage 3 foreca
 ## UPDATE 20:16 SGT — second finance reply (ts `1793620550.489109`), answered (`1793620586.473909`)
 
 Live sheet now: Stage 3 forecast R&D 40,000 (was 45,000), COGS 20,000, expenses 202,800, net 27,200. Stage 2 unchanged (185,784 / 14,756 / 166,844.14 / 4,183.86). Professional-services halving documented in a cell note (corporate secretarial annual fee). P&L is done except: MPF reason for Stage 1 (E30 note), slide-4 HK-billed revenue, Stage 4 forecast, COGS 0.24 vs 7.9% sentence in the self-assessment.
+
+## UPDATE 20:55 SGT — Chris/finance decisions (ts `1793622803.673809`, `1793622823.741609`), answered (`1793622882.234469`)
+
+- Stage 1 staffing 72,000 was a **contractor** (no MPF) → finance to move it off line 5 (line 4 if a service agreement exists, else line 7). Risk flagged: Stage 1 milestone "Hire BD Lead" was proven with a "signed employment contract" — if same person, contradiction.
+- 122K: ignore. Stage 4 forecast: deferred to next reporting round (Chris's call; p3/Stage 3 unaffected).
+- COGS 0.24 reference = signed form Part B-2 "Financial Planning" (quoted to Chris); finance to decide whether to keep 0.24 and add the reconciling sentence.
+- "Monthly Local Revenue (HK$)" = header in the template's slide-4 table `p4_i149` (cols: Stage / Assessment Month / Total Team Size / Local Team Size / Monthly Total Revenue / Monthly Local Revenue / New Investment Total / New Investment by Local Entity). Chris to decide 0 vs 30,964 per Cyberport's definition of "local".
