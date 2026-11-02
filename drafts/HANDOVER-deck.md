@@ -154,3 +154,7 @@ Figures context from the form: Stage 1 clients were Dong Yi Hai Wai and Novelshi
 Doc edits required (host; the Doc still has the old text): §2.3 "Who" bullet and "Reference partner" bullet → markdown lines 40 and 44 (Silver Star, South Korea sneaker 3PL); §6.1 "Who" bullet → line 125; §7.1 first bullet → line 149; §7.2 table rows → the five rows at lines 159–163 (P-04 = C / South Korea; P-06 dropped). Deck p6 elaboration: Client A = 佳超, mainland China, Q3 2026; Client B = Silver Star, South Korea sneaker 3PL, September 2026; both agreements dated inside 30/3–29/9/2026 — confirm 佳超's signature date is on or after 30/3/2026.
 
 Site: the "Head of Operations, Silver Star" testimonial is segment-neutral and stays; Presence card for South Korea already links to the Korea article. No site change from this.
+
+## UPDATE 19:55 SGT — live financials sheet replaces the xlsx
+
+Google Sheet `1qLNyn4aIn_q4-svD5lgpi-5YI1RkiTRk98uSYv1g5ts` ("Cyberport Program", tab `P&L Report`), SA has read access; `deck sheet <id>` dumps it. Source of truth for all revenue figures from now on. Current values (HK$): Stage 2 actual revenue **185,784**, COGS 14,756, expenses 166,844.14, net 4,183.86; cumulative since commencement revenue **311,399**, net 10,220.86; Stage 3 forecast revenue 250,000, net 22,200. Remaining finance questions were posted to Chris in the thread (ts `1793619436.299189`): half-booked 6,580 professional invoice; 141,321 forecast; Stage 4 forecast empty (1M cumulative milestone); MPF treatment; COGS 7.9% vs the form's USD 0.24/0.80.
