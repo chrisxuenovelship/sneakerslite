@@ -190,3 +190,8 @@ No restatement to 30%. Self-assessment wording supplied: 0.24 was fully-loaded (
 - p8 `p8_i178`: "Achieved — HK$311,399 cumulative revenue since commencement (Stage 1 HK$125,615 + Stage 2 HK$185,784) against the HK$250,000 target, 125%. Stage 2 revenue grew 48% on Stage 1 and 31% above forecast. Proof: invoices and bank records, P&L report."
 - p2 revenue bullet: "Cumulative revenue HK$311,399 at 29/9/2026, 125% of the Stage 2 target; Stage 2 run-rate HK$30,964/month; direct COGS 7.9%."
 - Sheet edits still due from finance: 72,000 line 5 → line 4 with E30 note; billing-locale answer.
+
+## UPDATE 23:00 SGT — finance moved 72,000 (ts `1793630047.203529`); answered (`1793630135.304769`)
+
+- Stage 1: 72,000 now under professional services (sub-total 74,750), staffing 0. Column L on that row has no formula → cumulative expenses show 202,866.14 / net 82,220.86 instead of 274,866.14 / 10,220.86. Finance told to fix.
+- Finance: Stage 1+2 revenue is **100% Novelship (Singapore)**; Dongyi billed from Stage 3. → p4 monthly local revenue = **0**. Risk: milestone 1 proof requires a *payment record* from each new client; if 佳超 and Silver Star paid nothing before 29/9/2026, p6 proof is agreements + first invoices only. Asked Chris.
