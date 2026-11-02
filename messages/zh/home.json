@@ -80,13 +80,14 @@
     "title": "我们可鉴定的品牌",
     "description": "我们为全球领先品牌的球鞋提供鉴定服务",
     "logoAlt": "标志",
+    "guide": "鉴定指南（英文）",
     "brands": [
-      { "name": "Nike", "logo": "/images/brands/nike.svg" },
-      { "name": "Jordan", "logo": "/images/brands/jordan.svg" },
-      { "name": "adidas", "logo": "/images/brands/adidas.svg" },
-      { "name": "New Balance", "logo": "/images/brands/newbalance.svg" },
-      { "name": "ASICS", "logo": "/images/brands/asics.svg" },
-      { "name": "Converse", "logo": "/images/brands/converse.svg" }
+      { "name": "Nike", "logo": "/images/brands/nike.svg", "articleSlug": "authenticating-nike" },
+      { "name": "Jordan", "logo": "/images/brands/jordan.svg", "articleSlug": "authenticating-air-jordan" },
+      { "name": "adidas", "logo": "/images/brands/adidas.svg", "articleSlug": "authenticating-adidas" },
+      { "name": "New Balance", "logo": "/images/brands/newbalance.svg", "articleSlug": "authenticating-new-balance" },
+      { "name": "ASICS", "logo": "/images/brands/asics.svg", "articleSlug": "authenticating-asics" },
+      { "name": "Converse", "logo": "/images/brands/converse.svg", "articleSlug": "authenticating-converse" }
     ]
   },
   "metrics": {
@@ -118,10 +119,10 @@
     "description": "覆盖亚洲多个合作市场，每个市场都有各自的监管要求、买家预期和仿冒品特征",
     "readMore": "阅读：",
     "locations": [
-      { "flag": "🇭🇰", "name": "香港", "description": "总部及亚太区运营中心。数据处理遵循《个人资料（私隐）条例》，并公开发布数据保护框架。", "articleSlug": "authentication-compliance-asia", "articleLocale": "en", "articleTitle": "新消费者保护法规对亚洲球鞋平台意味着什么（英文）" },
-      { "flag": "🇨🇳", "name": "中国内地", "description": "与广州及内地转售市场的 B2B 鉴定合作伙伴协作，内置 PIPL 与数据安全法合规。", "articleSlug": "authentication-compliance-asia-zh", "articleLocale": "zh", "articleTitle": "合规逻辑的底层演变：亚太监管新形势下球鞋平台的必然选择" },
-      { "flag": "🇸🇬", "name": "新加坡", "description": "服务东南亚最大的消费级球鞋平台，鉴定在这里是买家保障的一部分。", "articleSlug": "build-vs-buy-authentication", "articleLocale": "en", "articleTitle": "自建还是外包：平台运营者为何选择外包鉴定（英文）" },
-      { "flag": "🇰🇷", "name": "韩国", "description": "以合作伙伴为主导进入韩国平台化转售市场，这里的买家期望每一件商品都经过检验。", "articleSlug": "korea-japan-resale-authentication", "articleLocale": "en", "articleTitle": "韩国与日本：亚洲最严苛的转售市场为何需要鉴定基础设施（英文）" }
+      { "flag": "🇭🇰", "name": "香港", "description": "总部及亚太区运营中心。数据处理遵循《个人资料（私隐）条例》，并公开发布数据保护框架。", "articleSlug": "hong-kong-sneaker-resale-authentication", "articleLocale": "en", "articleTitle": "香港：亚洲球鞋贸易的清关枢纽，为何鉴定必须可验证（英文）" },
+      { "flag": "🇨🇳", "name": "中国内地", "description": "与广州及内地转售市场的 B2B 鉴定合作伙伴协作，内置 PIPL 与数据安全法合规。", "articleSlug": "china-b2b-sneaker-authentication-zh", "articleLocale": "zh", "articleTitle": "广州球鞋批发鉴别：从单件判断走向批次管理" },
+      { "flag": "🇸🇬", "name": "新加坡", "description": "服务东南亚最大的消费级球鞋平台，鉴定在这里是买家保障的一部分。", "articleSlug": "singapore-marketplace-authentication", "articleLocale": "en", "articleTitle": "新加坡：在东南亚最成熟的转售市场建立买家信任（英文）" },
+      { "flag": "🇰🇷", "name": "韩国", "description": "以合作伙伴为主导进入韩国平台化转售市场，这里的买家期望每一件商品都经过检验。", "articleSlug": "south-korea-platform-authentication", "articleLocale": "en", "articleTitle": "韩国：平台主导的转售市场对鉴定合作伙伴有何期待（英文）" }
     ],
     "ctaTitle": "您在这些市场运营吗？",
     "contact": "联系我们"

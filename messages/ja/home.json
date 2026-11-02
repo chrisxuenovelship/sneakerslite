@@ -80,13 +80,14 @@
     "title": "鑑定対応ブランド",
     "description": "世界を代表するブランドのスニーカーを鑑定します",
     "logoAlt": "ロゴ",
+    "guide": "鑑定ガイド（英語）",
     "brands": [
-      { "name": "Nike", "logo": "/images/brands/nike.svg" },
-      { "name": "Jordan", "logo": "/images/brands/jordan.svg" },
-      { "name": "adidas", "logo": "/images/brands/adidas.svg" },
-      { "name": "New Balance", "logo": "/images/brands/newbalance.svg" },
-      { "name": "ASICS", "logo": "/images/brands/asics.svg" },
-      { "name": "Converse", "logo": "/images/brands/converse.svg" }
+      { "name": "Nike", "logo": "/images/brands/nike.svg", "articleSlug": "authenticating-nike" },
+      { "name": "Jordan", "logo": "/images/brands/jordan.svg", "articleSlug": "authenticating-air-jordan" },
+      { "name": "adidas", "logo": "/images/brands/adidas.svg", "articleSlug": "authenticating-adidas" },
+      { "name": "New Balance", "logo": "/images/brands/newbalance.svg", "articleSlug": "authenticating-new-balance" },
+      { "name": "ASICS", "logo": "/images/brands/asics.svg", "articleSlug": "authenticating-asics" },
+      { "name": "Converse", "logo": "/images/brands/converse.svg", "articleSlug": "authenticating-converse" }
     ]
   },
   "metrics": {
@@ -118,10 +119,10 @@
     "description": "アジア各地のパートナー市場。規制、購入者の期待、偽造品の傾向はそれぞれ異なります",
     "readMore": "関連記事：",
     "locations": [
-      { "flag": "🇭🇰", "name": "香港", "description": "本社およびアジア太平洋地域の運営拠点。PDPOに基づくデータ取り扱いと、公開済みのデータ保護フレームワーク。", "articleSlug": "authentication-compliance-asia", "articleLocale": "en", "articleTitle": "アジアの新しい消費者保護法がスニーカープラットフォームに意味すること（英語）" },
-      { "flag": "🇨🇳", "name": "中国", "description": "広州および中国本土の再販市場におけるB2B鑑定パートナー。PIPLとデータセキュリティ法への対応を組み込み済み。", "articleSlug": "authentication-compliance-asia-zh", "articleLocale": "zh", "articleTitle": "合規邏輯的底層演變：亞太監管新形勢下球鞋平台的必然選擇（中国語）" },
-      { "flag": "🇸🇬", "name": "シンガポール", "description": "東南アジア最大級の消費者向けスニーカーマーケットプレイスにサービスを提供。鑑定は購入者保証の一部です。", "articleSlug": "build-vs-buy-authentication", "articleLocale": "en", "articleTitle": "自社構築か外部委託か：マーケットプレイス運営者が鑑定を外部化する理由（英語）" },
-      { "flag": "🇰🇷", "name": "韓国", "description": "パートナー主導で韓国のプラットフォーム型再販市場へ展開。すべての商品に検品を求める購入者が待っています。", "articleSlug": "korea-japan-resale-authentication", "articleLocale": "en", "articleTitle": "韓国と日本：アジアで最も要求の厳しい再販市場に鑑定インフラが必要な理由（英語）" }
+      { "flag": "🇭🇰", "name": "香港", "description": "本社およびアジア太平洋地域の運営拠点。PDPOに基づくデータ取り扱いと、公開済みのデータ保護フレームワーク。", "articleSlug": "hong-kong-sneaker-resale-authentication", "articleLocale": "en", "articleTitle": "香港：アジアのスニーカー取引が集まる場所で、なぜ検証可能な鑑定が必要か（英語）" },
+      { "flag": "🇨🇳", "name": "中国", "description": "広州および中国本土の再販市場におけるB2B鑑定パートナー。PIPLとデータセキュリティ法への対応を組み込み済み。", "articleSlug": "china-b2b-sneaker-authentication-zh", "articleLocale": "zh", "articleTitle": "広州の卸売スニーカー鑑定：単品判断からロット管理へ（中国語）" },
+      { "flag": "🇸🇬", "name": "シンガポール", "description": "東南アジア最大級の消費者向けスニーカーマーケットプレイスにサービスを提供。鑑定は購入者保証の一部です。", "articleSlug": "singapore-marketplace-authentication", "articleLocale": "en", "articleTitle": "シンガポール：東南アジアで最も成熟した再販市場における購入者の信頼構築（英語）" },
+      { "flag": "🇰🇷", "name": "韓国", "description": "パートナー主導で韓国のプラットフォーム型再販市場へ展開。すべての商品に検品を求める購入者が待っています。", "articleSlug": "south-korea-platform-authentication", "articleLocale": "en", "articleTitle": "韓国：プラットフォーム主導の再販市場が鑑定パートナーに求めるもの（英語）" }
     ],
     "ctaTitle": "これらの市場で事業を運営されていますか？",
     "contact": "お問い合わせ"

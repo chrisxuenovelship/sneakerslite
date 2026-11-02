@@ -1,7 +1,6 @@
-'use client'
-
 import Image from 'next/image'
-import type { Locale } from '@/lib/i18n'
+import Link from 'next/link'
+import { localePath, type Locale } from '@/lib/i18n'
 import type { Dictionary } from '@/lib/dictionary'
 
 interface ProductsGridProps {
@@ -24,10 +23,11 @@ export default function ProductsGrid({ t }: ProductsGridProps) {
 
         {/* Mobile: 2 columns | Desktop: 3 columns (2 rows) */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-          {t.brands.map((brand, index) => (
-            <div
-              key={index}
-              className="bg-gray-900 rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-brand-cyan cursor-pointer group flex flex-col items-center justify-center text-center"
+          {t.brands.map((brand) => (
+            <Link
+              key={brand.name}
+              href={localePath('en', `/blog/${brand.articleSlug}`)}
+              className="bg-gray-900 rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-brand-cyan group flex flex-col items-center justify-center text-center"
             >
               <div className="w-24 h-24 md:w-32 md:h-32 mb-4 group-hover:scale-110 transition-all duration-300 relative">
                 <Image
@@ -41,7 +41,10 @@ export default function ProductsGrid({ t }: ProductsGridProps) {
               <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-brand-cyan transition-colors">
                 {brand.name}
               </h3>
-            </div>
+              <span className="mt-2 text-xs md:text-sm text-gray-400 group-hover:text-brand-cyan transition-colors">
+                {t.guide}
+              </span>
+            </Link>
           ))}
         </div>
       </div>
