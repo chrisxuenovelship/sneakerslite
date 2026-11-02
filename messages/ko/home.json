@@ -89,15 +89,41 @@
       { "name": "Converse", "logo": "/images/brands/converse.svg" }
     ]
   },
-  "presence": {
-    "title": "글로벌 서비스 지역",
-    "description": "전 세계 고객에게 서비스를 제공하기 위한 전략적 거점",
-    "locations": [
-      { "flag": "🇭🇰", "name": "홍콩", "description": "아시아 태평양 지역 운영 본부" },
-      { "flag": "🇨🇳", "name": "중국", "description": "주요 정품 감정 및 물류 거점" },
-      { "flag": "🇸🇬", "name": "싱가포르", "description": "글로벌 운영 센터" }
+  "metrics": {
+    "items": [
+      { "value": "34,200+", "label": "누적 감정 상품 수" },
+      { "value": "3,100+", "label": "월간 감정 건수" },
+      { "value": "71%", "label": "60일 고객 유지율" }
     ],
-    "ctaTitle": "더 알아보고 싶으신가요?",
+    "note": "수치는 Cyberport Incubation Programme 제출 자료 기준입니다."
+  },
+  "testimonials": {
+    "title": "파트너의 목소리",
+    "description": "정품 감정을 고정비에서 인프라로 전환한 마켓플레이스 운영자들의 이야기",
+    "items": [
+      {
+        "quote": "정품 감정은 우리의 가장 큰 고정비이자 가장 느린 단계였습니다. SneakersLite 도입 후 결과당 과금으로 전환했고, 어려운 케이스를 위한 사람 검토 경로를 유지하면서도 검토율이 매달 떨어지는 것을 확인했습니다. 구매자는 그 과정을 전혀 보지 못합니다. 상품이 검증된 상태로 도착했다는 것만 볼 뿐입니다.",
+        "role": "운영 리드",
+        "company": "Novelship"
+      },
+      {
+        "quote": "늘어나는 카탈로그를 인력 충원 없이 따라갈 수 있는 감정 커버리지가 필요했습니다. SneakersLite는 모델 단위 커버리지, 모든 결과에 대한 명확한 신뢰도 점수, 그리고 예외 케이스를 위한 검토 경로를 제공했습니다. 연동에는 몇 달이 아니라 며칠이 걸렸습니다.",
+        "role": "운영 총괄",
+        "company": "Silver Star"
+      }
+    ]
+  },
+  "presence": {
+    "title": "서비스 지역",
+    "description": "아시아 전역의 파트너 시장. 각 시장마다 규제, 구매자 기대치, 가품 패턴이 다릅니다",
+    "readMore": "관련 글:",
+    "locations": [
+      { "flag": "🇭🇰", "name": "홍콩", "description": "본사 및 아시아 태평양 운영 거점. PDPO에 따라 데이터를 처리하며 데이터 보호 프레임워크를 공개하고 있습니다.", "articleSlug": "authentication-compliance-asia", "articleLocale": "en", "articleTitle": "아시아의 새로운 소비자 보호법이 스니커즈 플랫폼에 의미하는 것 (영문)" },
+      { "flag": "🇨🇳", "name": "중국", "description": "광저우 및 중국 본토 리셀 시장의 B2B 감정 파트너. PIPL 및 데이터보안법 준수를 기본으로 합니다.", "articleSlug": "authentication-compliance-asia-zh", "articleLocale": "zh", "articleTitle": "合规逻辑的底层演变：亚太监管新形势下球鞋平台的必然选择 (중문)" },
+      { "flag": "🇸🇬", "name": "싱가포르", "description": "동남아시아 최대 규모의 소비자 스니커즈 마켓플레이스에 서비스를 제공합니다. 이곳에서 감정은 구매자 보증의 일부입니다.", "articleSlug": "build-vs-buy-authentication", "articleLocale": "en", "articleTitle": "직접 구축 vs 도입: 마켓플레이스 운영자가 감정을 아웃소싱하는 이유 (영문)" },
+      { "flag": "🇰🇷", "name": "대한민국", "description": "파트너 주도로 한국의 플랫폼 중심 리셀 시장에 진출. 모든 상품의 검수를 기대하는 구매자들이 있는 시장입니다.", "articleSlug": "korea-japan-resale-authentication", "articleLocale": "en", "articleTitle": "한국과 일본: 아시아에서 가장 까다로운 리셀 시장에 감정 인프라가 필요한 이유 (영문)" }
+    ],
+    "ctaTitle": "이 시장들 중 한 곳에서 운영 중이신가요?",
     "contact": "문의하기"
   }
 }

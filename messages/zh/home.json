@@ -89,15 +89,41 @@
       { "name": "Converse", "logo": "/images/brands/converse.svg" }
     ]
   },
-  "presence": {
-    "title": "全球业务布局",
-    "description": "依托战略布局，为全球客户提供服务",
-    "locations": [
-      { "flag": "🇭🇰", "name": "香港", "description": "亚太地区业务的区域总部" },
-      { "flag": "🇨🇳", "name": "中国内地", "description": "主要鉴定与物流枢纽" },
-      { "flag": "🇸🇬", "name": "新加坡", "description": "全球运营中心" }
+  "metrics": {
+    "items": [
+      { "value": "34,200+", "label": "累计鉴定商品" },
+      { "value": "3,100+", "label": "每月鉴定量" },
+      { "value": "71%", "label": "60 天客户留存率" }
     ],
-    "ctaTitle": "想了解更多？",
+    "note": "数据来源于我们提交给数码港培育计划的报告。"
+  },
+  "testimonials": {
+    "title": "合作伙伴怎么说",
+    "description": "平台运营者谈如何将鉴定从固定成本转变为基础设施",
+    "items": [
+      {
+        "quote": "鉴定曾是我们最大的固定成本，也是最慢的环节。接入 SneakersLite 后，我们改为按结果付费，为疑难案例保留了人工复核通道，并看到复核率逐月下降。买家看不到这些过程——他们只看到商品到手时已经过验证。",
+        "role": "运营负责人",
+        "company": "Novelship"
+      },
+      {
+        "quote": "我们需要的是能跟上品类扩张、又不用增加人手的鉴定能力。SneakersLite 提供了型号级别的覆盖、每个结果都附带清晰的置信度评分，以及针对边缘案例的复核通道。对接只用了几天，而不是几个月。",
+        "role": "运营总监",
+        "company": "Silver Star"
+      }
+    ]
+  },
+  "presence": {
+    "title": "我们的服务市场",
+    "description": "覆盖亚洲多个合作市场，每个市场都有各自的监管要求、买家预期和仿冒品特征",
+    "readMore": "阅读：",
+    "locations": [
+      { "flag": "🇭🇰", "name": "香港", "description": "总部及亚太区运营中心。数据处理遵循《个人资料（私隐）条例》，并公开发布数据保护框架。", "articleSlug": "authentication-compliance-asia", "articleLocale": "en", "articleTitle": "新消费者保护法规对亚洲球鞋平台意味着什么（英文）" },
+      { "flag": "🇨🇳", "name": "中国内地", "description": "与广州及内地转售市场的 B2B 鉴定合作伙伴协作，内置 PIPL 与数据安全法合规。", "articleSlug": "authentication-compliance-asia-zh", "articleLocale": "zh", "articleTitle": "合规逻辑的底层演变：亚太监管新形势下球鞋平台的必然选择" },
+      { "flag": "🇸🇬", "name": "新加坡", "description": "服务东南亚最大的消费级球鞋平台，鉴定在这里是买家保障的一部分。", "articleSlug": "build-vs-buy-authentication", "articleLocale": "en", "articleTitle": "自建还是外包：平台运营者为何选择外包鉴定（英文）" },
+      { "flag": "🇰🇷", "name": "韩国", "description": "以合作伙伴为主导进入韩国平台化转售市场，这里的买家期望每一件商品都经过检验。", "articleSlug": "korea-japan-resale-authentication", "articleLocale": "en", "articleTitle": "韩国与日本：亚洲最严苛的转售市场为何需要鉴定基础设施（英文）" }
+    ],
+    "ctaTitle": "您在这些市场运营吗？",
     "contact": "联系我们"
   }
 }

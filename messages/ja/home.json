@@ -89,15 +89,41 @@
       { "name": "Converse", "logo": "/images/brands/converse.svg" }
     ]
   },
-  "presence": {
-    "title": "グローバルな事業展開",
-    "description": "世界各地のお客様にサービスを届けるための戦略的な拠点配置",
-    "locations": [
-      { "flag": "🇭🇰", "name": "香港", "description": "アジア太平洋地域の事業を統括する地域本部" },
-      { "flag": "🇨🇳", "name": "中国", "description": "真贋鑑定と物流の主要拠点" },
-      { "flag": "🇸🇬", "name": "シンガポール", "description": "グローバルな事業運営の拠点" }
+  "metrics": {
+    "items": [
+      { "value": "34,200+", "label": "累計鑑定点数" },
+      { "value": "3,100+", "label": "月間鑑定件数" },
+      { "value": "71%", "label": "60日間の顧客継続率" }
     ],
-    "ctaTitle": "詳しくお知りになりたいですか？",
+    "note": "数値はCyberport Incubation Programmeへの提出資料に基づきます。"
+  },
+  "testimonials": {
+    "title": "パートナーの声",
+    "description": "真贋鑑定を固定費からインフラへと転換したマーケットプレイス運営者の声",
+    "items": [
+      {
+        "quote": "真贋鑑定は当社最大の固定費であり、最も時間のかかる工程でした。SneakersLiteの導入後は結果ごとの従量課金に移行し、難しいケースには人による確認経路を残したまま、確認率が月を追うごとに下がっていくのを確認できました。購入者はその裏側を一切目にしません。届いた商品が鑑定済みであることだけを目にするのです。",
+        "role": "オペレーションリード",
+        "company": "Novelship"
+      },
+      {
+        "quote": "拡大するカタログに人員を増やさずに追いつける鑑定体制が必要でした。SneakersLiteはモデル単位のカバレッジ、すべての結果に明確な信頼度スコア、そしてエッジケース向けの確認経路を提供してくれました。連携にかかったのは数か月ではなく数日です。",
+        "role": "オペレーション責任者",
+        "company": "Silver Star"
+      }
+    ]
+  },
+  "presence": {
+    "title": "事業展開地域",
+    "description": "アジア各地のパートナー市場。規制、購入者の期待、偽造品の傾向はそれぞれ異なります",
+    "readMore": "関連記事：",
+    "locations": [
+      { "flag": "🇭🇰", "name": "香港", "description": "本社およびアジア太平洋地域の運営拠点。PDPOに基づくデータ取り扱いと、公開済みのデータ保護フレームワーク。", "articleSlug": "authentication-compliance-asia", "articleLocale": "en", "articleTitle": "アジアの新しい消費者保護法がスニーカープラットフォームに意味すること（英語）" },
+      { "flag": "🇨🇳", "name": "中国", "description": "広州および中国本土の再販市場におけるB2B鑑定パートナー。PIPLとデータセキュリティ法への対応を組み込み済み。", "articleSlug": "authentication-compliance-asia-zh", "articleLocale": "zh", "articleTitle": "合規邏輯的底層演變：亞太監管新形勢下球鞋平台的必然選擇（中国語）" },
+      { "flag": "🇸🇬", "name": "シンガポール", "description": "東南アジア最大級の消費者向けスニーカーマーケットプレイスにサービスを提供。鑑定は購入者保証の一部です。", "articleSlug": "build-vs-buy-authentication", "articleLocale": "en", "articleTitle": "自社構築か外部委託か：マーケットプレイス運営者が鑑定を外部化する理由（英語）" },
+      { "flag": "🇰🇷", "name": "韓国", "description": "パートナー主導で韓国のプラットフォーム型再販市場へ展開。すべての商品に検品を求める購入者が待っています。", "articleSlug": "korea-japan-resale-authentication", "articleLocale": "en", "articleTitle": "韓国と日本：アジアで最も要求の厳しい再販市場に鑑定インフラが必要な理由（英語）" }
+    ],
+    "ctaTitle": "これらの市場で事業を運営されていますか？",
     "contact": "お問い合わせ"
   }
 }

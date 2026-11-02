@@ -89,15 +89,41 @@
       { "name": "Converse", "logo": "/images/brands/converse.svg" }
     ]
   },
-  "presence": {
-    "title": "Global Presence",
-    "description": "Strategically positioned to serve you worldwide",
-    "locations": [
-      { "flag": "🇭🇰", "name": "Hong Kong", "description": "Regional headquarters for APAC operations" },
-      { "flag": "🇨🇳", "name": "China", "description": "Major authentication and logistics hub" },
-      { "flag": "🇸🇬", "name": "Singapore", "description": "Global operational center" }
+  "metrics": {
+    "items": [
+      { "value": "34,200+", "label": "Items authenticated to date" },
+      { "value": "3,100+", "label": "Authentications per month" },
+      { "value": "71%", "label": "60-day customer retention" }
     ],
-    "ctaTitle": "Want to Learn more?",
-    "contact": "Contact Us"
+    "note": "Figures as reported in our Cyberport Incubation Programme submission."
+  },
+  "testimonials": {
+    "title": "What our partners say",
+    "description": "Marketplace operators on moving authentication from a fixed cost to infrastructure",
+    "items": [
+      {
+        "quote": "Authentication was our biggest fixed cost and our slowest step. With SneakersLite we moved to pay-per-result, kept a human-review path for the hard cases, and watched the review rate fall month on month. Buyers never see any of that — they just see that the item arrived verified.",
+        "role": "Operations Lead",
+        "company": "Novelship"
+      },
+      {
+        "quote": "We needed coverage that could keep pace with a growing catalogue without adding headcount. SneakersLite gave us model-level coverage, a clear confidence score on every result, and a review path for the edge cases. Integration took days, not months.",
+        "role": "Head of Operations",
+        "company": "Silver Star"
+      }
+    ]
+  },
+  "presence": {
+    "title": "Where We Operate",
+    "description": "Partner markets across Asia, each with its own regulation, buyer expectations, and counterfeit patterns",
+    "readMore": "Read:",
+    "locations": [
+      { "flag": "🇭🇰", "name": "Hong Kong", "description": "Headquarters and APAC operations. Data handled under the PDPO with a published data protection framework.", "articleSlug": "authentication-compliance-asia", "articleLocale": "en", "articleTitle": "What new consumer protection laws mean for sneaker platforms in Asia" },
+      { "flag": "🇨🇳", "name": "China", "description": "B2B authentication partners in Guangzhou and the mainland resale market, with PIPL and DSL compliance built in.", "articleSlug": "authentication-compliance-asia-zh", "articleLocale": "zh", "articleTitle": "合规逻辑的底层演变：亚太监管新形势下球鞋平台的必然选择" },
+      { "flag": "🇸🇬", "name": "Singapore", "description": "Serving Southeast Asia's largest consumer sneaker marketplaces, where authentication is a buyer guarantee.", "articleSlug": "build-vs-buy-authentication", "articleLocale": "en", "articleTitle": "Build vs buy: why marketplace operators are outsourcing authentication" },
+      { "flag": "🇰🇷", "name": "South Korea", "description": "Partner-led expansion into Korea's platform-driven resale market, where buyers expect every item inspected.", "articleSlug": "korea-japan-resale-authentication", "articleLocale": "en", "articleTitle": "Korea and Japan: why Asia's most demanding resale markets need authentication infrastructure" }
+    ],
+    "ctaTitle": "Operating in one of these markets?",
+    "contact": "Talk to us"
   }
 }

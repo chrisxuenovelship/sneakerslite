@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { localePath, type Locale } from '@/lib/i18n'
+import { isLocale, localePath, type Locale } from '@/lib/i18n'
 import type { Dictionary } from '@/lib/dictionary'
 
 interface PresenceProps {
@@ -20,34 +20,32 @@ export default function Presence({ locale, t }: PresenceProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {t.locations.map((location, index) => (
-            <button
-              key={index}
-              className="group p-8 rounded-xl border-2 border-gray-200 hover:border-brand-cyan bg-white hover:bg-gradient-to-br hover:from-cyan-50 hover:to-white transition-all duration-300 transform hover:scale-105 cursor-pointer text-center"
-            >
-              <div className="text-5xl mb-4 group-hover:scale-125 transition-transform">
-                {location.flag}
-              </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-2">
-                {location.name}
-              </h3>
-              <p className="text-gray-600 group-hover:text-brand-cyan transition">
-                {location.description}
-              </p>
-            </button>
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {t.locations.map((location) => {
+            // Articles live in one language; link to that language's URL regardless of UI locale.
+            const articleLocale = isLocale(location.articleLocale) ? location.articleLocale : locale
+            return (
+              <Link
+                key={location.name}
+                href={localePath(articleLocale, `/blog/${location.articleSlug}`)}
+                className="group flex flex-col p-8 rounded-lg border border-gray-200 hover:border-brand-cyan bg-white shadow-sm hover:shadow-lg transition"
+              >
+                <div className="text-4xl mb-4">{location.flag}</div>
+                <h3 className="text-xl font-bold text-brand-dark mb-2">{location.name}</h3>
+                <p className="text-gray-600 text-sm flex-1">{location.description}</p>
+                <p className="mt-6 text-sm font-semibold text-brand-cyan">
+                  {t.readMore} <span className="font-normal text-gray-600 group-hover:text-brand-cyan transition">{location.articleTitle}</span> →
+                </p>
+              </Link>
+            )
+          })}
         </div>
 
-        {/* Call to Action */}
         <div className="mt-16 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-brand-dark mb-6">
             {t.ctaTitle}
           </h3>
-          <Link
-            href={localePath(locale, '/contact')}
-            className="inline-block bg-brand-cyan hover:bg-cyan-700 text-white font-bold py-3 px-8 rounded-lg transition-colors"
-          >
+          <Link href={localePath(locale, '/contact')} className="btn-primary inline-block">
             {t.contact}
           </Link>
         </div>

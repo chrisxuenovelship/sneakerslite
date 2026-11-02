@@ -60,6 +60,7 @@ export default function Footer({ locale, t }: FooterProps) {
               <li className="text-gray-600">🇭🇰 {t.hongKong}</li>
               <li className="text-gray-600">🇨🇳 {t.china}</li>
               <li className="text-gray-600">🇸🇬 {t.singapore}</li>
+              <li className="text-gray-600">🇰🇷 {t.korea}</li>
             </ul>
           </div>
         </div>
