@@ -45,7 +45,7 @@
     "sneaker": "Jordan 12 Retro",
     "colorway": "블랙/화이트 색상 조합",
     "productDetails": [
-      { "label": "제품명", "value": "Jordan 1 Retro High OG" },
+      { "label": "제품명", "value": "Jordan 12 Retro" },
       { "label": "모델 ID", "value": "153265-006" },
       { "label": "GTIN", "value": "0195866361881" },
       { "label": "요청 ID", "value": "AUTH-2026-001945" }

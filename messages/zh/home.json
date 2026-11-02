@@ -45,7 +45,7 @@
     "sneaker": "Jordan 12 Retro",
     "colorway": "黑白配色",
     "productDetails": [
-      { "label": "产品名称", "value": "Jordan 1 Retro High OG" },
+      { "label": "产品名称", "value": "Jordan 12 Retro" },
       { "label": "型号 ID", "value": "153265-006" },
       { "label": "GTIN", "value": "0195866361881" },
       { "label": "请求 ID", "value": "AUTH-2026-001945" }
