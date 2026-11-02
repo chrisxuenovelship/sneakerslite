@@ -199,3 +199,7 @@ No restatement to 30%. Self-assessment wording supplied: 0.24 was fully-loaded (
 ## UPDATE 00:55 SGT 03/11 — P&L closed (ts `1793637167.433819`, answered `1793637208.357789`)
 
 Column L fixed and verified (professional 78,040 / expenses 274,866.14 / net 10,220.86). Chris: items 2–3 (contractor note, Novelship billing) handled verbally if asked; p4 monthly local revenue = 0. Milestone 1 proof: form's own proof list says "payment record"; if none from 佳超/Silver Star by 29/9, use agreement + first invoice + usage evidence (API key, first authentications, dated dashboard screenshot) and state payment terms fall in Stage 3. Finance re-checks the sheet in the morning; no further sheet edits expected.
+
+## UPDATE 01:20 SGT 03/11 — Doc placeholders filled at Chris's request (targeted replaceAllText only, no body re-push)
+
+Doc had been edited by someone else at 00:48 (REVENUE placeholders already filled there). Applied: P01 Q4 2024; P02 Q2 2025; P03 source "Direct (founder-led)", Q3 2026; P-04 source "Direct (founder-led)", segment A→C (cell edit), next action "KR export catalogue"; §2.3 Silver Star 3PL sentence; §6.1 "Korean 3PL"; §7.1 bullet with 佳超/Silver Star and pre-incubation clients. Remaining in Doc: `{{P05_*}}`, `{{P06_*}}` (fill one real open opportunity each or delete the rows), `{{MONTHLY_VOLUME}}`, `{{TOTAL_VERIFIED}}`, `{{RETENTION_60D}}`, and P-01/P-02 source cells still read "Existing partner" (markdown says "(pre-incubation)"; cosmetic).
