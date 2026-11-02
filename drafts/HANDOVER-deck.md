@@ -144,3 +144,13 @@ Not in the workbook: items verified to date, monthly authentication volume, 60-d
 8. **Stage 1 B-1 table in the form carries two stray template rows ("…… 10% / 100% / 10%")** that are not in the sub-total (55% = 25+30+0). When the Stage 2 B-1 is filled in, delete the "……" rows so the reviewer cannot read the sub-total as 75%.
 
 Figures context from the form: Stage 1 clients were Dong Yi Hai Wai and Novelship (confirm whether Dong Yi Hai Wai is the legal entity of 潮盟 国际版 — the framework's P-02); Stage 1 result 75% (SMO 600-organic milestone scored 0%); "3,100+ monthly / 34,200+ total" were as of April 2026 and are stale for the Stage 2 review. Self-assessment unit economics: PRO USD 0.80/result, COGS USD 0.24/result → Stage 2 revenue implies ≈29,800 results (≈5,000/month) and COGS ≈HK$55,700, whereas the P&L books COGS of 11,756 (6.3%). The reviewer holds both documents; Chris's finance tabulation must reconcile volume × price = revenue and COGS before anything is filled.
+
+## UPDATE 19:40 SGT — client mapping from Chris (supersedes earlier assumptions)
+
+- 潮盟 国际版 = Dong Yi Hai Wai: closed **before** CIP started → pre-incubation client, not a Stage 2 count. (Earlier "Client A mainland China (start of window)" on p6 is wrong.)
+- **佳超** (mainland China): closed last quarter (Q3 2026, inside the window) → Stage 2 new client #1.
+- **Silver Star = the Korean partner** (closed September 2026) → Stage 2 new client #2. It is NOT a Hong Kong inspection house; the earlier framework draft listed it under Segment C / Hong Kong — corrected in `drafts/sales-partnership-framework-v1.md` (§2.3 reference partner removed; §7.1 names 佳超 and Silver Star; §7.2 P-04 South Korea = Silver Star, P-05 no longer assumed HK).
+
+Doc edits required (host; the Doc still has the old text): §2.3 bullet "Reference partner: Silver Star." → "Reference partner: none yet; target segment for Stage 3 outbound (Hong Kong and Korea)."; §7.1 first bullet → text at markdown line 149; §7.2 table rows P-01..P-06 → the five rows at markdown lines 159–163 (P-06 dropped). Deck p6 elaboration: Client A = 佳超, mainland China, Q3 2026; Client B = Silver Star, South Korea, September 2026; both agreements dated inside 30/3–29/9/2026 — confirm 佳超's signature date is on or after 30/3/2026.
+
+Site: the "Head of Operations, Silver Star" testimonial is segment-neutral and stays; Presence card for South Korea already links to the Korea article. No site change from this.

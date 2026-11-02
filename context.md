@@ -144,7 +144,9 @@ B2C via Partners (affiliate):
 
 ### Existing Partners
 - Novelship — largest SEA B2C sneaker marketplace
-- 潮盟 国际版 — Guangzhou's largest B2B sneaker seller
+- 潮盟 国际版 (legal entity Dong Yi Hai Wai) — Guangzhou B2B sneaker seller; pre-incubation client
+- 佳超 — mainland China B2B client, closed Q3 2026 (Stage 2 new client #1)
+- Silver Star — South Korean platform partner, closed Sept 2026 (Stage 2 new client #2)
 
 ### Supported Brands
 Current: Jordan, Nike, Adidas, YZY, New Balance, ASICS, Converse (ASICS + Converse confirmed by user 02/11/2026)

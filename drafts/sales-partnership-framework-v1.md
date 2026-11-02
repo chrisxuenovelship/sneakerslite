@@ -41,7 +41,7 @@ SneakersLite sells to organisations that authenticate sneakers at volume as part
 - Buyer of record: Head of Operations; the platform client is often the sponsor.
 - Volume band: 1,000 to 15,000 items per month across several end clients.
 - Trigger: a client contract requires a defined authentication process; staff turnover in the inspection team; need to add brands without adding specialists.
-- Reference partner: Silver Star.
+- Reference partner: none yet; target segment for Stage 3 outbound (Hong Kong and Korea).
 - Disqualifiers: inspection is a loss-leader with no budget line; the house cannot agree data-sharing terms with its end clients.
 
 ### 2.4 Qualification gate
@@ -146,7 +146,7 @@ Every partnership agreement records: tier; term and renewal; volume commitment; 
 
 ### 7.1 Commercial outcomes
 
-- New B2B clients onboarded: 2 (one mainland Chinese client closed immediately before the Stage 1 review; one Korean platform partner closed September 2026). Milestone target: 2.
+- New B2B clients onboarded in the window: 2 — 佳超 (mainland China, Segment B, closed Q3 2026) and Silver Star (South Korea platform, Segment A, closed September 2026). Milestone target: 2. The pre-incubation clients (Novelship, Singapore; 潮盟 国际版 / Dong Yi Hai Wai, Guangzhou) are not counted.
 - Cumulative revenue against the HKD 250,000 Stage 2 target: {{REVENUE_HKD}} (source: finance sheet, {{REVENUE_AS_OF_DATE}}).
 - Monthly authentication volume at window close: {{MONTHLY_VOLUME}}; items verified to date: {{TOTAL_VERIFIED}}; 60-day retention: {{RETENTION_60D}}.
 
@@ -156,12 +156,11 @@ Each row is one organisation. Names are withheld in the Cyberport copy; the inte
 
 | Ref | Segment | Market | Source | Stage reached | Date of last stage change | Next action |
 |---|---|---|---|---|---|---|
-| P-01 | A | Singapore | Existing partner | Live | {{P01_DATE}} | Quarterly review |
-| P-02 | B | Guangzhou | Existing partner | Live | {{P02_DATE}} | Quarterly review |
-| P-03 | B | Mainland China | {{P03_SOURCE}} | Live | {{P03_DATE}} | Day-60 retention check |
-| P-04 | A | South Korea | Partner-led | Live | September 2026 | Coverage expansion for KR catalogue |
-| P-05 | C | Hong Kong | {{P05_SOURCE}} | {{P05_STAGE}} | {{P05_DATE}} | {{P05_NEXT}} |
-| P-06 | {{P06_SEGMENT}} | {{P06_MARKET}} | {{P06_SOURCE}} | {{P06_STAGE}} | {{P06_DATE}} | {{P06_NEXT}} |
+| P-01 | A | Singapore | Existing partner (pre-incubation) | Live | {{P01_DATE}} | Quarterly review |
+| P-02 | B | Guangzhou | Existing partner (pre-incubation) | Live | {{P02_DATE}} | Quarterly review |
+| P-03 | B | Mainland China | {{P03_SOURCE}} | Live | {{P03_DATE}} (Q3 2026) | Day-60 retention check |
+| P-04 | A | South Korea | {{P04_SOURCE}} | Live | September 2026 | Coverage expansion for KR catalogue |
+| P-05 | {{P05_SEGMENT}} | {{P05_MARKET}} | {{P05_SOURCE}} | {{P05_STAGE}} | {{P05_DATE}} | {{P05_NEXT}} |
 
 ### 7.3 Assets built in the window
 
