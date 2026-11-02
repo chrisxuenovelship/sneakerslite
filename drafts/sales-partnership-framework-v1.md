@@ -231,3 +231,90 @@ The pipeline register is a Google Sheet owned by the CEO, with one row per oppor
 ## 11. Version History
 
 - Version 1.0, November 2026: initial framework. Established for Cyberport Incubation Programme Stage 2 and adopted as the operating document for the Stage 3 window.
+
+## Appendix A. Pricing Matrix (finalised, effective November 2026)
+
+### A.1 B2B pay-per-result
+
+| Tier | Monthly volume | Price per result (USD) | Saving vs USD 4.00 human benchmark | Human review path | Integration | Support | Reporting |
+|---|---|---|---|---|---|---|---|
+| STANDARD | up to 1,000 | 2.00 | 50% | Included, 24h target | Dashboard + REST API | Email, next business day | Monthly summary |
+| PLUS | 1,001 to 2,000 | 1.30 | 68% | Included, 24h target | Dashboard + REST API | Email, same business day | Monthly summary + review-rate curve |
+| PRO | above 2,000 | 0.80 | 80% | Included, 12h target | Dashboard + REST API + batch submission | Named contact | Weekly report + coverage gap list |
+| ENTERPRISE | above 10,000 | Quoted | Quoted | Agreed SLA | API + in-region or client-hosted data path | Named contact + quarterly review | Custom |
+
+Rules: the tier is set by the trailing three-month average volume and reviewed quarterly; a client moving up a tier is re-rated from the next invoice; no discounts below the published price; pilot fees are credited per section 5.2; prices exclude taxes; invoicing monthly in arrears, 30-day terms.
+
+### A.2 Pilot
+
+| Item | Term |
+|---|---|
+| Duration | 30 days, one 15-day extension |
+| Minimum volume | 300 submissions |
+| Price | STANDARD tier, invoiced at pilot end |
+| Credit | 100% of pilot fees credited against month one if signed within 30 days of the pilot report |
+| Deliverable | Pilot report: volume, weekly review rate, coverage gaps by model, disputes, cost versus client baseline |
+
+### A.3 B2C via partners (affiliate)
+
+| Plan | Revenue share | Minimum per transaction (USD) | Partner obligation |
+|---|---|---|---|
+| STANDARD | 15% of profit | 15 | Expose SneakersLite authentication as a paid consumer service; monthly reconciliation |
+| ADVANCED | 10% of profit | 12 | As STANDARD plus a minimum of 500 consumer authentications per month |
+
+### A.4 Partner pricing adjustments
+
+| Partner tier | Pricing effect |
+|---|---|
+| Launch partner | Agreed tier locked for 12 months regardless of volume dips |
+| Integration partner | One tier below the partner's standalone volume on resold results |
+| Channel partner | 10% of first-year net revenue on introduced clients that reach Live, paid quarterly |
+
+## Appendix B. Partnership Agreement Templates
+
+Each template is a term sheet. Square-bracketed fields are completed per deal; the CEO signs; the BD Lead files the signed copy in the partner register. Governing law Hong Kong unless agreed otherwise. The Data Protection Framework is annexed to every agreement.
+
+### B.1 Launch Partner Term Sheet
+
+1. Parties: Primefleet Digital Hong Kong Limited ("SneakersLite") and [Partner legal name] ("Partner"), [jurisdiction].
+2. Purpose: Partner is SneakersLite's launch partner in [market] for AI sneaker authentication.
+3. Term: 12 months from [start date], renewing annually unless either party gives 60 days' notice.
+4. Volume commitment: Partner submits a minimum of [N] results per month from month [M].
+5. Pricing: [tier] at USD [price] per result, locked for the term regardless of monthly volume; pilot credit of USD [amount] applied to month one.
+6. Service: dashboard and REST API access; human review path with [24/12]-hour target; monthly report including review-rate curve and coverage gaps.
+7. Coverage: priority on model-coverage requests for Partner's top [20] models; model list disclosed and updated monthly.
+8. Data handling: [Hong Kong PDPO path / in-region path / client-hosted path]; human-reviewed cases returned to training under the agreed path; retention [period]; Data Protection Framework annexed.
+9. Partner obligations: one reference call per quarter for a SneakersLite prospect; a named testimonial or quote; co-authored case study, each published only with Partner's written approval.
+10. Naming rights: SneakersLite may name Partner publicly only after written approval; Partner may describe SneakersLite as its authentication provider.
+11. Fees and invoicing: monthly in arrears, 30-day terms, USD.
+12. Termination: either party on 60 days' notice; immediately for material breach uncured within 30 days or for a data-protection breach.
+13. Contacts: SneakersLite [name, role]; Partner [name, role].
+
+### B.2 Integration Partner Term Sheet
+
+1. Parties: Primefleet Digital Hong Kong Limited ("SneakersLite") and [Partner legal name] ("Partner"), [jurisdiction].
+2. Purpose: Partner embeds the SneakersLite API in its [inspection / logistics / software] service to its own clients ("End Clients").
+3. Term: 12 months from [start date], renewing annually unless either party gives 60 days' notice.
+4. Pricing: wholesale pricing one tier below Partner's standalone volume tier on all results resold to End Clients; Partner sets its own price to End Clients.
+5. Revenue share or referral: [X]% of first-year net revenue on End Clients that contract directly with SneakersLite through Partner's introduction, paid quarterly.
+6. Technical onboarding: integration per the SneakersLite integration playbook; sandbox access; go-live checklist signed by both parties.
+7. Support: Partner provides first-line support to End Clients; SneakersLite provides second-line support with a [next business day] response target.
+8. Joint go-to-market: at least one named End Client launched jointly per six months; SneakersLite lists Partner as an integration partner on sneakerslite.com once live.
+9. Data handling: Partner is responsible for End Client consent and data path selection; SneakersLite processes under [path]; Data Protection Framework annexed.
+10. Branding: Partner may state "authentication powered by SneakersLite"; no other use of marks without written approval.
+11. Fees and invoicing: monthly in arrears, 30-day terms, USD; reconciliation statement of resold results each month.
+12. Termination: either party on 60 days' notice; immediately for material breach uncured within 30 days or for a data-protection breach.
+13. Contacts: SneakersLite [name, role]; Partner [name, role].
+
+### B.3 Channel Partner (Referral) Term Sheet
+
+1. Parties: Primefleet Digital Hong Kong Limited ("SneakersLite") and [Partner legal name or individual] ("Referrer").
+2. Purpose: Referrer introduces qualified prospects to SneakersLite; no integration or volume obligation.
+3. Term: 12 months from [start date], renewing annually unless either party gives 30 days' notice.
+4. Qualified introduction: a warm introduction to the buyer of record at an organisation meeting the ideal customer profile in section 2, recorded in the pipeline register with Referrer named as source within 5 working days.
+5. Referral fee: 10% of first-year net revenue received from an introduced client that reaches Live, paid quarterly against SneakersLite's statement; no fee on renewals or on clients already in the register.
+6. Collateral: SneakersLite supplies a one-page overview, the pricing sheet and relevant articles; Referrer makes no pricing or service commitments on SneakersLite's behalf.
+7. Conduct: no cold mass outreach in SneakersLite's name; compliance with applicable anti-bribery law; Referrer discloses the arrangement to the prospect.
+8. Confidentiality: pipeline and pricing information shared under this agreement is confidential.
+9. Termination: either party on 30 days' notice; fees on introductions made before termination remain payable for the first year of each client.
+10. Contacts: SneakersLite [name, role]; Referrer [name, role].
