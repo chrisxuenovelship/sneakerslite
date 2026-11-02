@@ -183,3 +183,10 @@ Live sheet now: Stage 3 forecast R&D 40,000 (was 45,000), COGS 20,000, expenses 
 ## UPDATE 22:25 SGT — COGS explanation agreed (finance ts `1793628396.454159`, answered `1793628447.396229`)
 
 No restatement to 30%. Self-assessment wording supplied: 0.24 was fully-loaded (inference + cloud/data + human review); booked direct COGS ≈ USD 0.06 (7.9%, from 9.2%); cloud under line 6, review in staffing; Stage 3 forecast holds 8% with cloud rising for certificate-portal and new-brand R&D. Finance's "economies of scale next 6 months" line dropped — contradicts the Stage 3 forecast.
+
+## UPDATE 22:30 SGT — agreed PPT wording for revenue (thread ts `1793628744.429729`)
+
+- p4 `p4_i149` row 2: Stage 2 · Oct 2026 · team 2 / HK [n] · monthly total revenue **30,964** · monthly local revenue [pending finance] · investment 0 / 0.
+- p8 `p8_i178`: "Achieved — HK$311,399 cumulative revenue since commencement (Stage 1 HK$125,615 + Stage 2 HK$185,784) against the HK$250,000 target, 125%. Stage 2 revenue grew 48% on Stage 1 and 31% above forecast. Proof: invoices and bank records, P&L report."
+- p2 revenue bullet: "Cumulative revenue HK$311,399 at 29/9/2026, 125% of the Stage 2 target; Stage 2 run-rate HK$30,964/month; direct COGS 7.9%."
+- Sheet edits still due from finance: 72,000 line 5 → line 4 with E30 note; billing-locale answer.
