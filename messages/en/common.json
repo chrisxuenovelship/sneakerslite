@@ -16,11 +16,14 @@
     "about": "About",
     "security": "Security",
     "contact": "Contact",
+    "pricing": "Pricing",
     "presence": "Our Presence",
     "hongKong": "Hong Kong",
     "china": "China",
     "singapore": "Singapore",
-    "copyright": "© 2026 SneakersLite. All rights reserved."
+    "copyright": "© 2026 SneakersLite. All rights reserved.",
+    "legal": "SneakersLite is operated by Prime Fleet, a company incorporated in Hong Kong.",
+    "privacy": "Privacy & Data Protection"
   },
   "notFound": {
     "title": "Page not found",

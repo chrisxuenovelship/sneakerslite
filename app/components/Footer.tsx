@@ -41,6 +41,11 @@ export default function Footer({ locale, t }: FooterProps) {
                 </Link>
               </li>
               <li>
+                <Link href={localePath(locale, '/pricing')} className="text-gray-600 hover:text-brand-cyan text-sm">
+                  {t.pricing}
+                </Link>
+              </li>
+              <li>
                 <Link href={localePath(locale, '/contact')} className="text-gray-600 hover:text-brand-cyan text-sm">
                   {t.contact}
                 </Link>
@@ -59,8 +64,15 @@ export default function Footer({ locale, t }: FooterProps) {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 pt-8">
-          <p className="text-center text-gray-600 text-sm">{t.copyright}</p>
+        <div className="border-t border-gray-200 pt-8 text-center text-gray-600 text-sm space-y-2">
+          <p>{t.legal}</p>
+          <p>
+            {t.copyright}
+            <span className="mx-2 text-gray-400">·</span>
+            <Link href={localePath(locale, '/data-protection-framework')} className="hover:text-brand-cyan">
+              {t.privacy}
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

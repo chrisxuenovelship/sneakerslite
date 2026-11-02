@@ -16,11 +16,14 @@
     "about": "会社概要",
     "security": "セキュリティ",
     "contact": "お問い合わせ",
+    "pricing": "料金",
     "presence": "事業展開地域",
     "hongKong": "香港",
     "china": "中国",
     "singapore": "シンガポール",
-    "copyright": "© 2026 SneakersLite. All rights reserved."
+    "copyright": "© 2026 SneakersLite. All rights reserved.",
+    "legal": "SneakersLiteは、香港で設立された企業Prime Fleetが運営しています。",
+    "privacy": "プライバシーとデータ保護"
   },
   "notFound": {
     "title": "ページが見つかりません",
