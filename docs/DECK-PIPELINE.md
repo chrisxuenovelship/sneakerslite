@@ -6,12 +6,12 @@ Google Slides, edit it, until I approve the slides for the review presentation")
 
 ## The loop
 
-1. **Chris drops a file** (.pptx/.ppt/.xlsx/.xls/.csv) in his Slack direct message with **Ops Improver**
+1. **Chris drops a file** (.pptx/.ppt/.xlsx/.xls/.csv/.docx/.doc/.md) in his Slack direct message with **Ops Improver**
    (channel `D0C4F2KGVP1`, the loss owner's bot). Within a minute `deck-drop` (root cron) downloads it to
    `inbox/` here and appends a line to `inbox/manifest.jsonl`; one line is typed on this session's screen.
    The desk sorter also files the message to this session's inbox (`desk inbox` from this folder; owner key
    `cyberport`) and claims the thread, so Chris's replies in that thread come here too.
-2. **Convert:** `deck import inbox/<file>` → Google Slides (Excel → Google Sheets) in the shared drive
+2. **Convert:** `deck import inbox/<file>` → Google Slides (Excel → Google Sheets, Word/Markdown → Google Docs) in the shared drive
    *Cyberport review deck*. It prints the link. Give Chris the link in the same thread:
    `deck say "Slides: <link>. Editing now." --thread <ts> --live` (ts = the drop's `root_ts` from `deck inbox`).
 3. **Edit** with the Slides API through `deck`:
@@ -29,11 +29,12 @@ Google Slides, edit it, until I approve the slides for the review presentation")
 
 ```
 deck inbox [--all]                  what Chris dropped, newest first, with import status
-deck import <file> [--name "…"]     PPT → Slides, Excel/CSV → Sheets; prints link and id
-deck links                          every document made so far
-deck slides <id>                    structure and text; --batch <req.json> applies edits
+deck import <file> [--name "…"]     PPT → Slides, Excel/CSV → Sheets, Word/Markdown → Docs; prints link and id
+deck links                          everything in the shared drive, newest change first (yours, Chris's, any tool's)
+deck slides <id>                    structure and text; --batch <req.json> applies Slides API edits
 deck sheet <id>                     spreadsheet cells as tab-separated text
-deck export <id> [--to <path>]      Slides → .pptx (Sheets → .xlsx) into exports/
+deck doc <id>                       Google Doc as text with @character-indexes and styles; --batch <req.json> applies Docs API edits
+deck export <id> [--to <path>]      Slides → .pptx, Sheets → .xlsx, Docs → .docx into exports/
 deck send <file> --thread <ts> [--text "…"]   file back to Chris in the drop thread (through Ops Improver)
 deck say "<text>" --thread <ts> [--live]      signed reply in the thread (desk post as cyberport; preview without --live)
 ```
