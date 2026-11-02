@@ -103,3 +103,29 @@ Open promises now transferred to the host: fill PENDING cells from the Excel; ad
 ## Website items still with the sneakerslite session (for the host's awareness only)
 
 Update the home metrics strip when figures arrive; patch brand articles §4 when Chris sends the per-brand model list; Resend DNS (records go in Vercel DNS, not Namecheap) then `CONTACT_FROM` env; JA/KO native copy review.
+
+## UPDATE 18:58 SGT — Excel received (revenue only)
+
+Chris dropped `inbox/202611021858-Cyberport Incubation Programme _ P_L Report of Incubatee_Primefleet.xlsx` (thread ts `1793617129.410629`) with: "Financials and Revenue for the sneakerslite session, **no need create in Google Drive. Pass to the session only.**" → not imported to Drive, by his instruction. Single sheet `P&L Report`, HK$:
+
+| Line | Stage 1 forecast | Stage 1 actual (30/9/25–29/3/26) | Stage 2 forecast | **Stage 2 actual (30/3/26–29/9/26)** | Stage 3 forecast |
+|---|---|---|---|---|---|
+| Sales & Revenue | 246,000 | 125,615 | 141,321 | **185,784** | 250,000 |
+| COGS | — | 11,556 | 9,963 | 11,756 | 15,000 |
+| Gross profit | 246,000 | 114,059 | 131,358 | 174,028 | 235,000 |
+| Promotion & marketing | — | 17,716 | 25,000 | 28,843 | 35,000 |
+| Professional services | 5,500 | 2,750 | 4,000 | 3,290 | 4,000 |
+| Staffing (full-time, excl. founder) | 48,000 | 72,000 | 96,000 | 100,800 | 100,800 |
+| Cloud/data subscriptions | — | 8,571 | 6,830 | 16,398.14 | 23,000 |
+| R&D hardware/software | — | 6,985 | 7,133 | 21,598.14 | 45,000 |
+| Total expenses | 53,500 | 108,022 | 138,963 | 170,929.28 | 207,800 |
+| Net profit | 192,500 | 6,037 | −7,605 | 3,098.72 | 27,200 |
+
+Derived: cumulative revenue since commencement (Stage 1 + Stage 2 actual) = **311,399**; Stage 2 average monthly revenue = 185,784 / 6 ≈ **30,964**; Stage 2 actual beat its own forecast by 31% (185,784 vs 141,321).
+
+Where it goes:
+- p8 `p8_i178` and p2 revenue bullet, Doc `{{REVENUE_HKD}}` / `{{REVENUE_AS_OF_DATE}}` (as of 29/9/2026): **decide the reading of "HK$250,000 cumulative revenue by end of Stage 2" with Chris before filling.** Cumulative since incubation start = 311,399 (target met, 125%); Stage 2 window alone = 185,784 (74%, not met). The milestone text in context.md says "cumulative", which supports 311,399, and the P&L column headers show both periods so the reviewer can see the arithmetic. Recommend stating both numbers on p8.
+- p4 `p4_i149` row 2 col 5 "Monthly total revenue": ~30,964 (Stage 2 average) — or the actual September 2026 month if Chris has it; col 6 "Monthly local (HK) revenue": not in the workbook, ask Chris.
+- Note the earlier CIP figure "HK$122K monthly revenue" in context.md does not reconcile with this P&L (would be ~730k per stage); use the P&L, it is the audited-style document Cyberport receives.
+
+Not in the workbook: items verified to date, monthly authentication volume, 60-day retention. Website metrics strip, p2 traction bullet, and Doc §3 / `{{TOTAL_VERIFIED}}` / `{{MONTHLY_VOLUME}}` / `{{RETENTION_60D}}` still wait on Chris.
