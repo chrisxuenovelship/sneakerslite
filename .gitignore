@@ -37,3 +37,7 @@ lerna-debug.log*
 .turbo
 .turborc.json
 .vercel
+
+# Cyberport deck pipeline (host, 2 Nov 2026): files Chris drops in Slack and exports back to him
+inbox/
+exports/

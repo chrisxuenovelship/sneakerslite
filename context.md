@@ -69,6 +69,7 @@ real data before final publish.
 3. CMS migration: backfill applied 02/11/2026 (6 docs patched). Script retained for future legacy docs; `--dry-run` previews.
 4. Publishing: `node --env-file=.env.local scripts/sanity-publish.mjs publish drafts/<file>.md --dry-run` previews Portable Text. Drop `--dry-run` to write. Token lives only in `.env.local` (gitignored) as `SANITY_EDITOR_TOKEN`. Articles appear on the site within 30s, no deploy needed.
 5. Deployment: `git push origin master` → Vercel builds and goes live in ~2–3 min (verified 02/11/2026). GitHub SSH auth works from this server. Vercel CLI has no auth and is not needed.
+6. Cyberport review deck (host-built, 02/11/2026): Chris drops PPT/Excel in his Slack DM with Ops Improver → lands in `inbox/` within a minute (a line is typed on this screen) → `deck import` makes Google Slides/Sheets in the shared drive "Cyberport review deck" → edit via `deck slides <id> --batch req.json` → when Chris approves in the thread, `deck export` + `deck send`. Full guide: `docs/DECK-PIPELINE.md`. Replies to Chris only via `deck say` (signed, through the desk).
 
 ## Environment Variables
 All set correctly in Vercel as of 04/04/2026:
