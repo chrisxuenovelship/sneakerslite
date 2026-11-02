@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Pricing | SneakersLite",
+    "description": "Simple pay-per-result sneaker authentication pricing. No setup fee or monthly minimum; rates decrease as your monthly volume grows."
+  },
+  "hero": {
+    "headingStart": "Simple, ",
+    "headingHighlight": "pay-per-result",
+    "headingEnd": " pricing",
+    "description": "No setup fee. No monthly minimum. Your price per result falls as your volume grows."
+  },
+  "tiers": {
+    "standard": { "name": "STANDARD", "price": "$2.00", "volume": "Up to 1,000 results / month" },
+    "plus": { "name": "PLUS", "price": "$1.30", "volume": "1,001–2,000 results / month" },
+    "pro": { "name": "PRO", "price": "$0.80", "volume": "Over 2,000 results / month" },
+    "perResult": "/ result",
+    "badge": "Most common for marketplaces",
+    "features": [
+      "Dashboard + REST API",
+      "Confidence score + verification breakdown",
+      "Human-review path for below-threshold cases",
+      "Jordan, Nike, Adidas, YEEZY, New Balance, ASICS, Converse"
+    ],
+    "cta": "Talk to sales"
+  },
+  "calculator": {
+    "title": "Estimate your monthly cost",
+    "description": "Move the slider to see your rate at a given number of completed results per calendar month. The tier reached applies to every result that month.",
+    "volumeLabel": "Completed results per month",
+    "currentTier": "Current tier",
+    "costPerResult": "Cost per result",
+    "monthlyCost": "Estimated monthly cost",
+    "monthlySaving": "Estimated monthly saving vs. human authentication",
+    "humanComparison": "Compared with approximately $4.00 per human-authenticated result",
+    "percentSaving": "{percent}% less"
+  },
+  "enterprise": {
+    "title": "Need an enterprise plan?",
+    "description": "Above 10,000 results a month or need custom SLAs or an on-prem review workflow? Talk to sales.",
+    "cta": "Talk to sales"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "question": "What counts as a result?", "answer": "One completed authentication decision counts as one result." },
+      { "question": "Is there a minimum commitment?", "answer": "No. There is no setup fee and no monthly minimum." },
+      { "question": "How is the tier determined?", "answer": "Your tier is determined by completed results in the calendar month. All results that month are billed at the tier reached." },
+      { "question": "What happens below the confidence threshold?", "answer": "The case is routed to human review and still counts as one result." }
+    ]
+  }
+}

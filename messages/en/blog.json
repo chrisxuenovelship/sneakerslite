@@ -6,7 +6,8 @@
     "openGraphDescription": "Insights on sneaker authentication and verification"
   },
   "header": {
-    "title": "Authentication Insights",
+    "headingStart": "Authentication ",
+    "headingHighlight": "Insights",
     "description": "Real stories. Real solutions. Case studies on authenticating brand products."
   },
   "filter": {
@@ -17,6 +18,7 @@
     "notFoundMetaTitle": "Article Not Found | SneakersLite",
     "backToBlog": "Back to Blog",
     "bodyUnavailable": "Article body is loading or not available. Check Sanity CMS.",
+    "related": "Related articles",
     "cta": {
       "title": "Ready to Authenticate Your Products?",
       "description": "Learn how SneakersLite can help you verify products with speed, accuracy, and consistency.",

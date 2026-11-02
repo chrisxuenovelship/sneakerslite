@@ -61,6 +61,10 @@ export const translationsQuery = `
   *[_type == "article" && translationKey == $translationKey && slug.current != $slug] { language, slug }
 `
 
+export const relatedArticlesQuery = `
+  *[_type == "article" && coalesce(language, "en") == $language && _id != $id && (!defined($translationKey) || coalesce(translationKey, "") != $translationKey)] | order(publishedAt desc) { ${articleFields} }
+`
+
 
 export async function getAllArticles(): Promise<ArticleSummary[]> {
   try {
@@ -95,6 +99,24 @@ export async function getArticleTranslations(
     return await sanityClient.fetch<ArticleTranslation[]>(translationsQuery, { translationKey, slug })
   } catch (error) {
     console.error('Failed to fetch article translations:', error)
+    return []
+  }
+}
+
+/** Same-language articles, prioritising the current category before recency. */
+export async function getRelatedArticles(current: Article): Promise<ArticleSummary[]> {
+  try {
+    const candidates = await sanityClient.fetch<ArticleSummary[]>(relatedArticlesQuery, {
+      language: current.language ?? 'en',
+      id: current._id,
+      translationKey: current.translationKey ?? null,
+    })
+    return (candidates || [])
+      .filter((candidate) => candidate.slug?.current && candidate.slug.current !== current.slug.current)
+      .sort((a, b) => Number(Boolean(current.category && b.category === current.category)) - Number(Boolean(current.category && a.category === current.category)))
+      .slice(0, 3)
+  } catch (error) {
+    console.error('Failed to fetch related articles:', error)
     return []
   }
 }

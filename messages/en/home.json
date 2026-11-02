@@ -21,6 +21,24 @@
       { "title": "CONSISTENT", "description": "Industry-leading accuracy and reliability. Every authentication backed by rigorous standards and expertise.", "icon": "✓" }
     ]
   },
+  "howItWorks": {
+    "title": "How authentication works",
+    "description": "A clear path from image submission to an actionable result.",
+    "steps": [
+      { "title": "Submit", "description": "Capture guided photos of the lateral, medial, heel, toe box, outsole, insole, size tag, and box label through the app or API." },
+      { "title": "Standardise", "description": "Pose estimation and OpenCV-based normalisation bring each image to a consistent angle and scale." },
+      { "title": "Analyse", "description": "We analyse colour, texture, and shape ratio, then use OCR to check barcodes, QR codes, and typography on tags and labels." },
+      { "title": "Decide", "description": "Signals combine into a confidence score with a verification breakdown. Below-threshold cases go to human review, never a forced verdict." },
+      { "title": "Deliver", "description": "The result is returned to your dashboard or via REST API, with its ID stored against the transaction." }
+    ],
+    "facts": [
+      "REST API, integrates in days",
+      "Pay per result — no fixed cost, from USD 0.80",
+      "Human-review path built in",
+      "Jordan, Nike, Adidas, YEEZY, New Balance, ASICS, Converse covered"
+    ],
+    "cta": "Talk to us about integration"
+  },
   "dashboard": {
     "title": "Advanced Authentication Dashboard",
     "description": "Live dashboard used by our partners to manage and track authentication requests at scale",

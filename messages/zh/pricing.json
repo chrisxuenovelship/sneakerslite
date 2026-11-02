@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "价格 | SneakersLite",
+    "description": "简单的按鉴定结果计费方案。无开通费、无每月最低消费；月鉴定量越大，单次价格越低。"
+  },
+  "hero": {
+    "headingStart": "简单的",
+    "headingHighlight": "按结果付费",
+    "headingEnd": "定价",
+    "description": "无开通费，无每月最低消费。鉴定量越大，单次价格越低。"
+  },
+  "tiers": {
+    "standard": { "name": "标准版", "price": "$2.00", "volume": "每月不超过 1,000 次结果" },
+    "plus": { "name": "进阶版", "price": "$1.30", "volume": "每月 1,001–2,000 次结果" },
+    "pro": { "name": "专业版", "price": "$0.80", "volume": "每月超过 2,000 次结果" },
+    "perResult": "/ 次结果",
+    "badge": "交易平台最常选择",
+    "features": [
+      "管理后台 + REST API",
+      "置信度评分 + 鉴定依据明细",
+      "低于置信度阈值时转入人工复核",
+      "支持 Jordan、Nike、Adidas、YEEZY、New Balance、ASICS、Converse"
+    ],
+    "cta": "联系销售团队"
+  },
+  "calculator": {
+    "title": "估算每月费用",
+    "description": "拖动滑块，查看每个自然月完成指定鉴定量时的单次价格。达到的档位适用于当月全部结果。",
+    "volumeLabel": "每月完成的鉴定结果数",
+    "currentTier": "当前档位",
+    "costPerResult": "单次结果费用",
+    "monthlyCost": "预计每月费用",
+    "monthlySaving": "与人工鉴定相比预计每月节省",
+    "humanComparison": "按每次人工鉴定约 $4.00 计算",
+    "percentSaving": "节省 {percent}%"
+  },
+  "enterprise": {
+    "title": "需要企业方案？",
+    "description": "每月超过 10,000 次结果，或需要定制 SLA、内部部署的复核流程？请联系销售团队。",
+    "cta": "联系销售团队"
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": [
+      { "question": "什么算一次结果？", "answer": "每完成一次鉴定决策，计为一次结果。" },
+      { "question": "有最低消费要求吗？", "answer": "没有。无开通费，也无每月最低消费。" },
+      { "question": "如何确定价格档位？", "answer": "根据自然月内完成的鉴定结果数确定档位；当月所有结果均按最终达到的档位计费。" },
+      { "question": "低于置信度阈值时怎么办？", "answer": "该鉴定会转入人工复核，仍计为一次结果。" }
+    ]
+  }
+}

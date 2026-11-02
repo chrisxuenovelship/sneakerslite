@@ -21,6 +21,24 @@
       { "title": "更稳定", "description": "行业领先的准确度与可靠性。每次鉴定都有严格标准和专业经验作为支撑。", "icon": "✓" }
     ]
   },
+  "howItWorks": {
+    "title": "球鞋鉴定如何运作",
+    "description": "从提交图片到获得可用于业务决策的结果，流程清晰透明。",
+    "steps": [
+      { "title": "提交", "description": "通过应用或 API，按照指引拍摄鞋外侧、内侧、后跟、鞋头、外底、鞋垫、尺码标签及鞋盒标签。" },
+      { "title": "标准化", "description": "通过姿态估计与基于 OpenCV 的图像归一化，将每张图片调整到一致的角度和比例。" },
+      { "title": "分析", "description": "分析颜色、纹理和形状比例，并运用 OCR 检查标签上的条形码、二维码及字体排版。" },
+      { "title": "判定", "description": "综合各项信号，生成置信度评分及鉴定明细。低于阈值的案例转交人工复核，不强行给出结论。" },
+      { "title": "交付", "description": "鉴定结果返回至您的管理平台或通过 REST API 交付，结果 ID 与对应交易关联存储。" }
+    ],
+    "facts": [
+      "REST API，数天内即可完成集成",
+      "按结果付费，无固定费用，低至每次 0.80 美元",
+      "内置人工复核流程",
+      "支持 Jordan、Nike、Adidas、YEEZY、New Balance、ASICS、Converse"
+    ],
+    "cta": "咨询集成方案"
+  },
   "dashboard": {
     "title": "先进的鉴定管理平台",
     "description": "合作伙伴使用实时管理平台，大规模管理和追踪鉴定请求",

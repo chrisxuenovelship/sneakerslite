@@ -74,7 +74,7 @@ If you are assessing authentication partners on coverage, five questions separat
 
 ## Where We Are
 
-SneakersLite currently authenticates Jordan, Nike, Adidas, YEEZY, and New Balance. Puma, Vans, Converse, Saucony, HOKA, and Salomon are in active development at model level, following the process described above — conservative launch thresholds, human-review fallback, and reinforcement from partner submissions.
+SneakersLite currently authenticates Jordan, Nike, Adidas, YEEZY, New Balance, ASICS, and Converse. Puma, Vans, Saucony, HOKA, and Salomon are in active development at model level, following the process described above — conservative launch thresholds, human-review fallback, and reinforcement from partner submissions.
 
 We publish coverage at model granularity to our partners, and we tell them where a model is still maturing. That is the standard we think the market should hold every authentication vendor to.
 

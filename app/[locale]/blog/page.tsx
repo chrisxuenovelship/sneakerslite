@@ -42,16 +42,25 @@ export default async function BlogPage({ params }: PageProps) {
     <main className="w-full">
       <Navigation locale={locale} t={t.common.nav} />
 
-      <section className="bg-gradient-to-r from-brand-dark to-brand-cyan text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-4">{t.blog.header.title}</h1>
-          <p className="text-xl text-gray-200">{t.blog.header.description}</p>
-        </div>
-      </section>
+      <div className="pt-16 pb-20">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-dark">
+              {t.blog.header.headingStart}<span className="text-brand-cyan">{t.blog.header.headingHighlight}</span>
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              {t.blog.header.description}
+            </p>
+          </div>
+        </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-16">
-        <BlogFilter articles={displayArticles} locale={locale} t={t.blog.filter} />
-      </section>
+        <section className="bg-gray-50 py-16 md:py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <BlogFilter articles={displayArticles} locale={locale} t={t.blog.filter} />
+          </div>
+        </section>
+      </div>
+
 
       <Footer locale={locale} t={t.common.footer} />
     </main>

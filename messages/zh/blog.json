@@ -6,7 +6,8 @@
     "openGraphDescription": "球鞋鉴定与核验洞察"
   },
   "header": {
-    "title": "鉴定洞察",
+    "headingStart": "鉴定",
+    "headingHighlight": "洞察",
     "description": "真实案例，切实方案。探索品牌产品鉴定案例。"
   },
   "filter": {
@@ -17,6 +18,7 @@
     "notFoundMetaTitle": "未找到文章 | SneakersLite",
     "backToBlog": "返回博客",
     "bodyUnavailable": "文章正文正在加载或暂不可用。请检查 Sanity CMS。",
+    "related": "相关文章",
     "cta": {
       "title": "准备开始鉴定您的产品了吗？",
       "description": "了解 SneakersLite 如何帮助您快速、准确且稳定地核验产品。",

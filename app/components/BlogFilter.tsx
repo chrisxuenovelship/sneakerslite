@@ -50,8 +50,8 @@ export default function BlogFilter({ articles, locale, t }: BlogFilterProps) {
           {filtered.map((article) => (
             <Link
               key={article._id}
-              href={localePath(locale, `/blog/${article.slug.current}`)}
-              className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition"
+              href={localePath(localeFromLangTag(article.language), `/blog/${article.slug.current}`)}
+              className="group bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:border-brand-cyan transition"
             >
               {article.mainImage?.asset?.url && (
                 <div className="w-full h-48 bg-gray-200 overflow-hidden">

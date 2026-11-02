@@ -141,8 +141,9 @@ B2C via Partners (affiliate):
 - 潮盟 国际版 — Guangzhou's largest B2B sneaker seller
 
 ### Supported Brands
-Current: Jordan, Nike, Adidas, YZY, New Balance
-Upcoming: Puma, Vans, Converse, Saucony, HOKA, Salomon
+Current: Jordan, Nike, Adidas, YZY, New Balance, ASICS, Converse (ASICS + Converse confirmed by user 02/11/2026)
+Upcoming: Puma, Vans, Saucony, HOKA, Salomon
+Partner names (Novelship, 潮盟) MUST NOT appear on the site or in articles — no permission yet (user, 02/11/2026). Testimonial quote allowed once approved by the partner.
 
 ### Competitors
 - Entrupy (machine-heavy, single-segment)

@@ -34,7 +34,7 @@ AI authentication coverage is defined at model level, not brand level. Before in
 - **Maturing.** Coverage exists but at a conservative confidence threshold. Expect a higher share of results routed to human review.
 - **Not covered.** The item should be excluded from automated checks, or sent directly to human review.
 
-SneakersLite currently covers Jordan, Nike, Adidas, YEEZY, and New Balance, with Puma, Vans, Converse, Saucony, HOKA, and Salomon in development. For most sneaker marketplaces the covered bucket accounts for the majority of transaction value, and that is where the integration should start.
+SneakersLite currently covers Jordan, Nike, Adidas, YEEZY, New Balance, ASICS, and Converse, with Puma, Vans, Saucony, HOKA, and Salomon in development. For most sneaker marketplaces the covered bucket accounts for the majority of transaction value, and that is where the integration should start.
 
 ## Step 3: Fix the Image Capture Standard
 

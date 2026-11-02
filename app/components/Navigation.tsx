@@ -19,6 +19,7 @@ export default function Navigation({ locale, t }: NavigationProps) {
     { href: '/', label: t.home },
     { href: '/about', label: t.about },
     { href: '/security', label: t.security },
+    { href: '/pricing', label: t.pricing },
     { href: '/blog', label: t.blog },
   ]
 

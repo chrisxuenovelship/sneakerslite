@@ -5,6 +5,7 @@ import { getDictionary } from '@/lib/dictionary'
 import Navigation from '@/app/components/Navigation'
 import Hero from '@/app/components/Hero'
 import USPCards from '@/app/components/USPCards'
+import HowItWorks from '@/app/components/HowItWorks'
 import Dashboard from '@/app/components/Dashboard'
 import ProductsGrid from '@/app/components/ProductsGrid'
 import Presence from '@/app/components/Presence'
@@ -28,6 +29,7 @@ export default function Home({ params }: PageProps) {
       <Navigation locale={locale} t={t.common.nav} />
       <Hero locale={locale} t={t.home.hero} />
       <USPCards locale={locale} t={t.home.usp} />
+      <HowItWorks locale={locale} t={t.home.howItWorks} />
       <Dashboard locale={locale} t={t.home.dashboard} />
       <ProductsGrid locale={locale} t={t.home.products} />
       <Presence locale={locale} t={t.home.presence} />

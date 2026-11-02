@@ -6,7 +6,8 @@
     "openGraphDescription": "스니커즈 정품 감정과 검증에 관한 인사이트"
   },
   "header": {
-    "title": "정품 감정 인사이트",
+    "headingStart": "정품 감정 ",
+    "headingHighlight": "인사이트",
     "description": "실제 사례, 실제 해결책. 브랜드 제품 정품 감정 사례를 살펴보세요."
   },
   "filter": {
@@ -17,6 +18,7 @@
     "notFoundMetaTitle": "글을 찾을 수 없습니다 | SneakersLite",
     "backToBlog": "블로그로 돌아가기",
     "bodyUnavailable": "글 본문을 불러오는 중이거나 사용할 수 없습니다. Sanity CMS를 확인해 주세요.",
+    "related": "관련 글",
     "cta": {
       "title": "제품 정품 감정을 시작할 준비가 되셨나요?",
       "description": "SneakersLite가 어떻게 빠르고 정확하며 일관되게 제품을 검증하는 데 도움을 드리는지 알아보세요.",

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getArticleBySlug, getAllArticles, getArticleTranslations } from '@/lib/sanity'
+import { getArticleBySlug, getAllArticles, getArticleTranslations, getRelatedArticles } from '@/lib/sanity'
 import { isLocale, langTag, localeFromLangTag, localeNames, localePath, locales, siteUrl } from '@/lib/i18n'
 import { getDictionary } from '@/lib/dictionary'
 import type { Metadata } from 'next'
@@ -68,6 +68,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   if (!article) notFound()
 
   const translations = await getArticleTranslations(article.translationKey, params.slug)
+  const relatedArticles = await getRelatedArticles(article)
   return (
     <main className="w-full">
       <Navigation locale={locale} t={t.common.nav} />
@@ -201,10 +202,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-brand-dark bg-opacity-5 border border-brand-cyan rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-bold text-brand-dark mb-2">
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 md:p-10 text-center mb-16">
+          <h2 className="text-2xl font-bold text-brand-dark mb-2">
             {t.blog.article.cta.title}
-          </h3>
+          </h2>
           <p className="text-gray-700 mb-6">
             {t.blog.article.cta.description}
           </p>
@@ -212,6 +213,37 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {t.blog.article.cta.button}
           </Link>
         </div>
+
+        {relatedArticles.length > 0 && (
+          <section aria-labelledby="related-articles">
+            <h2 id="related-articles" className="text-3xl font-bold text-brand-dark mb-8">
+              {t.blog.article.related}
+            </h2>
+            <div className="grid gap-6 md:grid-cols-3">
+              {relatedArticles.map((related) => (
+                <Link
+                  key={related._id}
+                  href={localePath(localeFromLangTag(related.language), `/blog/${related.slug.current}`)}
+                  className="block bg-white rounded-lg border border-gray-200 shadow-sm p-6 hover:shadow-lg hover:border-brand-cyan transition"
+                >
+                  {related.category && (
+                    <span className="block text-sm font-semibold text-brand-cyan mb-2">
+                      {related.category}
+                    </span>
+                  )}
+                  <h3 className="text-lg font-bold text-brand-dark mb-3">{related.title}</h3>
+                  <time dateTime={related.publishedAt} className="text-sm text-gray-500">
+                    {new Date(related.publishedAt).toLocaleDateString(langTag[localeFromLangTag(related.language)], {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </article>
 
       <Footer locale={locale} t={t.common.footer} />
