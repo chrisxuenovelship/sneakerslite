@@ -26,7 +26,7 @@ content marketing via blog.
 - /blog/[slug] — Sanity article pages with translation links derived from a shared `translationKey`
 - /data-protection-framework — Full 12-section data protection framework (v1)
 - /data-protection-framework.pdf — Downloadable PDF version (generated via puppeteer from live page)
-- Local implementation (not deployed): pages live under `app/[locale]/`; English URLs remain unprefixed, Chinese/Japanese/Korean use `/zh`, `/ja`, `/ko`. The framework body and PDF remain English originals.
+- Locales LIVE since 02/11/2026: pages live under `app/[locale]/`; English URLs remain unprefixed (`/en/*` 308→unprefixed), Chinese/Japanese/Korean use `/zh`, `/ja`, `/ko`. hreflang + x-default on every page. The framework body and PDF remain English originals.
 
 ## Components
 Navigation, Footer, Hero, USPCards, Dashboard, ProductsGrid, Presence, BlogFilter, ContactForm. UI strings are typed from `messages/en/*.json`, with matching `zh`, `ja`, and `ko` namespaces.
@@ -48,11 +48,12 @@ Editor token: provided ad-hoc for write operations — not stored in .env (reque
 are placeholders — not validated data. Do not treat as factual. Replace with 
 real data before final publish.
 
-## Current Status (as of 30/10/2026)
+## Current Status (as of 02/11/2026)
 - Stage 1 closed. Unmet Stage 1 items (600 organic SMO) are irrelevant going forward.
 - User-reported client wins: 1 Chinese client (closed just before Stage 1 review) + 1 Korean partner (closed September 2026). Supporting documents are planned for Cyberport management over 31 October–1 November. Eligibility against the Stage 2 reporting window remains for management to confirm.
 - Stage 2 (semi-annual) evaluation due October 2026 — in progress.
-- Git note: April work existed on production but was uncommitted locally; the deployment mechanism was not verified. Baseline committed locally as cf175a9, not pushed. Do not deploy the locale cutover until CMS backfill and translation review are complete.
+- 02/11/2026: A6/A7/A8 published to Sanity (9 articles live). Backfill applied. Locale cutover pushed as c58ea05 → Vercel auto-deployed in ~140s (push→deploy mechanism now verified). Sitemap is ISR (30s), 30 URLs. JA/KO/ZH copy shipped WITHOUT native review — post-launch copy fixes are the open item for milestone 5.
+- Pending from user: Stage 2 #2 brand/model list (also keeps A6's "in active development" claim honest), #3 revenue figure, #4 Sales & Partnership Framework doc.
 
 ## Workstream (started 30/10/2026)
 1. Three more articles, dated May / June / August 2026, each proposed → approved → published:
@@ -60,10 +61,10 @@ real data before final publish.
    - A7 (18 Jun 2026): "From Contract to First Result: An Integration Playbook for Marketplace Authentication" — `drafts/A7-integration-onboarding-playbook.md`, 47 blocks. Dry-run clean. Publish approved 02/11/2026.
    - A8 (20 Aug 2026): "Korea and Japan: Why Asia's Most Demanding Resale Markets Need Authentication Infrastructure, Not Just Inspectors" — `drafts/A8-korea-japan-resale-authentication.md`, 30 blocks. Dry-run clean. Publish approved 02/11/2026. Deliberately contains no market-size figures; does not mention the Korean partner (closed after the editorial date).
    - All three blocked only on `SANITY_EDITOR_TOKEN`. Verified 02/11/2026: no editor token exists on this server; `.env.local` viewer token is rejected for mutations (`permission "update" required`).
-2. Multilingual — Option A implemented locally: native Next.js locale routes, JSON namespaces, translated site chrome/pages, Sanity language enum and translation groups, canonical/hreflang metadata, sitemap alternates, locale dates, and CJK fonts. JA/KO/ZH copy is assistant-drafted and needs native review. No JA/KO article bodies have been published.
-3. CMS migration: `node --env-file=.env.local scripts/sanity-publish.mjs backfill --dry-run` previews six document patches (three missing English language fields and translation keys for all six, grouping the V4 pair). Run for real before production cutover so existing V4 translation links are retained.
-4. Publishing: `node --env-file=.env.local scripts/sanity-publish.mjs publish drafts/<file>.md --dry-run` previews Portable Text. Drop `--dry-run` to write. Token lives only in `.env.local` (gitignored) as `SANITY_EDITOR_TOKEN`.
-5. Deployment: GitHub SSH push works (`ssh -T git@github.com` authenticates as chrisxuenovelship). Vercel CLI has no auth; not needed because Vercel auto-deploys on push to master. Locale cutover still gated on CMS backfill and JA/KO native review.
+2. Multilingual — SHIPPED 02/11/2026. JA/KO/ZH copy is assistant-drafted; native review still owed, applied as post-launch edits to `messages/<locale>/*.json`. No JA/KO article bodies exist; blog language tabs show only EN/中文 until one is published.
+3. CMS migration: backfill applied 02/11/2026 (6 docs patched). Script retained for future legacy docs; `--dry-run` previews.
+4. Publishing: `node --env-file=.env.local scripts/sanity-publish.mjs publish drafts/<file>.md --dry-run` previews Portable Text. Drop `--dry-run` to write. Token lives only in `.env.local` (gitignored) as `SANITY_EDITOR_TOKEN`. Articles appear on the site within 30s, no deploy needed.
+5. Deployment: `git push origin master` → Vercel builds and goes live in ~2–3 min (verified 02/11/2026). GitHub SSH auth works from this server. Vercel CLI has no auth and is not needed.
 
 ## Environment Variables
 All set correctly in Vercel as of 04/04/2026:
