@@ -195,3 +195,7 @@ No restatement to 30%. Self-assessment wording supplied: 0.24 was fully-loaded (
 
 - Stage 1: 72,000 now under professional services (sub-total 74,750), staffing 0. Column L on that row has no formula → cumulative expenses show 202,866.14 / net 82,220.86 instead of 274,866.14 / 10,220.86. Finance told to fix.
 - Finance: Stage 1+2 revenue is **100% Novelship (Singapore)**; Dongyi billed from Stage 3. → p4 monthly local revenue = **0**. Risk: milestone 1 proof requires a *payment record* from each new client; if 佳超 and Silver Star paid nothing before 29/9/2026, p6 proof is agreements + first invoices only. Asked Chris.
+
+## UPDATE 00:55 SGT 03/11 — P&L closed (ts `1793637167.433819`, answered `1793637208.357789`)
+
+Column L fixed and verified (professional 78,040 / expenses 274,866.14 / net 10,220.86). Chris: items 2–3 (contractor note, Novelship billing) handled verbally if asked; p4 monthly local revenue = 0. Milestone 1 proof: form's own proof list says "payment record"; if none from 佳超/Silver Star by 29/9, use agreement + first invoice + usage evidence (API key, first authentications, dated dashboard screenshot) and state payment terms fall in Stage 3. Finance re-checks the sheet in the morning; no further sheet edits expected.
