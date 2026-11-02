@@ -179,3 +179,7 @@ Live sheet now: Stage 3 forecast R&D 40,000 (was 45,000), COGS 20,000, expenses 
 - COGS: booked ≈ USD 0.06/result (7.9%) vs the form's USD 0.24 (30%) — booked is lower, not higher; gap ≈ HK$41k over Stage 2. No sheet change; reconciling sentence supplied for the Stage 2 self-assessment.
 - Monthly Local Revenue: enquiry drafted for finance (billing entity, revenue by client billing country, receiving account, non-HK recognition). Value for p4 col 6 pending finance; may be 0.
 - BD Lead: service agreement during notice period in Stage 1 (72,000 → line 4), employment from Stage 2 (100,800 incl. MPF, line 5). Dates to verify: contract signed inside Stage 1; start ≤ first Stage 2 salary month; MPF enrolment within 60 days.
+
+## UPDATE 22:25 SGT — COGS explanation agreed (finance ts `1793628396.454159`, answered `1793628447.396229`)
+
+No restatement to 30%. Self-assessment wording supplied: 0.24 was fully-loaded (inference + cloud/data + human review); booked direct COGS ≈ USD 0.06 (7.9%, from 9.2%); cloud under line 6, review in staffing; Stage 3 forecast holds 8% with cloud rising for certificate-portal and new-brand R&D. Finance's "economies of scale next 6 months" line dropped — contradicts the Stage 3 forecast.
