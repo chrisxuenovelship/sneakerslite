@@ -118,8 +118,8 @@ See "Workstream (started 30/10/2026)" above.
 
 ### Real Traction Metrics (as of CIP submission)
 - Revenue: HK$122K was CUMULATIVE as of CIP submission (April 2026), not monthly — Stage 1 actual per the P&L is HK$125,615 for 30/9/2025–29/3/2026. Stage 2 actual HK$185,784; cumulative HK$311,399 (P&L received 02/11/2026). Pricing is USD; Stage 2 revenue ÷ USD 0.80 implies ≈5,000 authentications/month average.
-- Monthly Authentication Volume: 3,100+
-- Total Verified Items: 34,200+
+- Monthly Authentication Volume: 6,800+ (Oct 2026); Stage 1 22,530 / Stage 2 33,773 authentications; 200 free per partner per month; all clients at USD 0.80
+- Total items authenticated since launch: 120,000+ (Chris, 03/11/2026); site metrics strip updated
 - 60-Day Retention Rate: 71%
 
 ### Pricing Model
