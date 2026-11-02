@@ -146,8 +146,8 @@ Every partnership agreement records: tier; term and renewal; volume commitment; 
 
 ### 7.1 Commercial outcomes
 
-- New B2B clients onboarded in the window: 2 — 佳超 (mainland China, Segment B, closed Q3 2026) and Silver Star (South Korea, Segment C sneaker 3PL serving cross-border sellers, closed September 2026). Milestone target: 2. The pre-incubation clients (Novelship, Singapore; 潮盟 国际版 / Dong Yi Hai Wai, Guangzhou) are not counted.
-- Cumulative revenue against the HKD 250,000 Stage 2 target: {{REVENUE_HKD}} (source: finance sheet, {{REVENUE_AS_OF_DATE}}).
+- New B2B clients onboarded in the window: 2 — 佳超 (mainland China, Segment B, closed Q3 2026) and Silver Star (South Korea, Segment C sneaker 3PL serving cross-border sellers, closed September 2026). Milestone target: 2. The pre-incubation clients (Novelship, Singapore, Q4 2024; 潮盟 国际版 / Dong Yi Hai Wai, Guangzhou, Q2 2025) are not counted.
+- Cumulative revenue against the HKD 250,000 Stage 2 target: HKD 311,399 (source: finance sheet, 29 September 2026).
 - Monthly authentication volume at window close: {{MONTHLY_VOLUME}}; items verified to date: {{TOTAL_VERIFIED}}; 60-day retention: {{RETENTION_60D}}.
 
 ### 7.2 Pipeline snapshot at window close
@@ -156,10 +156,10 @@ Each row is one organisation. Names are withheld in the Cyberport copy; the inte
 
 | Ref | Segment | Market | Source | Stage reached | Date of last stage change | Next action |
 |---|---|---|---|---|---|---|
-| P-01 | A | Singapore | Existing partner (pre-incubation) | Live | {{P01_DATE}} | Quarterly review |
-| P-02 | B | Guangzhou | Existing partner (pre-incubation) | Live | {{P02_DATE}} | Quarterly review |
-| P-03 | B | Mainland China | {{P03_SOURCE}} | Live | {{P03_DATE}} (Q3 2026) | Day-60 retention check |
-| P-04 | C | South Korea | {{P04_SOURCE}} | Live | September 2026 | Coverage expansion for KR export catalogue |
+| P-01 | A | Singapore | Existing partner (pre-incubation) | Live | Q4 2024 | Quarterly review |
+| P-02 | B | Guangzhou | Existing partner (pre-incubation) | Live | Q2 2025 | Quarterly review |
+| P-03 | B | Mainland China | Direct (founder-led) | Live | Q3 2026 | Day-60 retention check |
+| P-04 | C | South Korea | Direct (founder-led) | Live | September 2026 | Coverage expansion for KR export catalogue |
 | P-05 | {{P05_SEGMENT}} | {{P05_MARKET}} | {{P05_SOURCE}} | {{P05_STAGE}} | {{P05_DATE}} | {{P05_NEXT}} |
 
 ### 7.3 Assets built in the window
