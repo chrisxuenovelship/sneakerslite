@@ -122,7 +122,7 @@ Partnerships are distinct from customer contracts: they carry obligations on bot
 
 ### 6.1 Launch partner
 
-- Who: the first marketplace, wholesaler or fulfilment house in a new market (for example the Singapore and Guangzhou partners; the Korean 3PL onboarded in September 2026).
+- Who: the first marketplace, wholesaler or fulfilment house in a new market (for example the Singapore and Guangzhou partners; the Korean 3PL signed in September 2026 and live from October 2026).
 - SneakersLite provides: the PRO rate (USD 0.80 per result) from the first month regardless of volume, locked for 12 months; 200 authentications per month free of charge for the term of the agreement; priority on model-coverage requests; a named integration contact; co-authored case study and testimonial rights, published only with written approval.
 - Partner provides: a minimum monthly volume commitment; human-reviewed cases returned to training under the agreed data path; a reference call for one prospect per quarter; named testimonial or quote.
 
@@ -151,7 +151,7 @@ One row per organisation. Names are withheld in this copy; the internal register
 | P-01 | A | Singapore | Existing partner | Live | Q4 2024 | Quarterly review |
 | P-02 | B | Guangzhou | Existing partner | Live | Q2 2025 | Quarterly review |
 | P-03 | B | Mainland China | Direct (founder-led) | Live | Q2 2026 | Day-180 retention check |
-| P-04 | C | South Korea | Direct (BD-led) | Live | September 2026 | Day 30 onboarding review |
+| P-04 | C | South Korea | Direct (BD-led) | Live | October 2026 | Day 30 onboarding review |
 | P-05 | C | Taiwan | Direct (founder-led) | Qualified | August 2026 | Pilot scope |
 | P-06 | C | Japan | Direct (BD-led) | Lead | September 2026 | Discovery call |
 
