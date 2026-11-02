@@ -145,7 +145,7 @@ B2C via Partners (affiliate):
 ### Existing Partners
 - Novelship — largest SEA B2C sneaker marketplace
 - 潮盟 国际版 (legal entity Dong Yi Hai Wai) — Guangzhou B2B sneaker seller; pre-incubation client
-- 佳超 — mainland China B2B client, closed Q3 2026 (Stage 2 new client #1)
+- 佳超 — mainland China B2B client, closed Q2 2026 (Stage 2 new client #1; Chris corrected from Q3 on 03/11)
 - Silver Star — South Korean sneaker 3PL (processes + authenticates shoes for sellers exporting from Korea), closed Sept 2026 (Stage 2 new client #2). Segment C, not a platform.
 
 ### Supported Brands

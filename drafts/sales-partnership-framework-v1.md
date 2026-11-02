@@ -150,10 +150,10 @@ One row per organisation. Names are withheld in this copy; the internal register
 |---|---|---|---|---|---|---|
 | P-01 | A | Singapore | Existing partner | Live | Q4 2024 | Quarterly review |
 | P-02 | B | Guangzhou | Existing partner | Live | Q2 2025 | Quarterly review |
-| P-03 | B | Mainland China | Direct (founder-led) | Live | Q3 2026 | Day-60 retention check |
-| P-04 | C | South Korea | Direct (BD-led) | Live | September 2026 | Coverage expansion for KR export catalogue |
-| P-05 | C | Taiwan | Direct (founder-led) | Demo | August 2026 | Pilot scope |
-| P-06 | C | Japan | Direct (BD-led) | Initial Pitch | September 2026 | Discovery call |
+| P-03 | B | Mainland China | Direct (founder-led) | Live | Q2 2026 | Day-180 retention check |
+| P-04 | C | South Korea | Direct (BD-led) | Live | September 2026 | Day 30 onboarding review |
+| P-05 | C | Taiwan | Direct (founder-led) | Qualified | August 2026 | Pilot scope |
+| P-06 | C | Japan | Direct (BD-led) | Lead | September 2026 | Discovery call |
 
 ## 8. Sales Playbooks
 
