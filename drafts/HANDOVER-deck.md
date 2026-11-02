@@ -173,3 +173,9 @@ Live sheet now: Stage 3 forecast R&D 40,000 (was 45,000), COGS 20,000, expenses 
 - 122K: ignore. Stage 4 forecast: deferred to next reporting round (Chris's call; p3/Stage 3 unaffected).
 - COGS 0.24 reference = signed form Part B-2 "Financial Planning" (quoted to Chris); finance to decide whether to keep 0.24 and add the reconciling sentence.
 - "Monthly Local Revenue (HK$)" = header in the template's slide-4 table `p4_i149` (cols: Stage / Assessment Month / Total Team Size / Local Team Size / Monthly Total Revenue / Monthly Local Revenue / New Investment Total / New Investment by Local Entity). Chris to decide 0 vs 30,964 per Cyberport's definition of "local".
+
+## UPDATE 21:45 SGT — Chris questions (ts `1793625936.488379`), answered (`1793626009.004269`)
+
+- COGS: booked ≈ USD 0.06/result (7.9%) vs the form's USD 0.24 (30%) — booked is lower, not higher; gap ≈ HK$41k over Stage 2. No sheet change; reconciling sentence supplied for the Stage 2 self-assessment.
+- Monthly Local Revenue: enquiry drafted for finance (billing entity, revenue by client billing country, receiving account, non-HK recognition). Value for p4 col 6 pending finance; may be 0.
+- BD Lead: service agreement during notice period in Stage 1 (72,000 → line 4), employment from Stage 2 (100,800 incl. MPF, line 5). Dates to verify: contract signed inside Stage 1; start ≤ first Stage 2 salary month; MPF enrolment within 60 days.
