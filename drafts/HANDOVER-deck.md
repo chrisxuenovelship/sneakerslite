@@ -162,3 +162,7 @@ Google Sheet `1qLNyn4aIn_q4-svD5lgpi-5YI1RkiTRk98uSYv1g5ts` ("Cyberport Program"
 ## UPDATE 20:02 SGT — finance reply (thread ts `1793619663.402709`) and session answer (`1793619758.845359`)
 
 Resolved: column L, COGS reclass, G35, Stage 1 forecast as filed, Stage 3 forecast 250k is a real forecast, 141,321 forecast as filed. Team size = founder + 1 FTE (fill p4). Monthly revenue for p4 col 5 = **30,964** (185,784 ÷ 6); 122K must not appear anywhere. Open: real reason for the 6,580 ÷ 2 (and Stage 3 3,290 vs 4,000); real reason for no MPF in Stage 1 (compliance risk if the person was a contractor — affects which line 72,000 sits on); p4 col 6 HK-billed monthly revenue; Stage 4 forecast column empty; COGS USD 0.24 on the signed form vs 7.9% booked — one explanatory sentence needed in the Stage 2 self-assessment.
+
+## UPDATE 20:16 SGT — second finance reply (ts `1793620550.489109`), answered (`1793620586.473909`)
+
+Live sheet now: Stage 3 forecast R&D 40,000 (was 45,000), COGS 20,000, expenses 202,800, net 27,200. Stage 2 unchanged (185,784 / 14,756 / 166,844.14 / 4,183.86). Professional-services halving documented in a cell note (corporate secretarial annual fee). P&L is done except: MPF reason for Stage 1 (E30 note), slide-4 HK-billed revenue, Stage 4 forecast, COGS 0.24 vs 7.9% sentence in the self-assessment.
