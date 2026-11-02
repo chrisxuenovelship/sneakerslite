@@ -92,11 +92,11 @@
   },
   "metrics": {
     "items": [
-      { "value": "34,200+", "label": "累計鑑定点数" },
-      { "value": "3,100+", "label": "月間鑑定件数" },
+      { "value": "120,000+", "label": "累計鑑定点数" },
+      { "value": "6,800+", "label": "月間鑑定件数" },
       { "value": "71%", "label": "60日間の顧客継続率" }
     ],
-    "note": "数値はCyberport Incubation Programmeへの提出資料に基づきます。"
+    "note": "鑑定件数は2026年10月時点。継続率はCyberport Incubation Programmeへの提出資料に基づきます。"
   },
   "testimonials": {
     "title": "パートナーの声",

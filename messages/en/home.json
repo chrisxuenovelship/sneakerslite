@@ -92,11 +92,11 @@
   },
   "metrics": {
     "items": [
-      { "value": "34,200+", "label": "Items authenticated to date" },
-      { "value": "3,100+", "label": "Authentications per month" },
+      { "value": "120,000+", "label": "Items authenticated to date" },
+      { "value": "6,800+", "label": "Authentications per month" },
       { "value": "71%", "label": "60-day customer retention" }
     ],
-    "note": "Figures as reported in our Cyberport Incubation Programme submission."
+    "note": "Volume figures as of October 2026; retention as reported in our Cyberport Incubation Programme submission."
   },
   "testimonials": {
     "title": "What our partners say",

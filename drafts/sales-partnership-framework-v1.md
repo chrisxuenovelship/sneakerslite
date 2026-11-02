@@ -63,7 +63,7 @@ The product is the same for every segment: image standardisation (pose estimatio
 - Segment B (wholesale): item-level evidence that survives resale and disputes; batch submission with per-SKU confidence; mainland data handling under PIPL and DSL designed before go-live.
 - Segment C (inspection houses): consistency across inspectors and shifts; a documented process their end clients can audit; coverage added at model level on request.
 
-Proof points available for use in any conversation: 34,200+ items verified to date, 3,100+ per month, 71% 60-day retention (CIP submission figures; update from the current finance sheet before each use). Two partner testimonials are live on sneakerslite.com (Operations Lead, Novelship; Head of Operations, Silver Star).
+Proof points available for use in any conversation: 120,000+ items authenticated since launch; 6,800+ authentications per month (October 2026); 56,303 authentications across Stage 1 and Stage 2 of the Cyberport programme (22,530 and 33,773); 71% 60-day retention (CIP submission figure). Two partner testimonials are live on sneakerslite.com (Operations Lead, Novelship; Head of Operations, Silver Star).
 
 Positioning against alternatives: machine-heavy and fully integrated for both B2B and B2C flows. Entrupy is machine-heavy but single-segment; CheckCheck and FakeEducation are human-based; POIZON is integrated but captive to its own marketplace. SneakersLite does not disparage competitors in writing; it states public pricing and lets the operator compare.
 
@@ -89,7 +89,7 @@ Close-lost reasons are recorded from a fixed list: volume too low, no budget, in
 - PRO: USD 0.80 per result, above 2,000 results per month.
 - Benchmark: approximately USD 4.00 per human authentication. PRO represents an 80% saving.
 
-Pricing is published at sneakerslite.com/pricing. Discounts below the published tier are not offered; volume commitments move a client to the next tier, not to a custom rate. Enterprise terms apply above 10,000 results per month and are quoted case by case.
+Pricing is published at sneakerslite.com/pricing. Discounts below the published PRO rate are not offered; volume commitments move a client to the next tier, not to a custom rate. Launch partners (section 6.1) are placed at the PRO rate from day one. Enterprise terms apply above 10,000 results per month and are quoted case by case.
 
 ### 5.2 Pilot terms
 
@@ -123,7 +123,7 @@ Partnerships are distinct from customer contracts: they carry obligations on bot
 ### 6.1 Launch partner
 
 - Who: the first marketplace, wholesaler or fulfilment house in a new market (for example the Singapore and Guangzhou partners; the Korean 3PL onboarded in September 2026).
-- SneakersLite provides: pricing locked at the agreed tier for 12 months regardless of volume dips; priority on model-coverage requests; a named integration contact; co-authored case study and testimonial rights, published only with written approval.
+- SneakersLite provides: the PRO rate (USD 0.80 per result) from the first month regardless of volume, locked for 12 months; 200 authentications per month free of charge for the term of the agreement; priority on model-coverage requests; a named integration contact; co-authored case study and testimonial rights, published only with written approval.
 - Partner provides: a minimum monthly volume commitment; human-reviewed cases returned to training under the agreed data path; a reference call for one prospect per quarter; named testimonial or quote.
 
 ### 6.2 Integration partner
@@ -148,7 +148,7 @@ Every partnership agreement records: tier; term and renewal; volume commitment; 
 
 - New B2B clients onboarded in the window: 2 — 佳超 (mainland China, Segment B, closed Q3 2026) and Silver Star (South Korea, Segment C sneaker 3PL serving cross-border sellers, closed September 2026). Milestone target: 2. The pre-incubation clients (Novelship, Singapore, Q4 2024; 潮盟 国际版 / Dong Yi Hai Wai, Guangzhou, Q2 2025) are not counted.
 - Cumulative revenue against the HKD 250,000 Stage 2 target: HKD 311,399 (source: finance sheet, 29 September 2026).
-- Monthly authentication volume at window close: {{MONTHLY_VOLUME}}; items verified to date: {{TOTAL_VERIFIED}}; 60-day retention: {{RETENTION_60D}}.
+- Authentications in the window: 33,773 (Stage 1: 22,530), of which 4,000 were launch-partner free allowance; run-rate at window close 6,800 per month; items authenticated since launch: 120,000+. 60-day retention: 71% (CIP submission figure).
 
 ### 7.2 Pipeline snapshot at window close
 
@@ -170,6 +170,22 @@ Each row is one organisation. Names are withheld in the Cyberport copy; the inte
 - Twenty published articles, including four market pieces (Hong Kong, mainland China in English and Chinese, Singapore, South Korea) and six brand guides (Nike, Air Jordan, adidas, New Balance, ASICS, Converse), each mapped to a segment in section 9.
 - Two partner testimonials and a metrics strip on the home page.
 - Data Protection Framework v1 (Stage 1) attached to every proposal.
+
+### 7.4 Revenue path to the Stage 3 target
+
+Stage 3 target: HKD 500,000 cumulative by 29 March 2027, i.e. HKD 188,601 in the window. At USD 0.80 (HKD 6.24) that is 30,225 paid results, or 5,038 per month, after free allowances.
+
+| Input | Value |
+|---|---|
+| Run-rate at window close | 6,800 authentications per month |
+| Free allowance | 4 partners × 200 = 800 per month |
+| Paid run-rate | 6,000 per month |
+| Stage 3 paid results at flat run-rate | 36,000 |
+| Stage 3 revenue at flat run-rate | HKD 224,640 |
+| Cumulative at 29 March 2027 | HKD 536,039 (107% of target) |
+| Minimum paid run-rate to hit the target | 5,038 per month (headroom 16%) |
+
+Rule for the window: the paid run-rate is checked monthly against 5,038; two consecutive months below it trigger the account review in section 10 for the account that fell, and outbound targets in section 9.2 are raised for the following month.
 
 ## 8. Sales Playbooks
 

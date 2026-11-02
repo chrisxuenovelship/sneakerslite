@@ -92,11 +92,11 @@
   },
   "metrics": {
     "items": [
-      { "value": "34,200+", "label": "누적 감정 상품 수" },
-      { "value": "3,100+", "label": "월간 감정 건수" },
+      { "value": "120,000+", "label": "누적 감정 상품 수" },
+      { "value": "6,800+", "label": "월간 감정 건수" },
       { "value": "71%", "label": "60일 고객 유지율" }
     ],
-    "note": "수치는 Cyberport Incubation Programme 제출 자료 기준입니다."
+    "note": "감정 건수는 2026년 10월 기준이며, 유지율은 Cyberport Incubation Programme 제출 자료 기준입니다."
   },
   "testimonials": {
     "title": "파트너의 목소리",
