@@ -11,7 +11,7 @@ Date: 3 November 2026
 
 A. Primefleet issues invoices to its customers for SneakersLite authentication services.
 
-B. Certain Primefleet invoices issued on or before 30 September 2026 stated a bank account held by Novelship as the remittance account. This was an administrative error in Primefleet's invoice template. The customers listed in Schedule A paid those invoices into that account.
+B. Primefleet's invoices state Primefleet's own bank account. For invoices issued on or before 30 September 2026, the customers listed in Schedule A nevertheless remitted payment to a bank account held by Novelship, in the mistaken belief that Primefleet's representative was acting for Novelship, with which those customers also have a commercial relationship. Novelship did not solicit those payments.
 
 C. The parties record here that those funds belong to Primefleet and how they are remitted.
 
@@ -25,7 +25,7 @@ C. The parties record here that those funds belong to Primefleet and how they ar
 
 4. Further receipts. If Novelship receives any further payment in respect of a Primefleet invoice after the date of this acknowledgement, it will notify Primefleet within 5 business days and remit the amount within 10 business days of receipt. Schedule A is updated accordingly.
 
-5. Correction. Primefleet confirms that all invoices issued from 1 October 2026 state Primefleet's own bank account. Novelship has no authority to collect on Primefleet's behalf other than as recorded in this document.
+5. Remittance instructions. Primefleet has confirmed its bank account to each customer in Schedule A in writing, and customers have been instructed to remit to that account only. Novelship has no authority to collect on Primefleet's behalf, and any amount it receives in respect of a Primefleet invoice is held under clause 1.
 
 6. Records. Schedule A is completed by the finance functions of both parties, initialled by both signatories, and re-signed once the final remittance is made. Each party keeps a copy with its accounting records.
 
