@@ -1,4 +1,4 @@
-# Acknowledgement of Receipt on Behalf and Remittance Undertaking
+# Acknowledgement of Receipt on Behalf, Remittance Undertaking and Account Reconciliation
 
 Date: 3 November 2026
 
@@ -13,7 +13,9 @@ A. Primefleet issues invoices to its customers for SneakersLite authentication s
 
 B. Certain Primefleet invoices issued on or before 30 September 2026 stated a bank account held by Novelship as the remittance account. This was an administrative error in Primefleet's invoice template. The customers listed in Schedule A paid those invoices into that account.
 
-C. The parties record here that those funds belong to Primefleet and how they are remitted.
+C. Separately, Novelship is itself a customer of Primefleet. Under a marketing expense co-sharing arrangement between the parties, Novelship's payments against Primefleet's invoices have been made net of co-sharing contributions, so individual remittances do not match individual invoice amounts.
+
+D. The parties record here that the Schedule A funds belong to Primefleet and how they are remitted, and how the Novelship customer account is reconciled.
 
 ## Terms
 
@@ -27,13 +29,15 @@ C. The parties record here that those funds belong to Primefleet and how they ar
 
 5. Correction. Primefleet confirms that all invoices issued from 1 October 2026 state Primefleet's own bank account. Novelship has no authority to collect on Primefleet's behalf other than as recorded in this document.
 
-6. Records. Schedule A is completed by the finance functions of both parties, initialled by both signatories, and re-signed once the final remittance is made. Each party keeps a copy with its accounting records.
+6. Novelship customer account. The parties will reconcile the account between them covering every Primefleet invoice issued to Novelship, every co-sharing contribution credited against it, and every payment made, and will agree the resulting balance in writing no later than 31 December 2026. The reconciliation is recorded in Schedule B and signed by both parties. Until it is agreed, neither party treats any item in Schedule B as disputed. Any balance agreed as owing is settled within 30 days of signature of Schedule B. Co-sharing contributions are documented separately and are not applied against the Schedule A amounts.
 
-7. Independence of signatories. Mr Xue YuYu (Chris Xue), who signs for Primefleet, also holds a position at Novelship. For that reason this document is signed for Novelship by an officer other than Mr Xue.
+7. Records. Schedules A and B are completed by the finance functions of both parties, initialled by both signatories, and re-signed once the final remittance under Schedule A is made and the balance under Schedule B is agreed. Each party keeps a copy with its accounting records.
 
-8. Governing law. This acknowledgement is governed by the laws of Hong Kong. The courts of Hong Kong have exclusive jurisdiction.
+8. Independence of signatories. Mr Xue YuYu (Chris Xue), who signs for Primefleet, also holds a position at Novelship. For that reason this document is signed for Novelship by an officer other than Mr Xue.
 
-9. Counterparts. This document may be signed in counterparts and electronically.
+9. Governing law. This acknowledgement is governed by the laws of Hong Kong. The courts of Hong Kong have exclusive jurisdiction.
+
+10. Counterparts. This document may be signed in counterparts and electronically.
 
 ## Signatures
 
@@ -72,3 +76,25 @@ Remittance batches
 | 1 | 3 November 2026 | | |
 | 2 | | | |
 | 3 | | | |
+
+## Schedule B. Reconciliation of the Novelship customer account
+
+Currency: USD. Completed by the finance functions of both parties; to be agreed and signed by 31 December 2026.
+
+| # | Primefleet invoice no. | Invoice date | Invoice amount (USD) | Co-sharing contribution credited (USD) | Reference to co-sharing document | Payment received (USD) | Payment date | Balance (USD) |
+|---|---|---|---|---|---|---|---|---|
+| 1 | | | | | | | | |
+| 2 | | | | | | | | |
+| 3 | | | | | | | | |
+| 4 | | | | | | | | |
+| 5 | | | | | | | | |
+| 6 | | | | | | | | |
+| 7 | | | | | | | | |
+| 8 | | | | | | | | |
+| | | **Total** | | | | | | |
+
+Agreed balance owing by [Novelship / Primefleet]: USD ____________ as at ____________.
+
+For Novelship Pte. Ltd.: ____________ (name, title, date)
+
+For Primefleet Digital Hong Kong Limited: ____________ (name, title, date)
