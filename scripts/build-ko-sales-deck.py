@@ -4,16 +4,18 @@
 Usage: ~/.venvs/gdocs/bin/python scripts/build-ko-sales-deck.py [--replace <presentationId>]
 
 Copy lives in this file (KO primary, EN subline). Section screenshots come from
-sneakerslite.com/ko and must exist in /tmp/proof/ before running:
+sneakerslite.com/ko and live in drafts/ko-deck-assets/:
   ko-how.png, ko-dashboard.png, ko-brands.png
 """
 import sys
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
+import os
 import struct
 
 SA = '/www/wwwroot/jira-ticket-sentry/google-sa-key.json'
+ASSETS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'drafts', 'ko-deck-assets')
 FOLDER = '0AN9_YLI39K7TUk9PVA'
 NAME = 'SneakersLite 세일즈 덱 — 한국 파트너 제안 (Korea sales deck, v1.0, Nov 2026)'
 FONT = 'Noto Sans KR'
@@ -209,7 +211,7 @@ def build_deck(pid):
     # 4 how it works
     s = d.slide()
     d.header(s, '작동 방식', 'How it works: submit, standardise, analyse, decide, deliver')
-    d.image(s, '/tmp/proof/ko-how.png', M, 1150000, W - 2 * M, 2100000)
+    d.image(s, ASSETS + '/ko-how.png', M, 1150000, W - 2 * M, 2100000)
     d.bullets(s, [('기준치에 못 미치는 건은 억지로 판정하지 않고 사람이 재검토합니다 (24시간, PRO 12시간 목표).', 'Sub-threshold cases go to human review: 24h target, 12h on PRO.'),
                   ('결과 ID는 거래에 연결되어 분쟁 시 근거가 됩니다.', 'Each result ID is tied to the transaction and serves as dispute evidence.')],
               y=3350000, h=1300000)
@@ -217,7 +219,7 @@ def build_deck(pid):
     # 5 dashboard
     s = d.slide()
     d.header(s, '결과마다 제공되는 것', 'What you get with every result')
-    d.image(s, '/tmp/proof/ko-dashboard.png', W - M - 3500000, 1150000, 3500000, 3600000)
+    d.image(s, ASSETS + '/ko-dashboard.png', W - M - 3500000, 1150000, 3500000, 3600000)
     d.bullets(s, [('신뢰도 점수와 검증 항목별 내역', 'Confidence score with a verification breakdown'),
                   ('모델 단위 커버리지, 파일럿 전 상위 20개 모델 점검', 'Model-level coverage; top-20 models checked before the pilot'),
                   ('대시보드, REST API, 배치 제출', 'Dashboard, REST API and batch submission'),
@@ -248,7 +250,7 @@ def build_deck(pid):
     # 8 coverage
     s = d.slide()
     d.header(s, '브랜드·모델 커버리지', 'Coverage at model level')
-    d.image(s, '/tmp/proof/ko-brands.png', M, 1150000, W - 2 * M, 2250000)
+    d.image(s, ASSETS + '/ko-brands.png', M, 1150000, W - 2 * M, 2250000)
     d.bullets(s, [('모델 리스트는 요청 시 공개하고, 파트너 요청에 따라 확장합니다.', 'Model list disclosed on request; expanded on partner request.'),
                   ('파일럿 전 상위 20개 모델을 점검해 커버/부분/갭을 표시합니다.', 'Top-20 models checked before the pilot: covered, partial, gap.')],
               y=3500000, h=1200000)
