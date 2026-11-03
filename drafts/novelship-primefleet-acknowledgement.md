@@ -51,30 +51,30 @@ Date: ____________
 
 ## Schedule A. Amounts received by Novelship on behalf of Primefleet
 
-Currency: USD. Invoice numbers, dates and amounts are taken from Primefleet's invoice register (Invoices List, 3 November 2026). The "Received" and "Remitted" columns are completed by finance from Novelship's bank records before signature; any difference between the amount received and the invoice amount is stated in the Note column.
+Amounts in Hong Kong dollars (HKD), with the United States dollar (USD) amount as stated on each invoice (HKD 7.75 per USD). Invoice numbers, dates and amounts are taken from Primefleet's invoice register (Invoices List, 3 November 2026). The "Received" and "Remitted" columns are completed by finance from Novelship's bank records before signature; any difference between the amount received and the invoice amount is stated in the Note column.
 
-| # | Primefleet invoice no. | Customer | Invoice date | Amount (USD) | Received by Novelship (date, amount) | Remitted to Primefleet (date, batch) | Note |
-|---|---|---|---|---|---|---|---|
-| 1 | PFDHK-INV-2026-007 | 东易 | 31 Mar 2026 | 1,837.60 | | | |
-| 2 | PFDHK-INV-2026-009 | 东易 | 30 Apr 2026 | 1,601.60 | | | |
-| 3 | PFDHK-INV-2026-010 | 佳超 | 30 Apr 2026 | 160.80 | | | |
-| 4 | PFDHK-INV-2026-012 | 东易 | 31 May 2026 | 1,602.40 | | | |
-| 5 | PFDHK-INV-2026-013 | 佳超 | 31 May 2026 | 187.20 | | | |
-| 6 | PFDHK-INV-2026-015 | 东易 | 30 Jun 2026 | 1,601.60 | | | |
-| 7 | PFDHK-INV-2026-016 | 佳超 | 30 Jun 2026 | 210.40 | | | |
-| 8 | PFDHK-INV-2026-018 | 东易 | 31 Jul 2026 | 1,604.00 | | | |
-| 9 | PFDHK-INV-2026-019 | 佳超 | 31 Jul 2026 | 802.40 | | | |
-| 10 | PFDHK-INV-2026-021 | 东易 | 31 Aug 2026 | 1,600.80 | | | |
-| 11 | PFDHK-INV-2026-023 | 东易 | 30 Sep 2026 | 1,603.20 | | | |
-| 12 | PFDHK-INV-2026-024 | 佳超 | 30 Sep 2026 | 961.60 | | | |
-| | | 东易 sub-total | | 11,451.20 | | | |
-| | | 佳超 sub-total | | 2,322.40 | | | |
-| | | **Total** | | **13,773.60** | | | |
+| # | Primefleet invoice no. | Customer | Invoice date | Amount (HKD) | Amount (USD) | Received by Novelship (date, amount) | Remitted to Primefleet (date, batch) | Note |
+|---|---|---|---|---|---|---|---|---|
+| 1 | PFDHK-INV-2026-007 | 东易 | 31 Mar 2026 | 14,249 | 1,837.60 | | | |
+| 2 | PFDHK-INV-2026-009 | 东易 | 30 Apr 2026 | 12,419 | 1,601.60 | | | |
+| 3 | PFDHK-INV-2026-010 | 佳超 | 30 Apr 2026 | 1,247 | 160.80 | | | |
+| 4 | PFDHK-INV-2026-012 | 东易 | 31 May 2026 | 12,425 | 1,602.40 | | | |
+| 5 | PFDHK-INV-2026-013 | 佳超 | 31 May 2026 | 1,452 | 187.20 | | | |
+| 6 | PFDHK-INV-2026-015 | 东易 | 30 Jun 2026 | 12,419 | 1,601.60 | | | |
+| 7 | PFDHK-INV-2026-016 | 佳超 | 30 Jun 2026 | 1,631 | 210.40 | | | |
+| 8 | PFDHK-INV-2026-018 | 东易 | 31 Jul 2026 | 12,437 | 1,604.00 | | | |
+| 9 | PFDHK-INV-2026-019 | 佳超 | 31 Jul 2026 | 6,222 | 802.40 | | | |
+| 10 | PFDHK-INV-2026-021 | 东易 | 31 Aug 2026 | 12,412 | 1,600.80 | | | |
+| 11 | PFDHK-INV-2026-023 | 东易 | 30 Sep 2026 | 12,431 | 1,603.20 | | | |
+| 12 | PFDHK-INV-2026-024 | 佳超 | 30 Sep 2026 | 7,456 | 961.60 | | | |
+| | | 东易 sub-total | | 88,792 | 11,451.20 | | | |
+| | | 佳超 sub-total | | 18,008 | 2,322.40 | | | |
+| | | **Total** | | **106,800** | **13,773.60** | | | |
 
 Remittance batches
 
-| Batch | Date | Amount (USD) | Primefleet bank reference |
-|---|---|---|---|
-| 1 | 3 November 2026 | | |
-| 2 | | | |
-| 3 | | | |
+| Batch | Date | Amount (HKD) | Amount (USD) | Primefleet bank reference |
+|---|---|---|---|---|
+| 1 | 3 November 2026 | | | |
+| 2 | | | | |
+| 3 | | | | |
