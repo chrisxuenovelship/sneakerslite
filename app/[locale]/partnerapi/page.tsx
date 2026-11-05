@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import PartnerTryIt from '@/app/components/PartnerTryIt'
 import { SAMPLE_RESULT } from '@/lib/partner-sample'
 
 export const metadata: Metadata = {
@@ -24,7 +23,7 @@ const NAV = [
   ['limits', 'Rate limits & idempotency'],
   ['data', 'Data handling'],
   ['pricing', 'Plans & pricing'],
-  ['tryit', 'Try it'],
+  ['access', 'Get access'],
   ['changelog', 'Changelog'],
 ] as const
 
@@ -167,7 +166,7 @@ export default function PartnerApiDocs() {
             <span className="hidden text-sm text-gray-500 sm:inline">Partner API reference</span>
             <span className="rounded-full bg-cyan-50 px-2 py-0.5 text-xs font-medium text-cyan-700">{VERSION}</span>
           </div>
-          <Link href="/contact" className="rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium hover:bg-gray-50">Request live keys</Link>
+          <Link href="/contact" className="rounded-lg bg-brand-cyan px-3 py-1.5 text-xs font-semibold text-white hover:bg-cyan-600">Contact us for access</Link>
         </div>
       </header>
 
@@ -195,7 +194,7 @@ export default function PartnerApiDocs() {
                 ['Base URL', <code key="b">{BASE}</code>],
                 ['Format', 'JSON over HTTPS (TLS 1.2+). UTF-8. Timestamps are RFC 3339 in UTC.'],
                 ['Versioning', 'Path version (/v1). Additive changes (new fields, new check codes, new event types) are not versioned; removals get a new path version and 90 days notice.'],
-                ['Environments', 'The shared sandbox key sk_test_demo returns a fixed sample result and is free. Live keys (sk_live_…) are issued per partner and bill per completed result.'],
+                ['Environments', 'Sandbox keys (sk_test_…) return deterministic sample results and are free. Live keys (sk_live_…) bill per completed result. Both are issued on request — see Get access.'],
                 ['Status', `${VERSION}. Field names are stable for pilot partners; anything marked "preview" may change before general availability.`],
               ]}
             />
@@ -325,7 +324,7 @@ export default function PartnerApiDocs() {
                 ['checks[]', 'One entry per check that ran: code, label, result (pass | fail | skipped), score 0–100 and an optional detail string. Skipped means the view or code needed was missing.'],
                 ['review', 'required: whether a human looked at it. reason: low_confidence | partner_requested | decisive_check_failed | no_coverage. notes: authenticator comment on fail. dispute: present after feedback.'],
                 ['images', 'received / usable counts and rejected[] with view and reason.'],
-                ['sample', 'true only on sandbox and demo responses.'],
+                ['sample', 'true only on sandbox responses.'],
               ]}
             />
           </Section>
@@ -410,8 +409,16 @@ export default function PartnerApiDocs() {
             </p>
           </Section>
 
-          <Section id="tryit" title="Try it">
-            <PartnerTryIt />
+          <Section id="access" title="Get access">
+            <div className="rounded-xl border border-cyan-200 bg-cyan-50 p-6 space-y-3">
+              <p className="text-gray-800">
+                API keys and sandbox access are issued per partner after a short discovery call. Tell us your platform, monthly volume and the
+                brands you handle, and we come back within one business day with keys, a pilot scope and an integration contact.
+              </p>
+              <Link href="/contact" className="inline-block rounded-lg bg-brand-cyan px-5 py-2.5 text-sm font-semibold text-white hover:bg-cyan-600">
+                Contact us for access
+              </Link>
+            </div>
           </Section>
 
           <Section id="changelog" title="Changelog">
