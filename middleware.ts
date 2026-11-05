@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 import { defaultLocale, isLocale } from '@/lib/i18n'
-import { SESSION_COOKIE, verifySession } from '@/lib/partner-session'
 
 const PARTNER_RE = /^\/(?:(?:zh|ja|ko)\/)?partnerapi(?=\/|$)(.*)$/
 
@@ -18,33 +17,18 @@ function withPartnerHeaders(res: NextResponse): NextResponse {
 }
 
 /**
- * `/partnerapi/**` is English-only and gated by the signed `partner_session` cookie
- * (`lib/partner-session.ts`). Locale-prefixed forms redirect to the bare path so the
- * cookie's `Path=/partnerapi` always applies. Only `/partnerapi/login` is open.
+ * `/partnerapi/**` is English-only and unlisted: locale-prefixed forms redirect to the bare path,
+ * responses carry noindex / no-store headers, and `app/robots.ts` disallows the prefix.
  */
-async function partnerGate(request: NextRequest, sub: string): Promise<NextResponse> {
+function partnerArea(request: NextRequest, sub: string): NextResponse {
   const { pathname } = request.nextUrl
   if (!pathname.startsWith('/partnerapi')) {
     const url = request.nextUrl.clone()
     url.pathname = `/partnerapi${sub}`
     return withPartnerHeaders(NextResponse.redirect(url, 308))
   }
-  const session = await verifySession(process.env.PARTNER_SESSION_SECRET, request.cookies.get(SESSION_COOKIE)?.value)
   const headers = new Headers(request.headers)
   headers.set('x-locale-path', `/${defaultLocale}${pathname}`)
-  if (sub === '/login') {
-    if (session) {
-      const url = request.nextUrl.clone()
-      url.pathname = '/partnerapi'
-      url.search = ''
-      return withPartnerHeaders(NextResponse.redirect(url))
-    }
-  } else if (!session) {
-    const url = request.nextUrl.clone()
-    url.pathname = '/partnerapi/login'
-    url.search = sub && sub !== '/' ? `?next=${encodeURIComponent(pathname)}` : ''
-    return withPartnerHeaders(NextResponse.redirect(url))
-  }
   const url = request.nextUrl.clone()
   url.pathname = `/${defaultLocale}${pathname}`
   return withPartnerHeaders(NextResponse.rewrite(url, { request: { headers } }))
@@ -58,10 +42,10 @@ async function partnerGate(request: NextRequest, sub: string): Promise<NextRespo
  * The internal (locale-prefixed) path is forwarded as `x-locale-path` because `not-found.tsx`
  * receives no route params and needs the locale to render localized chrome.
  */
-export async function middleware(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const partner = PARTNER_RE.exec(pathname)
-  if (partner) return partnerGate(request, partner[1])
+  if (partner) return partnerArea(request, partner[1])
   const first = pathname.split('/')[1]
 
   if (first === defaultLocale) {

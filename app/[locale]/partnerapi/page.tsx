@@ -1,12 +1,7 @@
 import type { Metadata } from 'next'
-import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import PartnerTryIt from '@/app/components/PartnerTryIt'
 import { SAMPLE_RESULT } from '@/lib/partner-sample'
-import { SESSION_COOKIE, verifySession } from '@/lib/partner-session'
-
-export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Partner API reference — SneakersLite',
@@ -32,14 +27,6 @@ const NAV = [
   ['tryit', 'Try it'],
   ['changelog', 'Changelog'],
 ] as const
-
-function demoKeyFor(partner: string): string | null {
-  for (const entry of (process.env.PARTNER_DEMO_KEYS || '').split(',')) {
-    const [name, key] = entry.trim().split(':')
-    if (name === partner && key) return key
-  }
-  return null
-}
 
 function Code({ children, lang = 'json' }: { children: string; lang?: string }) {
   return (
@@ -168,13 +155,7 @@ const errorBody = `HTTP/1.1 422 Unprocessable Entity
   }
 }`
 
-export default async function PartnerApiDocs() {
-  // Middleware gates the route; this is the in-page check so a misconfigured matcher never serves the docs.
-  const session = await verifySession(process.env.PARTNER_SESSION_SECRET, cookies().get(SESSION_COOKIE)?.value)
-  if (!session) redirect('/partnerapi/login')
-  const partner = session.partner
-  const demoKey = demoKeyFor(partner)
-
+export default function PartnerApiDocs() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
       <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/95 backdrop-blur">
@@ -186,10 +167,7 @@ export default async function PartnerApiDocs() {
             <span className="hidden text-sm text-gray-500 sm:inline">Partner API reference</span>
             <span className="rounded-full bg-cyan-50 px-2 py-0.5 text-xs font-medium text-cyan-700">{VERSION}</span>
           </div>
-          <form method="post" action="/api/partner/logout" className="flex items-center gap-3 text-sm">
-            <span className="text-gray-500">Signed in as <strong className="text-brand-dark">{partner}</strong></span>
-            <button type="submit" className="rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium hover:bg-gray-50">Sign out</button>
-          </form>
+          <Link href="/contact" className="rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium hover:bg-gray-50">Request live keys</Link>
         </div>
       </header>
 
@@ -217,7 +195,7 @@ export default async function PartnerApiDocs() {
                 ['Base URL', <code key="b">{BASE}</code>],
                 ['Format', 'JSON over HTTPS (TLS 1.2+). UTF-8. Timestamps are RFC 3339 in UTC.'],
                 ['Versioning', 'Path version (/v1). Additive changes (new fields, new check codes, new event types) are not versioned; removals get a new path version and 90 days notice.'],
-                ['Environments', 'Sandbox keys (sk_test_…) return deterministic sample results and are free. Live keys (sk_live_…) bill per completed result.'],
+                ['Environments', 'The shared sandbox key sk_test_demo returns a fixed sample result and is free. Live keys (sk_live_…) are issued per partner and bill per completed result.'],
                 ['Status', `${VERSION}. Field names are stable for pilot partners; anything marked "preview" may change before general availability.`],
               ]}
             />
@@ -433,7 +411,7 @@ export default async function PartnerApiDocs() {
           </Section>
 
           <Section id="tryit" title="Try it">
-            <PartnerTryIt demoKey={demoKey} />
+            <PartnerTryIt />
           </Section>
 
           <Section id="changelog" title="Changelog">
