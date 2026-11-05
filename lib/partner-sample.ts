@@ -1,0 +1,25 @@
+/** Fixed sample returned by the documentation's try-it endpoint; `sample: true` marks it as such. */
+export const SAMPLE_RESULT = {
+  id: 'auth_01JC4Z8KQ2V9N3T7M5R1E6H8DP',
+  reference: 'ORDER-2026-118204',
+  status: 'completed',
+  verdict: 'pass',
+  confidence: 96.9,
+  sample: true,
+  product: { brand: 'Nike', model: 'Jordan 12 Retro', sku: '153265-006', gtin: '0195866361881', size_us: '10' },
+  coverage: { level: 'full', reference_items: 412 },
+  checks: [
+    { code: 'size_tag_id', label: 'Size tag ID', result: 'pass', score: 100 },
+    { code: 'size_tag_typography', label: 'Size tag font & spacing', result: 'pass', score: 98.2 },
+    { code: 'colour_accuracy', label: 'Colour accuracy', result: 'pass', score: 97.6 },
+    { code: 'outer_stitching', label: 'Outer stitching', result: 'pass', score: 96.1 },
+    { code: 'logo_geometry', label: 'Logo precision', result: 'pass', score: 92.4 },
+    { code: 'insole', label: 'Insoles', result: 'pass', score: 93.9 },
+    { code: 'midsole_stitching', label: 'Midsole stitching', result: 'pass', score: 97.7 },
+    { code: 'box_label', label: 'Box / packaging', result: 'pass', score: 93.0 },
+  ],
+  review: { required: false, reason: null, completed_at: null, notes: null },
+  images: { received: 8, usable: 8, rejected: [] },
+  created_at: '2026-11-05T08:12:41Z',
+  completed_at: '2026-11-05T08:13:27Z',
+}
