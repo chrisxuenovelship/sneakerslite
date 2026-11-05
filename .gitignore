@@ -41,3 +41,7 @@ lerna-debug.log*
 # Cyberport deck pipeline (host, 2 Nov 2026): files Chris drops in Slack and exports back to him
 inbox/
 exports/
+
+# internal notes, never in the public repo
+docs/PARTNERAPI-HOST-NOTES.md
+drafts/asics-converse-test-report.md
